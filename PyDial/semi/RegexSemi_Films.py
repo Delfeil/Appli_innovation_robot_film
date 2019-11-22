@@ -59,6 +59,7 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
     def init_regular_expressions(self):
         self.rHELLO = ur"^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
         self.THANK = ur"thx|[cs]imer(?:\s*bro|h?omer|albert?)|mer[csk]i\s*(?:b(?:eau|o|)c(?:ou|)p|)"
+        self.GREAT = ur"nickele?|nice|g[eé]niale?|pas?\s*male?|(?:tr(?:[eéè]s|op?)\s*)biens?"
         self.BYE = ur"au\s*re?v(?:oi?|i?o)r[ers]?|[+a]\+\s*(?:dans\s*l['e]?\s*bus|)"
         self.rBYE = (
             ur"^\s*(?:" +
@@ -107,6 +108,16 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
             ur"veu[stx]\s*pas" +
             ur"(?:\s*(?:d['e]\s*|)[cç](?:e?l?a|elui-?\s*(?:ci|l[aà])|et?t?e?s?\s*(?:choses?|trucs?|machins?|options?|propositions?|choi[esx]))|)\s*(?:!\s*|)$"
         )
+        self.contextual_NOT = ur"(?:n(?:o(?:n|pe)|an)|(?:absolument|surtout|certainement)\s*pas?|pas?\s*du\s*tou[stx]?)"
+        self.contextual_YES = ur"(?:oua?is?|ye[ps]|tou[stx]\s*[aà]\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
+        self.contextual_DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
+            ur"|(?:c'?e(?:st?|ts?)\s*)?pas?\s*graves?" +
+            ur"|[cç]a\s*importe\s*p(?:as?|eu)" +
+            ur"|peu[stx]?\s*importe(?:\s*l[ae]s?)?" +
+            ur"|(?:j'?\s*en\s*ai\s*)?rien\s*[aà]\s*(?:f(?:out|ai)re|battre|cir[eé]r?)(?:\s*de\s*[cç]a)?" +
+            ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr[eè]re?)?" +
+        ")")
+        self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans|non)"
 
     def create_domain_dependent_regex(self):
         """Can overwrite any of the regular expressions set in RegexParser.RegexParser.init_regular_expressions().
@@ -125,6 +136,12 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
         #exit("THESE NEED FIXING FOR THIS DOMAIN")
 
             # REGEXs
+            self.slot_vocab["titre"] = ur"(film|titre)"
+            self.slot_vocab["release_date"] = ur"((?:date*de\s*)?sortie)"
+            self.slot_vocab["duration"] = ur"(dur(é|e)e)"
+            self.slot_vocab["synopsis"] = ur"(synopsis|description|r(é|e)sum(é|e))"
+            self.slot_vocab["restriction"] = ur"(restriction)"
+            self.slot_vocab["genre"] = ur"(genre|type)"
 
         #---------------------------------------------------------------------------------------------------
         # Generate regular expressions for requests:
@@ -281,6 +298,20 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
 
         # TYPE:
         # SLOT: stars
+        # Genres
+        slot = 'genre'
+        # {u'west': '(west)', u'east': '(east)', u'north': '(north)', u'south': '(south)', u'centre': '(centre)'}
+        regex_de = "?(d'\s*|de\s*)"
+        regex_qui = "?(qui\s*)"
+        regex_en = "?(en)"
+        self.slot_values[slot]['action'] = ur"("+regex_de+"action|"+regex_qui+"bouge)"
+        self.slot_values[slot]['horeur'] = ur"("+regex_de+"(horeur|(é|e)pouv(a|e)nte|peur)|"+regex_qui+"?(fait)\s*peur)"
+        self.slot_values[slot]['animation'] = ur"(("+regex_de+"|"+regex_en+"|dessin?(s))(anim?(ation|é)|image?(s)\s*"+regex_de+"synth(e|é)se?(s)))"
+        self.slot_values[slot]['thriller'] = ur"(thriller)"
+        self.slot_values[slot]['comedie'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
+        self.slot_values[slot]['drame'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
+        self.slot_values[slot]['biopic'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
+        self.slot_values[slot]['historique'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
         #---------------------------------------------------------------------------------------------------
 
 

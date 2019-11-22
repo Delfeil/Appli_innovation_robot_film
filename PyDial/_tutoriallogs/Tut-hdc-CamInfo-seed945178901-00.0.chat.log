@@ -1,0 +1,84 @@
+INFO   :: 09:38:14: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 09:38:14: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 09:38:14: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 09:38:14: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 09:38:14: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/KUSTOM-rules.json
+INFO   :: 09:38:14: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/KUSTOM-dbase.db
+INFO   :: 09:38:14: root                                      pydial.py <initialise>373 :  Seed = 945178901
+INFO   :: 09:38:14: root                                      pydial.py <initialise>374 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
+DIAL   :: 09:38:14: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels', 'KUSTOM']: ***
+INFO   :: 09:38:14: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:14: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+WARNING:: 09:38:14: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 09:38:14: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:38:14: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+DIAL   :: 09:38:14: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 09:38:14: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello()
+DIAL   :: 09:38:14: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+DIAL   :: 09:38:16: root                                    Agent.py <continue_call>232 :  user input: [('help', 1.0)]
+DIAL   :: 09:38:16: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
+INFO   :: 09:38:16: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: topicmanager
+INFO   :: 09:38:16: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+INFO   :: 09:38:16: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 09:38:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 09:38:16: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 09:38:16: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello(help)
+DIAL   :: 09:38:16: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+DIAL   :: 09:38:28: root                                    Agent.py <continue_call>232 :  user input: [('kqjdfhqsdklfhsdqjhvbsd', 1.0)]
+DIAL   :: 09:38:28: root                                      Agent.py <_print_turn>579 :  ** Turn 2 **
+INFO   :: 09:38:28: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: topicmanager
+INFO   :: 09:38:28: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+INFO   :: 09:38:28: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 09:38:28: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 09:38:28: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 09:38:28: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello(help)
+DIAL   :: 09:38:28: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+DIAL   :: 09:38:44: root                                    Agent.py <continue_call>232 :  user input: [('resto', 1.0)]
+DIAL   :: 09:38:44: root                                      Agent.py <_print_turn>579 :  ** Turn 3 **
+INFO   :: 09:38:44: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: topicmanager
+INFO   :: 09:38:44: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+INFO   :: 09:38:44: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 09:38:44: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 09:38:44: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 09:38:44: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello(help)
+DIAL   :: 09:38:44: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+DIAL   :: 09:39:15: root                                    Agent.py <continue_call>232 :  user input: [('Je veux un burger', 1.0)]
+DIAL   :: 09:39:15: root                                      Agent.py <_print_turn>579 :  ** Turn 4 **
+INFO   :: 09:39:15: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: topicmanager
+INFO   :: 09:39:15: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+INFO   :: 09:39:15: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 09:39:15: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 09:39:15: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 09:39:15: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello(help)
+DIAL   :: 09:39:15: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+DIAL   :: 09:39:24: root                                    Agent.py <continue_call>232 :  user input: [('je veux une boisson', 1.0)]
+DIAL   :: 09:39:24: root                                      Agent.py <_print_turn>579 :  ** Turn 5 **
+INFO   :: 09:39:24: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: topicmanager
+INFO   :: 09:39:24: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+INFO   :: 09:39:24: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 09:39:24: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 09:39:24: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 09:39:24: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello(help)
+DIAL   :: 09:39:24: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+DIAL   :: 09:39:35: root                                    Agent.py <continue_call>232 :  user input: [('je veux une boisson', 1.0)]
+DIAL   :: 09:39:35: root                                      Agent.py <_print_turn>579 :  ** Turn 6 **
+INFO   :: 09:39:35: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: topicmanager
+INFO   :: 09:39:35: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+INFO   :: 09:39:35: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 09:39:35: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 09:39:35: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 09:39:35: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello(help)
+DIAL   :: 09:39:35: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager

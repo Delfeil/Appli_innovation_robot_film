@@ -682,6 +682,8 @@ class TopicManagerBasicSemO(BasicSemO):
                 text = 'San Francisco Restaurant'
             elif dom=="SFHotels":
                 text = 'San Francisco Hotel'
+            elif dom=="KUSTOM":
+                text = 'Mac Donalds'
 
             NL_DOMAINS[dom] = text
             #NL_DOMAINS["CamHotels"] = 'Cambridge Hotel'
@@ -717,7 +719,8 @@ class TopicManagerBasicSemO(BasicSemO):
 
 
 if __name__ == '__main__':
-    BasicTemplateGenerator('semo/templates/CamRestaurantsMessages.txt')
+    BasicTemplateGenerator('semo/templates/KUSTOMMessages.txt')
+    # BasicTemplateGenerator('semo/templates/CamRestaurantsMessages.txt')
 
 
 #END OF FILE

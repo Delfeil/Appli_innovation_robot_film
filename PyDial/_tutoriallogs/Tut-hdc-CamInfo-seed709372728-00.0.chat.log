@@ -1,0 +1,57 @@
+INFO   :: 09:38:04: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 09:38:04: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 09:38:04: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 09:38:04: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 09:38:04: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/KUSTOM-rules.json
+INFO   :: 09:38:04: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/KUSTOM-dbase.db
+INFO   :: 09:38:04: root                                      pydial.py <initialise>373 :  Seed = 709372728
+INFO   :: 09:38:04: root                                      pydial.py <initialise>374 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
+DIAL   :: 09:38:04: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels', 'KUSTOM']: ***
+INFO   :: 09:38:04: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:04: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:38:05: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+WARNING:: 09:38:05: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 09:38:05: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:38:05: root                                    Agent.py <_hand_control>470 :  Domain topicmanager is both already running and has control
+DIAL   :: 09:38:05: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 09:38:05: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello()
+DIAL   :: 09:38:05: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: topicmanager
+ERROR  :: 09:38:05: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.SyntaxError'>( invalid syntax (RuleSemOMethods.py, line 685) )
+          Traceback (most recent call last):
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1142, in <module>
+              run()
+            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
+              add_verbosity_option=add_verbosity_option)
+            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
+              return function(*args[:len(required_args)], **kw)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1129, in chat_command
+              hub.run()
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Texthub.py", line 88, in run
+              sys_act = self.agent.start_call(session_id='texthub_dialog')
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 203, in start_call
+              self.prompt_str = self._agents_semo(sys_act)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 680, in _agents_semo
+              prompt_str = self.semo_manager.generate(sys_act, domainTag=self.topic_tracker.operatingDomain)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/SemOManager.py", line 150, in generate
+              self._ensure_booted(domainTag)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/SemOManager.py", line 134, in _ensure_booted
+              self._load_domains_semo(dstring=domainTag)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/SemOManager.py", line 100, in _load_domains_semo
+              from RuleSemOMethods import TopicManagerBasicSemO
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/RuleSemOMethods.py", line 685
+              elfi dom=="KUSTOM":
+                     ^
+          SyntaxError: invalid syntax
+          

@@ -1,0 +1,21 @@
+DIAL   :: 10:01:34: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies []: ***
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:01:34: root                                       GPLib.py <readPolicy>745 :  inpolicyfile:auto does not exist
+WARNING:: 10:01:34: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 10:01:34: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 10:01:34: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+DIAL   :: 10:01:34: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 10:01:34: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello()
+DIAL   :: 10:01:34: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
