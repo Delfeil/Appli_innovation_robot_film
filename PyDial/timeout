@@ -1,0 +1,8 @@
+
+Executing tests in TServer
+Listening...
+
+Closing server.
+Exception KeyError: KeyError(140221045610304,) in <module 'threading' from '/usr/lib/python2.7/threading.pyc'> ignored
+0.17user 0.11system 0:43.87elapsed 0%CPU (0avgtext+0avgdata 29164maxresident)k
+0inputs+16outputs (0major+7690minor)pagefaults 0swaps

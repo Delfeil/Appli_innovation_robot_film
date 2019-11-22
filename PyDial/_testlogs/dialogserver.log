@@ -1,0 +1,111 @@
+INFO   :: 09:11:32: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/KUSTOM-rules.json
+INFO   :: 09:11:32: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/KUSTOM-dbase.db
+INFO   :: 09:11:32: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:11:32: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:11:32: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:11:32: root                                     DialogueServer.py <run>419 :  Server starting 10.120.15.163:8082 (level=info)
+INFO   :: 09:11:39: root                                       Agent.py <start_call>831 :  Agent Smith has been reactivated.
+DIAL   :: 09:11:39: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:11:39: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:11:39: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:11:39: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:11:39: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:11:39: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: 9898 
+INFO   :: 09:11:39: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:12:00: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:12:00: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:12:00: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:12:00: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:12:00: root                                        Agent.py <new_agent>934 :  Agent Smith1 has been created.
+DIAL   :: 09:12:00: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:12:00: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:12:00: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:12:00: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:12:00: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:12:00: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid7816528 
+INFO   :: 09:12:00: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:16:18: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:16:18: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:16:18: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:16:18: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:16:18: root                                        Agent.py <new_agent>934 :  Agent Smith2 has been created.
+DIAL   :: 09:16:18: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:16:18: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:16:18: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:16:18: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:16:18: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:16:18: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid8759717 
+INFO   :: 09:16:18: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:16:27: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:16:27: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:16:27: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:16:27: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:16:27: root                                        Agent.py <new_agent>934 :  Agent Smith3 has been created.
+DIAL   :: 09:16:27: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:16:27: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:16:27: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:16:27: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:16:27: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:16:27: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid7553830 
+INFO   :: 09:16:27: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:39:06: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:39:06: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:39:06: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:39:06: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:39:06: root                                        Agent.py <new_agent>934 :  Agent Smith4 has been created.
+DIAL   :: 09:39:06: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:39:06: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:39:06: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:39:06: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:39:06: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:39:06: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid2051095 
+INFO   :: 09:39:06: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:39:21: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:39:21: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:39:21: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:39:21: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:39:21: root                                        Agent.py <new_agent>934 :  Agent Smith5 has been created.
+DIAL   :: 09:39:21: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:39:21: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:39:21: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:39:21: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:39:21: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:39:21: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid2666455 
+INFO   :: 09:39:21: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:39:38: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:39:38: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:39:38: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:39:38: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:39:38: root                                        Agent.py <new_agent>934 :  Agent Smith6 has been created.
+DIAL   :: 09:39:38: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:39:38: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:39:38: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:39:38: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:39:38: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:39:38: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid4660463 
+INFO   :: 09:39:38: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
+INFO   :: 09:39:45: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 09:39:45: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 09:39:45: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 09:39:45: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 09:39:45: root                                        Agent.py <new_agent>934 :  Agent Smith7 has been created.
+DIAL   :: 09:39:45: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 09:39:45: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 09:39:45: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 09:39:45: root                                   Agent.py <_print_sys_act>591 :  Sys > hello()
+DIAL   :: 09:39:45: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 09:39:45: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid2708092 
+INFO   :: 09:39:45: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche McDonald' s! Que recherchez-vous? to tts.
