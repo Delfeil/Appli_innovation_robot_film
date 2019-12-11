@@ -1,0 +1,61 @@
+INFO   :: 09:53:30: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
+INFO   :: 09:53:30: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
+INFO   :: 09:53:30: root                                      pydial.py <initialise>373 :  Seed = 812255457
+INFO   :: 09:53:30: root                                      pydial.py <initialise>374 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
+DIAL   :: 09:53:30: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['Films']: ***
+INFO   :: 09:53:30: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 09:53:30: root                                RuleSemIMethods.py <__init__>79 :  No suitable regex SemI module found. Defaulting to generic module.
+WARNING:: 09:53:30: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+ERROR  :: 09:53:30: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.UnicodeEncodeError'>( 'ascii' codec can't encode character u'\xe8' in position 3: ordinal not in range(128) )
+          Traceback (most recent call last):
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1142, in <module>
+              run()
+            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
+              add_verbosity_option=add_verbosity_option)
+            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
+              return function(*args[:len(required_args)], **kw)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1128, in chat_command
+              hub = Texthub.ConsoleHub()
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Texthub.py", line 78, in __init__
+              self.agent = DialogueAgent(hub_id='texthub')
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 141, in __init__
+              self.restart_agent(session_id=None)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 379, in restart_agent
+              self._hand_control(domainString=self.topic_tracker.operatingDomain, previousDomainString=None)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 456, in _hand_control
+              self._bootup(domainString, previousDomainString)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 485, in _bootup
+              self.semi_belief_manager.bootup(domainString, previousDomainString)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/SemanticBeliefTrackingManager.py", line 188, in bootup
+              self._load_domains_semantic_belief_tracker(domainString)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/SemanticBeliefTrackingManager.py", line 236, in _load_domains_semantic_belief_tracker
+              self.domainSemiBelieftrackers[domainString] = ModularSemanticBeliefTracker(domainString)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/ModularSemanticBeliefTracker.py", line 60, in __init__
+              self.semi_manager = ModularSemanticBeliefTracker.getSemiManager()
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/ModularSemanticBeliefTracker.py", line 123, in getSemiManager
+              ModularSemanticBeliefTracker.semi_manager = SemI.SemIManager()
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/SemI.py", line 94, in __init__
+              self.semiManagers[domainTag] = self._load_domains_semi(dstring=domainTag)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/SemI.py", line 144, in _load_domains_semi
+              parsing_method = RegexSemI(domainTag=dstring)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RuleSemIMethods.py", line 80, in __init__
+              self.parser = RegexSemI_generic(self.domain_tag)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI_generic.py", line 48, in __init__
+              self.create_domain_dependent_regex()
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI_generic.py", line 58, in create_domain_dependent_regex
+              self._domain_init(dstring=self.domainTag)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI.py", line 99, in _domain_init
+              self.slot_values[slot] = {value:"("+str(value)+")" for value in slot_values}
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI.py", line 99, in <dictcomp>
+              self.slot_values[slot] = {value:"("+str(value)+")" for value in slot_values}
+          UnicodeEncodeError: 'ascii' codec can't encode character u'\xe8' in position 3: ordinal not in range(128)
+          

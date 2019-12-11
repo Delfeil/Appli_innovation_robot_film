@@ -136,8 +136,8 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
         #exit("THESE NEED FIXING FOR THIS DOMAIN")
 
             # REGEXs
-            self.slot_vocab["name"] = ur"(film|titre|nom)"
-            self.slot_vocab["release"] = ur"((?:date*de\s*)?sortie)"
+            self.slot_vocab["titre"] = ur"(film|titre)"
+            self.slot_vocab["release_date"] = ur"((?:date*de\s*)?sortie)"
             self.slot_vocab["duration"] = ur"(dur(é|e)e)"
             self.slot_vocab["synopsis"] = ur"(synopsis|description|r(é|e)sum(é|e))"
             self.slot_vocab["restriction"] = ur"(restriction)"
