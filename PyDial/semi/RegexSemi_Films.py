@@ -48,7 +48,7 @@ from utils import ContextLogger
 logger = ContextLogger.getLogger('')
 
 
-class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
+class RegexSemI_Films(RegexSemI.RegexSemI):
     """
     """
     def __init__(self, repoIn=None):
@@ -58,6 +58,10 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
     
     def init_regular_expressions(self):
         self.rHELLO = ur"^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
+        self.rNEG =  ur"^\s*(?:n(?:an|o(?:n|pe))\b|pas?\s*(?:di[est]?\s*)[cç]a|incorr?ecte?|(?:il\s*y'?\s*[aà]\s*erreur)|pas\s*(?:corr?ecte?|[cç](?:el)?a|bons?|(?:biens?\s*compri[est]?)))\s"
+        self.rAFFIRM = ur"^\s*(?:oua?is?|ye[ps]|ok|[cçs]a\s*m['e]?\s*va[st]?|absolue?ment|(?:c(?:e\s*n|)'?\s*e(?:ts?|st?)\s*|)(?:bons?|corr?ecte?|[cçs]a))\s*$"
+        self.THATSALL = ur"c(?:'?e(?:st?|ts?)|e\s*serr?as?)\s*tou[ts](?:\s*pour\s*(?:moi|nous)|)"
+        self.HELPFUL = ur"(?:c'?\s*(?:[eé]tai[st]?|e(?:st?|ts?))\s*|)(?:une?\s*info(?:rmations?)\s*|)(?:ass(?:ez|[eé]e?)\s*|)utiles?"
         self.THANK = ur"thx|[cs]imer(?:\s*bro|h?omer|albert?)|mer[csk]i\s*(?:b(?:eau|o|)c(?:ou|)p|)"
         self.GREAT = ur"nickele?|nice|g[eé]niale?|pas?\s*male?|(?:tr(?:[eéè]s|op?)\s*)biens?"
         self.BYE = ur"au\s*re?v(?:oi?|i?o)r[ers]?|[+a]\+\s*(?:dans\s*l['e]?\s*bus|)"
@@ -108,6 +112,45 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
             ur"veu[stx]\s*pas" +
             ur"(?:\s*(?:d['e]\s*|)[cç](?:e?l?a|elui-?\s*(?:ci|l[aà])|et?t?e?s?\s*(?:choses?|trucs?|machins?|options?|propositions?|choi[esx]))|)\s*(?:!\s*|)$"
         )
+        self.rREPEAT = (
+            ur"^\s*(?:(?:tu\s*|)peu[stx]?\s*(?:-\s*tu\s*|)|(?:vous\s*|)pouvez\s*(?:-\s*vous\s*|)|)" +
+            ur"(r(?:[eé]p[eéè]te[rsz]?|edi[str]?e?s?))" +
+            ur"(?:\s*[cç]e?l?a|)" +
+            # Tail : courtesy
+            ur"(?:\s*s'?\s*(?:il\s*|)(?:te?|v(?:ous|))\s*p(?:la[iî][st]|)|)" +
+            # Quesiton mark for correctness
+            ur"\s*(?:\?\s*|)$"
+        )
+        # The remaining regex are for the slot,value dependent acts - and so here in the base class are \
+        # just aiming to catch intent.
+        # REQUESTS:
+        self.WHATIS = ur"(?:(?:quell?e?\s*(?:est|sont)\s*)?l[ea]|combien\s*(?:y'?\s*)?a-?\s*t-\s*il\sde|s(?:['i]?\s*il|i)\s*(?:y'?\s*)?a(?:\s*d[eu]s?\b)?)"
+        self.IT = ur"l[ae]s?"
+        self.CYTM = ur"(?:(?:(?:tu\s*)?peu[stx]?\s*(?:-\s*tu\s*)?)?me\s*dire|di[st]\s*moi)"
+        self.NEGATE =ur"((i\ )*(don\'?t|do\ not|does\ not|does\'?nt)\ (care|mind|matter)(\ (about|what))*(\ (the|it\'?s*))*)"
+        self.DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
+            ur"|(?:c'?e(?:st?|ts?)\s*)?pas?\s*graves?" +
+            ur"|[cç]a\s*importe\s*p(?:as?|eu)" +
+            ur"|peu[stx]?\s*importe(?:\s*l[ae]s?)?" +
+            ur"|(?:j'?\s*en\s*ai\s*)?rien\s*[aà]\s*(?:f(?:out|ai)re|battre|cir[eé]r?)(?:\s*de\s*[cç]a)?" +
+            ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr[eè]re?)?" +
+        ")")
+        self.DONTCAREWHAT = "(i\ dont\ care\ what\ )"
+        self.DONTCAREABOUT = "(i\ dont\ care\ about\ )"
+        self.rREQUEST = ur"(\b|^|\s)("+self.CYTM+r"\s*("+self.WHATIS+r"|"+self.IT+r"))"
+        # INFORMS:
+        self.WANT = ur"(?:pourquoi\s*pas?|(?:j[e']|on)\s*v(?:eu[stx]|oudron[st])(?:\s*qu'?il\s*y\s*(?:aie?t?s?|est?|ets?))?|avec|j'ai\s*besoin\s*d[e']|(?:je\s*)(?:re)?cherche|(?:je\s*suis?\s*)habitue\s*a)(?:\s*(?:une?|des?|du))?"
+        self.WBG = ur"(?:(?:serr?ai[est]\s*"+self.GREAT+ur")(?:$|[^\?]$))"
+        self.rINFORM = ur"(?:\b|^|\ )"+self.WANT
+        self.rINFORM_DONTCARE = self.DONTCARE+ur"\s*(?:comment|[aà]\s*quell?e?\s*point?|si)\s*c'?e(?:st?|ts?)"
+        self.rINFORM_DONTWANT = ur"(?:je\s*[nl]e\s*veu[estx]\s*pas?(?:\s*que\s*[cç][ae]\s*so[iy][est]s?))"
+        # Contextual dontcares: i.e things that should be labelled inform(=dontcare)
+        self.rCONTEXTUAL_DONTCARE = self.DONTCARE
+        # The following are NOT regular expresions, but EXACT string matching:
+        self.COMMON_CONTEXTUAL_DONTCARES = [ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quoi)?", self.DONTCARE]
+        self.COMMON_CONTEXTUAL_DONTCARES += ["it doesn\'t matter", "dont care"]
+
+        self.general_INFORM = ur"(?:(?:j[e']|on)\s*(?:(?:v(?:eu|oudrai)[stx]?|pr[eé]f[eè]re(?:rai[stx]?|s|)|(?:aime(?:rai[stx]?|s|)))\s*(?:biens?|)|(?:ai|aurai[stx]?)\s*(?:biens?|)\s*(?:besoin|envie)(?:\s*d[e'])?)\s*(?:que\s*[cç]e?l?[ae]\s*so(?:i[stx]?|yen?t?s?)|quel(?:les?\s*)?que\s*chose\s*d['e]|une?\s*(?:truc|machin)s?|))"
         self.contextual_NOT = ur"(?:n(?:o(?:n|pe)|an)|(?:absolument|surtout|certainement)\s*pas?|pas?\s*du\s*tou[stx]?)"
         self.contextual_YES = ur"(?:oua?is?|ye[ps]|tou[stx]\s*[aà]\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
         self.contextual_DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
@@ -137,11 +180,11 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
 
             # REGEXs
             self.slot_vocab["name"] = ur"(film|titre|nom)"
-            self.slot_vocab["release"] = ur"((?:date*de\s*)?sortie)"
+            self.slot_vocab["release"] = ur"((?:(date|jour)*de\s*)?sortie)"
             self.slot_vocab["duration"] = ur"(dur(é|e)e)"
-            self.slot_vocab["synopsis"] = ur"(synopsis|description|r(é|e)sum(é|e))"
+            self.slot_vocab["synopsis"] = ur"(de.*quoi.*(ç|c)a.*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
             self.slot_vocab["restriction"] = ur"(restriction)"
-            self.slot_vocab["genre"] = ur"(genre|type)"
+            self.slot_vocab["genre"] = ur"(genre|type|style|nature|cath(e|é)gorie)"
 
         #---------------------------------------------------------------------------------------------------
         # Generate regular expressions for requests:
@@ -174,20 +217,40 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
                     self.inform_contextual[slot][value] = self.contextual_NOT
                 elif value == "1":
                     self.inform_contextual[slot][value] = self.contextual_YES
-                elif value == "free":
-                    self.inform_contextual[slot][value] = self.contextual_NONE
-                elif value == "little":
-                    self.inform_contextual[slot][value] = self.contextual_LITTLE
-                elif value == "fair":
-                    self.inform_contextual[slot][value] = self.contextual_FAIR
-                elif value == "much":
-                    self.inform_contextual[slot][value] = self.contextual_MUCH
-                elif value == "enormous":
-                    self.inform_contextual[slot][value] = self.contextual_VERYMUCH
-                elif value == "full":
-                    self.inform_contextual[slot][value] = self.contextual_COMPLETELY
-                elif value == "dontcare":
-                    self.inform_contextual[slot][value] = self.contextual_DONTCARE
+                if value == "comédie dramatique"
+                    self.inform_contextual[slot][value] = self.contextual_COM_DRAMA
+                if value == "divers"
+                    self.inform_contextual[slot][value] = self.contextual_DIVERS
+                if value == "comédie"
+                    self.inform_contextual[slot][value] = self.contextual_COMEDIE
+                if value == "aventure"
+                    self.inform_contextual[slot][value] = self.contextual_ADVENTURE
+                if value == "animation"
+                    self.inform_contextual[slot][value] = self.contextual_ANIMATION
+                if value == "film policier"
+                    self.inform_contextual[slot][value] = self.contextual_COPS
+                if value == "film noir-policier"
+                    self.inform_contextual[slot][value] = self.contextual_DARK_COPS
+                if value == "drame"
+                    self.inform_contextual[slot][value] = self.contextual_DRAME
+                if value == "épouvante-horreur"
+                    self.inform_contextual[slot][value] = self.contextual_HOROR
+                if value == "historique"
+                    self.inform_contextual[slot][value] = self.contextual_HISTORY
+                if value == "thriller"
+                    self.inform_contextual[slot][value] = self.contextual_THRILLER
+                if value == "biopic"
+                    self.inform_contextual[slot][value] = self.contextual_BIOPIC
+                if value == "romance"
+                    self.inform_contextual[slot][value] = self.contextual_ROMANCE
+                if value == "action"
+                    self.inform_contextual[slot][value] = self.contextual_ACTION
+                if value == "guerre"
+                    self.inform_contextual[slot][value] = self.contextual_WAR
+                if value == "fantastique"
+                    self.inform_contextual[slot][value] = self.contextual_FANTASTIQUE
+                if value == "science-fiction"
+                    self.inform_contextual[slot][value] = self.contextual_SCIENCE_FICTION
                 else:
                     continue
                 self.inform_contextual[slot][value] = ur"^\s*" + self.inform_contextual[slot][value] + ur"\s*$"
