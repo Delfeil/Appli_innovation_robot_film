@@ -14,12 +14,12 @@
 
 # --------------- RULES --------------------------
 
-hello() : "Bonjour ! Bienvenue dans cette version modifée de PyDial. Comment puis-je vous aider?";
+hello() : "Bonjour ! Bienvenue au cinéma. Comment puis-je vous aider?";
 
 hello(help) : "J'ai du mal à comprendre ce que vous voulez. Voulez-vous _DOMAINS_?";
-hello(more) : "Puis faire quoi que ce soit d'autre pour vous?";
+hello(more) : "Puis-je faire quoi que ce soit d'autre pour vous?";
 
-bad() : "Mumble";
+bad() : "Désolé";
 null() : "Navré, je suis un peu confus. Répétez votre requête, s'il vous plaît.";
 repeat() : "Pouvez-vous répéter?";
 bye() : "Merci, au revoir!";
