@@ -13,6 +13,26 @@
 
 # ============ Templates ========
 
+%genre_adj($genre){
+	comédie dramatique: "une comédie dramatique";
+	divers: "un film de genre divers";
+	comédie: "une comédie";
+	aventure: "un film d'aventure";
+	animation: "un film d'animation";
+	policier: "un film policier";
+	noir-policier: "un film noir-policier";
+	drame: "un film de genre dramatique";
+	épouvante-horreur: "un film d'épouvante-horreur";
+	historique: "un film de genre historique";
+	thriller: "un thriller";
+	biopic : "un biopic";
+	romance: "un film de genre romance";
+	action: "un film d'action";
+	guerre: "un film de guerre";
+	fantastique: "un film de genre fanstastique";
+	science-fiction: "un film de science-fiction"; 
+}
+
 # ============ RULES ============
 # -------Messages de bienvenu--------
 
@@ -25,4 +45,10 @@ null() : "Navré, je n'ai pas compris ce que vous avez dit. Pouvez-vous répéte
 
 # -----------Requetes-----------
 
+request(task) : "Que voulez-vous?";
 request(genre) : "Quel genre de film voulez-vous voir?
+
+
+# Explicit Confirmations
+
+confirm(genre=$V) : "Vous voulez voir %genre_adj($V), c'est bien cela?";
