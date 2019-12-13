@@ -176,6 +176,7 @@ def getOptionalConfigVar(configvarname, default='', section='exec_config'):
     return value
 
 def getRequiredDirectory(directoryname, section='exec_config'):
+    print(directoryname, section)
     assert Settings.config.has_option(section, directoryname),\
         "Value {} in section {} is missing.".format(directoryname, section)
     dir = Settings.config.get(section, directoryname)

@@ -121,6 +121,11 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             # Quesiton mark for correctness
             ur"\s*(?:\?\s*|)$"
         )
+
+        self.rTYPE = (
+            ur"(genre|type)"
+        )
+
         # The remaining regex are for the slot,value dependent acts - and so here in the base class are \
         # just aiming to catch intent.
         # REQUESTS:

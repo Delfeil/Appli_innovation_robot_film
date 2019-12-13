@@ -684,6 +684,8 @@ class TopicManagerBasicSemO(BasicSemO):
                 text = 'San Francisco Hotel'
             elif dom=="KUSTOM":
                 text = 'Mac Donalds'
+            elif dom=="Films":
+                text = "Films"
 
             NL_DOMAINS[dom] = text
             #NL_DOMAINS["CamHotels"] = 'Cambridge Hotel'
