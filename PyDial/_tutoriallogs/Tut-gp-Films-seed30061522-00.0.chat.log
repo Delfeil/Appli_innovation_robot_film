@@ -1,0 +1,49 @@
+DIAL   :: 11:08:18: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies []: ***
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                RuleSemIMethods.py <__init__>79 :  No suitable regex SemI module found. Defaulting to generic module.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 11:08:18: root                                       GPLib.py <readPolicy>745 :  inpolicyfile:auto does not exist
+WARNING:: 11:08:18: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 11:08:18: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 11:08:18: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+DIAL   :: 11:08:18: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 11:08:18: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello()
+DIAL   :: 11:08:18: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: Films
+ERROR  :: 11:08:18: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.TypeError'>( 'NoneType' object is not iterable )
+          Traceback (most recent call last):
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1142, in <module>
+              run()
+            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
+              add_verbosity_option=add_verbosity_option)
+            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
+              return function(*args[:len(required_args)], **kw)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1129, in chat_command
+              hub.run()
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Texthub.py", line 88, in run
+              sys_act = self.agent.start_call(session_id='texthub_dialog')
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 203, in start_call
+              self.prompt_str = self._agents_semo(sys_act)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 680, in _agents_semo
+              prompt_str = self.semo_manager.generate(sys_act, domainTag=self.topic_tracker.operatingDomain)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/SemOManager.py", line 151, in generate
+              return self.semoManagers[domainTag].generate(act_s)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/RuleSemOMethods.py", line 653, in generate
+              return self.generator.transform(act)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/RuleSemOMethods.py", line 574, in transform
+              best = self.compute_ftn(best, best_non_term_map)
+            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semo/RuleSemOMethods.py", line 586, in compute_ftn
+              for i, word in enumerate(input_words):
+          TypeError: 'NoneType' object is not iterable
+          

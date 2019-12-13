@@ -151,6 +151,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.COMMON_CONTEXTUAL_DONTCARES += ["it doesn\'t matter", "dont care"]
 
         self.general_INFORM = ur"(?:(?:j[e']|on)\s*(?:(?:v(?:eu|oudrai)[stx]?|pr[eé]f[eè]re(?:rai[stx]?|s|)|(?:aime(?:rai[stx]?|s|)))\s*(?:biens?|)|(?:ai|aurai[stx]?)\s*(?:biens?|)\s*(?:besoin|envie)(?:\s*d[e'])?)\s*(?:que\s*[cç]e?l?[ae]\s*so(?:i[stx]?|yen?t?s?)|quel(?:les?\s*)?que\s*chose\s*d['e]|une?\s*(?:truc|machin)s?|))"
+        
         self.contextual_NOT = ur"(?:n(?:o(?:n|pe)|an)|(?:absolument|surtout|certainement)\s*pas?|pas?\s*du\s*tou[stx]?)"
         self.contextual_YES = ur"(?:oua?is?|ye[ps]|tou[stx]\s*[aà]\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
         self.contextual_DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
@@ -161,6 +162,26 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr[eè]re?)?" +
         ")")
         self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans|non)"
+
+        self.contextual_COM_DRAMA = ur"(com(e|é)die?s\s*dramatique?s)"
+        self.contextual_DIVERS = ur"(divers)"
+        self.contextual_COMEDIE = ur"(com(e|é)die?s|drole)"
+        self.contextual_ADVENTURE = ur"(?(d')?(\s*)aventure?s)"
+        self.contextual_ANIMATION = ur"(?(d')?(\s*)annimation?s|?(dessin)?s\s*anim(é|e)?s)"
+        self.contextual_COPS = ur"(policier?s|?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))"
+        self.contextual_DARK_COPS = ur"(?(?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))\s*noir\s*?(policier?s))"
+        self.contextual_DRAME = ur"(?(d')?(\s*)dram(atique|e)?s|triste?s)"
+        self.contextual_HOROR = ur"(?(qui\s*)?(fait\s*)peur|horeur?s|(é|e)pouvante?s)"
+        self.contextual_HISTORY = ur"(histo(rique|ire)?s)"
+        self.contextual_THRILLER = ur"((thriller|suspens?e)?s)"
+        self.contextual_BIOPIC = ur"(bio(graphi(que|e))|pic)?s)"
+        self.contextual_ROMANCE = ur"((romance|?(d')?(\s*)amours|?(à|a)\s*?(l')?(\s*)de\s*rose)?s)"
+        self.contextual_ACTION = ur"((action|bagarre?s|course\s*poursuite|explosion)?s)"
+        self.contextual_WAR = ur"((guerre|bataille|conflit)?s)"
+        self.contextual_FANTASTIQUE = ur"((fantastique|immaginaire)?s)"
+        self.contextual_SCIENCE_FICTION = ur"(science(-|\s*)fiction?s|futur(ist(e|ique))?s|espace?s|fictif?s|super\s*h(é|e)ro?s|marvel?s)"
+
+
 
     def create_domain_dependent_regex(self):
         """Can overwrite any of the regular expressions set in RegexParser.RegexParser.init_regular_expressions().
@@ -180,9 +201,9 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
 
             # REGEXs
             self.slot_vocab["name"] = ur"(film|titre|nom)"
-            self.slot_vocab["release"] = ur"((?:(date|jour)*de\s*)?sortie)"
+            self.slot_vocab["release"] = ur"((?:(date|jour)\s*de\s*)?sortie)"
             self.slot_vocab["duration"] = ur"(dur(é|e)e)"
-            self.slot_vocab["synopsis"] = ur"(de.*quoi.*(ç|c)a.*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
+            self.slot_vocab["synopsis"] = ur"(de\s*quoi\s*(ç|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
             self.slot_vocab["restriction"] = ur"(restriction)"
             self.slot_vocab["genre"] = ur"(genre|type|style|nature|cath(e|é)gorie)"
 
@@ -213,44 +234,44 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         for slot in self.inform_contextual.keys():
             self.inform_contextual[slot] = {}
             for value in self.slot_values[slot].keys():
-                if value == "0":
                     self.inform_contextual[slot][value] = self.contextual_NOT
-                elif value == "1":
+                if value == "0":
                     self.inform_contextual[slot][value] = self.contextual_YES
-                if value == "comédie dramatique"
+                elif value == "1":
                     self.inform_contextual[slot][value] = self.contextual_COM_DRAMA
-                if value == "divers"
+                if value == "comédie dramatique"
                     self.inform_contextual[slot][value] = self.contextual_DIVERS
-                if value == "comédie"
+                if value == "divers"
                     self.inform_contextual[slot][value] = self.contextual_COMEDIE
-                if value == "aventure"
+                if value == "comédie"
                     self.inform_contextual[slot][value] = self.contextual_ADVENTURE
-                if value == "animation"
+                if value == "aventure"
                     self.inform_contextual[slot][value] = self.contextual_ANIMATION
-                if value == "film policier"
+                if value == "animation"
                     self.inform_contextual[slot][value] = self.contextual_COPS
-                if value == "film noir-policier"
+                if value == "film policier"
                     self.inform_contextual[slot][value] = self.contextual_DARK_COPS
-                if value == "drame"
+                if value == "film noir-policier"
                     self.inform_contextual[slot][value] = self.contextual_DRAME
-                if value == "épouvante-horreur"
+                if value == "drame"
                     self.inform_contextual[slot][value] = self.contextual_HOROR
-                if value == "historique"
+                if value == "épouvante-horreur"
                     self.inform_contextual[slot][value] = self.contextual_HISTORY
-                if value == "thriller"
+                if value == "historique"
                     self.inform_contextual[slot][value] = self.contextual_THRILLER
-                if value == "biopic"
+                if value == "thriller"
                     self.inform_contextual[slot][value] = self.contextual_BIOPIC
-                if value == "romance"
+                if value == "biopic"
                     self.inform_contextual[slot][value] = self.contextual_ROMANCE
-                if value == "action"
+                if value == "romance"
                     self.inform_contextual[slot][value] = self.contextual_ACTION
-                if value == "guerre"
+                if value == "action"
                     self.inform_contextual[slot][value] = self.contextual_WAR
-                if value == "fantastique"
+                if value == "guerre"
                     self.inform_contextual[slot][value] = self.contextual_FANTASTIQUE
-                if value == "science-fiction"
+                if value == "fantastique"
                     self.inform_contextual[slot][value] = self.contextual_SCIENCE_FICTION
+                if value == "science-fiction"
                 else:
                     continue
                 self.inform_contextual[slot][value] = ur"^\s*" + self.inform_contextual[slot][value] + ur"\s*$"
@@ -324,7 +345,18 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                 #TODO? - maybe just filter at end, so that inform(X) and request(X) can not both be there?
                 elif ADD_SLOTeqVALUE and not DETECTED_SLOT_INTENT:
                     self.semanticActs.append('inform('+slot+'='+value+')')
-    
+
+    def _decode_request(self, obs):
+        """
+        """
+        # if a slot needs its own code, then add it to this list and write code to deal with it differently
+        DO_DIFFERENTLY= [] #FIXME
+        for slot in self.USER_REQUESTABLE:
+            if slot not in DO_DIFFERENTLY:
+                self._generic_request(obs,slot)
+        # Domain independent requests:
+        self._domain_independent_requests(obs)
+
     def _decode_inform(self, obs):
         """
         """
@@ -367,14 +399,27 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         regex_de = "?(d'\s*|de\s*)"
         regex_qui = "?(qui\s*)"
         regex_en = "?(en)"
-        self.slot_values[slot]['action'] = ur"("+regex_de+"action|"+regex_qui+"bouge)"
-        self.slot_values[slot]['horeur'] = ur"("+regex_de+"(horeur|(é|e)pouv(a|e)nte|peur)|"+regex_qui+"?(fait)\s*peur)"
-        self.slot_values[slot]['animation'] = ur"(("+regex_de+"|"+regex_en+"|dessin?(s))(anim?(ation|é)|image?(s)\s*"+regex_de+"synth(e|é)se?(s)))"
-        self.slot_values[slot]['thriller'] = ur"(thriller)"
-        self.slot_values[slot]['comedie'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
-        self.slot_values[slot]['drame'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
-        self.slot_values[slot]['biopic'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
-        self.slot_values[slot]['historique'] = ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quel\s*produits?)"
+        # self.slot_values[slot]['action'] = ur"("+regex_de+"action|"+regex_qui+"bouge)"
+        self.slot_values[slot]['comédie dramatique'] = ur"(" + self.contextual_COM_DRAMA + ur")"
+        # self.slot_values[slot]['horeur'] = ur"("+regex_de+"(horeur|(é|e)pouv(a|e)nte|peur)|"+regex_qui+"?(fait)\s*peur)"
+        self.slot_values[slot]['divers'] = ur"(" + self.contextual_DIVERS + ur")"
+        # self.slot_values[slot]['annimation'] = ur"(("+regex_de+"|"+regex_en+"|dessin?(s))(anim?(ation|é)|image?(s)\s*"+regex_de+"synth(e|é)se?(s)))"
+        self.slot_values[slot]['comédie'] = ur"(" + self.contextual_COMEDIE + ur")"
+        self.slot_values[slot]['aventure'] = ur"(" + self.contextual_ADVENTURE + ur")"
+        self.slot_values[slot]['animation'] = ur"(" + self.contextual_ANIMATION + ur")"
+        self.slot_values[slot]['film policier'] = ur"(" + self.contextual_COPS + ur")"
+        self.slot_values[slot]['film noir-policier'] = ur"(" + self.contextual_DARK_COPS + ur")"
+        self.slot_values[slot]['drame'] = ur"(" + self.contextual_DRAME + ur")"
+        self.slot_values[slot]['épouvante-horreur'] = ur"(" + self.contextual_HOROR + ur")"
+        self.slot_values[slot]['historique'] = ur"(" + self.contextual_HISTORY + ur")"
+        self.slot_values[slot]['thriller'] = ur"(" + self.contextual_THRILLER + ur")"
+        self.slot_values[slot]['biopic'] = ur"(" + self.contextual_BIOPIC + ur")"
+        self.slot_values[slot]['romance'] = ur"(" + self.contextual_ROMANCE + ur")"
+        self.slot_values[slot]['action'] = ur"(" + self.contextual_ACTION + ur")"
+        self.slot_values[slot]['guerre'] = ur"(" + self.contextual_WAR + ur")"
+        self.slot_values[slot]['fantastique'] = ur"(" + self.contextual_FANTASTIQUE + ur")"
+        self.slot_values[slot]['science-fiction'] = ur"(" + self.contextual_SCIENCE_FICTION + ur")"
+        
         #---------------------------------------------------------------------------------------------------
 
 

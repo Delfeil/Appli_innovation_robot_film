@@ -21,6 +21,21 @@
             "02:32", 
             "02:33"
         ], 
+        "genre": [
+            "action", 
+            "animation", 
+            "aventure", 
+            "biopic", 
+            "comedie", 
+            "drame", 
+            "fantastique", 
+            "film noir-policier", 
+            "guerre", 
+            "historique", 
+            "romance", 
+            "thriller", 
+            "epouvante-horreur"
+        ], 
         "name": [
             "abominable", 
             "countdown", 
@@ -74,7 +89,12 @@
         "genre"
     ], 
     "system_requestable": [
-        "genre"
+        "restriction", 
+        "name", 
+        "genre", 
+        "synopsis", 
+        "duration", 
+        "release"
     ], 
     "type": "films"
 }
