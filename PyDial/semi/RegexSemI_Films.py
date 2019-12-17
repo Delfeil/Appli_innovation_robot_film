@@ -57,7 +57,8 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.create_domain_dependent_regex()
     
     def init_regular_expressions(self):
-        self.rHELLO = ur"^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
+        # self.rHELLO = ur"^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
+        self.rHELLO = ur"s(alut|lt)|b(jr|onjour)|coucou|cc|wesh|yo"
         self.rNEG =  ur"^\s*(?:n(?:an|o(?:n|pe))\b|pas?\s*(?:di[est]?\s*)[cç]a|incorr?ecte?|(?:il\s*y'?\s*[aà]\s*erreur)|pas\s*(?:corr?ecte?|[cç](?:el)?a|bons?|(?:biens?\s*compri[est]?)))\s"
         self.rAFFIRM = ur"^\s*(?:oua?is?|ye[ps]|ok|[cçs]a\s*m['e]?\s*va[st]?|absolue?ment|(?:c(?:e\s*n|)'?\s*e(?:ts?|st?)\s*|)(?:bons?|corr?ecte?|[cçs]a))\s*$"
         self.THATSALL = ur"c(?:'?e(?:st?|ts?)|e\s*serr?as?)\s*tou[ts](?:\s*pour\s*(?:moi|nous)|)"
