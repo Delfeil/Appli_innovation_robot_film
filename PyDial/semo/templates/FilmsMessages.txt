@@ -13,24 +13,20 @@
 
 # ============ Templates ========
 
-%genre_adj($genre){
-	comédie dramatique: "une comédie dramatique";
-	divers: "un film de genre divers";
-	comédie: "une comédie";
-	aventure: "un film d'aventure";
-	animation: "un film d'animation";
-	policier: "un film policier";
-	noir-policier: "un film noir-policier";
-	drame: "un film de genre dramatique";
-	épouvante-horreur: "un film d'épouvante-horreur";
-	historique: "un film de genre historique";
-	thriller: "un thriller";
-	biopic : "un biopic";
-	romance: "un film de genre romance";
+%genre_adj($genre) {
 	action: "un film d'action";
-	guerre: "un film de guerre";
+	animation: "un film d'animation";
+	aventure: "un film d'aventure";
+	biopic: "un biopic";
+	comedie: "une comédie";
+	drame: "un film de genre dramatique";
 	fantastique: "un film de genre fanstastique";
-	science-fiction: "un film de science-fiction"; 
+	"film noir-policier": "un film noir-policier";
+	guerre: "un film de guerre";
+	historique: "un film de genre historique";
+	romance: "un film de genre romance";
+	thriller: "un thriller";
+	epouvante_horreur: "un film d'épouvante-horreur"; 
 }
 
 # ============ RULES ============
@@ -46,9 +42,14 @@ null() : "Navré, je n'ai pas compris ce que vous avez dit. Pouvez-vous répéte
 # -----------Requetes-----------
 
 request(task) : "Que voulez-vous?";
-request(genre) : "Quel genre de film voulez-vous voir?
+request(genre) : "Quel genre de film voulez-vous voir?";
 
 
 # Explicit Confirmations
 
 confirm(genre=$V) : "Vous voulez voir %genre_adj($V), c'est bien cela?";
+
+
+# Informs
+
+inform(genre=$V, name=$U) : "Le film $U est du genre $V";

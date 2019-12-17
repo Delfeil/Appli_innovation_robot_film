@@ -34,7 +34,7 @@
             "historique", 
             "romance", 
             "thriller", 
-            "epouvante-horreur"
+            "epouvante_horreur"
         ], 
         "name": [
             "abominable", 
@@ -89,12 +89,7 @@
         "genre"
     ], 
     "system_requestable": [
-        "restriction", 
-        "name", 
-        "genre", 
-        "synopsis", 
-        "duration", 
-        "release"
+        "genre"
     ], 
     "type": "films"
 }
