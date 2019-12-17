@@ -301,9 +301,9 @@ class RegexSemI_KUSTOM(RegexSemI.RegexSemI):
         # Genres
         slot = 'genre'
         # {u'west': '(west)', u'east': '(east)', u'north': '(north)', u'south': '(south)', u'centre': '(centre)'}
-        regex_de = "?(d'\s*|de\s*)"
-        regex_qui = "?(qui\s*)"
-        regex_en = "?(en)"
+        regex_de = "(d'\s*|de\s*)?"
+        regex_qui = "(qui\s*)?"
+        regex_en = "(en)?"
         self.slot_values[slot]['action'] = ur"("+regex_de+"action|"+regex_qui+"bouge)"
         self.slot_values[slot]['horeur'] = ur"("+regex_de+"(horeur|(é|e)pouv(a|e)nte|peur)|"+regex_qui+"?(fait)\s*peur)"
         self.slot_values[slot]['animation'] = ur"(("+regex_de+"|"+regex_en+"|dessin?(s))(anim?(ation|é)|image?(s)\s*"+regex_de+"synth(e|é)se?(s)))"

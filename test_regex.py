@@ -12,6 +12,7 @@ regex = ur"n[ao](n|pe?)|pas(\s+)di[est]|incor?recte?|il\s+y\s+[aà]\s+erreur"
 # regex = "^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
 # regex = ur"(?:com[eé]die?s|drole)"
 # regex = ur"bonjour"
+regex = ur"(d'\s*|de\s*)?action|(qui\s*)?bouge"
 
 # pattern = re.compile(regex)
 
