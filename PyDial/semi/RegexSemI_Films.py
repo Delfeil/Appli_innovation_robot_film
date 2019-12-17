@@ -59,9 +59,12 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
     def init_regular_expressions(self):
         # self.rHELLO = ur"^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
         self.rHELLO = ur"s(alut|lt)|b(jr|onjour)|coucou|cc|wesh|yo"
-        self.rNEG =  ur"^\s*(?:n(?:an|o(?:n|pe))\b|pas?\s*(?:di[est]?\s*)[cç]a|incorr?ecte?|(?:il\s*y'?\s*[aà]\s*erreur)|pas\s*(?:corr?ecte?|[cç](?:el)?a|bons?|(?:biens?\s*compri[est]?)))\s"
-        self.rAFFIRM = ur"^\s*(?:oua?is?|ye[ps]|ok|[cçs]a\s*m['e]?\s*va[st]?|absolue?ment|(?:c(?:e\s*n|)'?\s*e(?:ts?|st?)\s*|)(?:bons?|corr?ecte?|[cçs]a))\s*$"
-        self.THATSALL = ur"c(?:'?e(?:st?|ts?)|e\s*serr?as?)\s*tou[ts](?:\s*pour\s*(?:moi|nous)|)"
+        # self.rNEG =  ur"^\s*(?:n(?:an|o(?:n|pe))\b|pas?\s*(?:di[est]?\s*)[cç]a|incorr?ecte?|(?:il\s*y'?\s*[aà]\s*erreur)|pas\s*(?:corr?ecte?|[cç](?:el)?a|bons?|(?:biens?\s*compri[est]?)))\s"
+        self.rNEG =  ur"n[ao](n|pe?)?|pas(\s*)(di[est])?\s*(c|\xc3\xa7)a|(in|pas\s*)cor?recte?|il\s*y\s*[aà]\s+erreur|pas\s*(bons?|biens?(\s*compri[est]?)?)"
+        # self.rAFFIRM = ur"^\s*(?:oua?is?|ye[ps]|ok|[cçs]a\s*m['e]?\s*va[st]?|absolue?ment|(?:c(?:e\s*n|)'?\s*e(?:ts?|st?)\s*|)(?:bons?|corr?ecte?|[cçs]a))\s*$"
+        self.rAFFIRM = ur"\s*(oua?is?|ye[ps]|ok|(\xc3\xa7|c)a\s*m['e]?\s*va[st]?|absolue?ment|c'est?\s*(bons?|corr?ecte?|(\xc3\xa7|c)a))"
+        # self.THATSALL = ur"c(?:'?e(?:st?|ts?)|e\s*serr?as?)\s*tou[ts](?:\s*pour\s*(?:moi|nous)|)"
+        self.THATSALL = ur"c('?e(st?|ts?)|e\s*serr?as?)\s*tou[ts](\s*pour\s*(moi|nous)|)"
         self.HELPFUL = ur"(?:c'?\s*(?:[eé]tai[st]?|e(?:st?|ts?))\s*|)(?:une?\s*info(?:rmations?)\s*|)(?:ass(?:ez|[eé]e?)\s*|)utiles?"
         self.THANK = ur"thx|[cs]imer(?:\s*bro|h?omer|albert?)|mer[csk]i\s*(?:b(?:eau|o|)c(?:ou|)p|)"
         self.GREAT = ur"nickele?|nice|g[eé]niale?|pas?\s*male?|(?:tr(?:[eéè]s|op?)\s*)biens?"
@@ -171,24 +174,24 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
 
         # self.contextual_COM_DRAMA = ur"(com(e|é)die?s\s*dramatique?s)"
         # self.contextual_DIVERS = ur"(divers)"
-        self.contextual_COMEDIE = ur"(?:com[eé]die?s|drole)"
-        self.contextual_ADVENTURE = ur"(?:aventure?s)"
+        self.contextual_COMEDIE = ur"(?:comm?(e|\xc3\xa9)dies?|drole|comm?iques?)"
+        self.contextual_ADVENTURE = ur"(?:(d')?\s*aventures?)"
         # self.contextual_ANIMATION = ur"(?:(?:an?nimation?s|?(dessin)?s\s*anim[eé]?s))"
-        self.contextual_ANIMATION = ur"(?:animation|dessin?s\s*an?nim[eé]?e?s)"
+        self.contextual_ANIMATION = ur"(?:(d')?\s*ann?imations?|(dessins?)?\s*an?nim(e|\xc3\xa9)e?s?)"
         # self.contextual_COPS = ur"(policier?s|?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))"
         # self.contextual_DARK_COPS = ur"(?(?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))\s*noir\s*?(policier?s))"
         # self.contextual_DRAME = ur"(?:?(d')\s*dram(atique|e)?s|triste?s)"
-        self.contextual_DRAME = ur"(?:(?:dram(atique|e)?s|triste?s))"
+        self.contextual_DRAME = ur"(dram(atique|e)s?|tristes?)"
         # self.contextual_HOROR = ur"(?:?(qui\s*)?(fait\s*)peur|horeur?s|[eé]pouvante?s)"
-        self.contextual_HOROR = ur"(?:peur|horeur(s)?|(e|\xc3\xa9)pouvante(s)?)" #OK
-        self.contextual_HISTORY = ur"(?:histo(?:rique|ire)s?)" #OK
-        self.contextual_THRILLER = ur"(?:(thriller|suspens(e)?(s)?" #OK
-        self.contextual_BIOPIC = ur"(?:bio(graphi(que|e)|pic)(s)?)" #OK
+        self.contextual_HOROR = ur"(?:peur|(d')?\s*horeurs?|(d')?\s*(e|\xc3\xa9)pouvante(s)?)" #OK
+        self.contextual_HISTORY = ur"(?:(d')?\s*histo(?:rique|ire)s?)" #OK
+        self.contextual_THRILLER = ur"(?:(thriller|suspense?s?" #OK
+        self.contextual_BIOPIC = ur"(?:(auto)?bio(graphi((que|e)|pic))?s?)" #OK
         # self.contextual_ROMANCE = ur"((romance|?(d')\s*amours|?(à|a)\s*?(l')\s*de\s*rose)?s)"
-        self.contextual_ROMANCE = ur"(?:(romance|d'amour|[aà]\s*l'eau\s*de\s*rose))"
-        self.contextual_ACTION = ur"(?:(action|bagarre?s|course\s*poursuite|explosion)?s)"
-        self.contextual_WAR = ur"(?:(guerre|bataille|conflit)?s)"
-        self.contextual_FANTASTIQUE = ur"(?:(fantastique|immaginaire)?s)"
+        self.contextual_ROMANCE = ur"(roman(tique|ce)s?|(d'?\s*)amours?|(a|\xc3\xa0)\s*l'eau\s*de\s*r(o|au)se)"
+        self.contextual_ACTION = ur"(?:((d')?\s*action|bagarr?es?|course\s*poursuite|(d('|es))?\s*explosion)s?)"
+        self.contextual_WAR = ur"(?:(guerre|bataill?e|conflic?t)s?)"
+        self.contextual_FANTASTIQUE = ur"(?:(fantastique|immaginn?aire)s?)"
         # self.contextual_SCIENCE_FICTION = ur"(science(-|\s*)fiction?s|futur(ist(e|ique))?s|espace?s|fictif?s|super\s*h(é|e)ro?s|marvel?s)"
 
 
