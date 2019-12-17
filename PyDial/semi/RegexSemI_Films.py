@@ -177,21 +177,21 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_COMEDIE = ur"(?:comm?(e|\xc3\xa9)dies?|drole|comm?iques?)"
         self.contextual_ADVENTURE = ur"(?:(d')?\s*aventures?)"
         # self.contextual_ANIMATION = ur"(?:(?:an?nimation?s|?(dessin)?s\s*anim[eé]?s))"
-        self.contextual_ANIMATION = ur"(?:(d')?\s*ann?imations?|(dessins?)?\s*an?nim(e|\xc3\xa9)e?s?)"
+        self.contextual_ANIMATION = ur"(?:(d')?\s*an?imations?|(dessins?)?\s*an?nim(e|\xc3\xa9)e?s?)"
         # self.contextual_COPS = ur"(policier?s|?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))"
         # self.contextual_DARK_COPS = ur"(?(?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))\s*noir\s*?(policier?s))"
         # self.contextual_DRAME = ur"(?:?(d')\s*dram(atique|e)?s|triste?s)"
         self.contextual_DRAME = ur"(dram(atique|e)s?|tristes?)"
         # self.contextual_HOROR = ur"(?:?(qui\s*)?(fait\s*)peur|horeur?s|[eé]pouvante?s)"
-        self.contextual_HOROR = ur"(?:peur|(d')?\s*horeurs?|(d')?\s*(e|\xc3\xa9)pouvante(s)?)" #OK
-        self.contextual_HISTORY = ur"(?:(d')?\s*histo(?:rique|ire)s?)" #OK
-        self.contextual_THRILLER = ur"(?:(thriller|suspense?s?" #OK
-        self.contextual_BIOPIC = ur"(?:(auto)?bio(graphi((que|e)|pic))?s?)" #OK
+        self.contextual_HOROR = ur"(?:peur|(d')?\s*horreurs?|(d')?\s*(e|\xc3\xa9)pouvante(s)?)"
+        self.contextual_HISTORY = ur"(?:(d')?\s*histo(?:rique|ire)s?)"
+        self.contextual_THRILLER = ur"(?:(thriller|suspense?s?"
+        self.contextual_BIOPIC = ur"(?:(auto)?bio(graphi((que|e)|pic))?s?)"
         # self.contextual_ROMANCE = ur"((romance|?(d')\s*amours|?(à|a)\s*?(l')\s*de\s*rose)?s)"
         self.contextual_ROMANCE = ur"(roman(tique|ce)s?|(d'?\s*)amours?|(a|\xc3\xa0)\s*l'eau\s*de\s*r(o|au)se)"
         self.contextual_ACTION = ur"(?:((d')?\s*action|bagarr?es?|course\s*poursuite|(d('|es))?\s*explosion)s?)"
-        self.contextual_WAR = ur"(?:(guerre|bataill?e|conflic?t)s?)"
-        self.contextual_FANTASTIQUE = ur"(?:(fantastique|immaginn?aire)s?)"
+        self.contextual_WAR = ur"(?:(guerre|bataill?e|confli?t)s?)"
+        self.contextual_FANTASTIQUE = ur"(?:(fantastique|imagin?aire)s?)"
         # self.contextual_SCIENCE_FICTION = ur"(science(-|\s*)fiction?s|futur(ist(e|ique))?s|espace?s|fictif?s|super\s*h(é|e)ro?s|marvel?s)"
 
 
