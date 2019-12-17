@@ -180,10 +180,10 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         # self.contextual_DRAME = ur"(?:?(d')\s*dram(atique|e)?s|triste?s)"
         self.contextual_DRAME = ur"(?:(?:dram(atique|e)?s|triste?s))"
         # self.contextual_HOROR = ur"(?:?(qui\s*)?(fait\s*)peur|horeur?s|[eé]pouvante?s)"
-        self.contextual_HOROR = ur"(?:peur|horeur?s|[eé]pouvante?s)"
-        self.contextual_HISTORY = ur"(?:histo(?:rique|ire)?s)"
-        self.contextual_THRILLER = ur"(?:(thriller|suspens?e)?s)"
-        self.contextual_BIOPIC = ur"(?:bio(graphi((que|e)|pic))?s)"
+        self.contextual_HOROR = ur"(?:peur|horeur(s)?|(e|\xc3\xa9)pouvante(s)?)" #OK
+        self.contextual_HISTORY = ur"(?:histo(?:rique|ire)s?)" #OK
+        self.contextual_THRILLER = ur"(?:(thriller|suspens(e)?(s)?" #OK
+        self.contextual_BIOPIC = ur"(?:bio(graphi(que|e)|pic)(s)?)" #OK
         # self.contextual_ROMANCE = ur"((romance|?(d')\s*amours|?(à|a)\s*?(l')\s*de\s*rose)?s)"
         self.contextual_ROMANCE = ur"(?:(romance|d'amour|[aà]\s*l'eau\s*de\s*rose))"
         self.contextual_ACTION = ur"(?:(action|bagarre?s|course\s*poursuite|explosion)?s)"
