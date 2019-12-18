@@ -276,7 +276,7 @@ class DialogueAgent(object):
 
         # Check ending the call:
         sys_act = self._check_ENDING_CALL(state, sys_act)  # NB: this may change the self.prompt_str
-
+        # print(state)
         self._print_sys_act(sys_act)
 
         # SEMO:
@@ -587,6 +587,7 @@ class DialogueAgent(object):
 
         :return: None
         '''
+        # print(sys_act)
         if self.hub_id=='dialogueserver':
             logger.dial('Sys > {}'.format(sys_act))
         else:

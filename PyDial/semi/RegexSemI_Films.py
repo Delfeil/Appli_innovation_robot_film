@@ -59,15 +59,15 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
     def init_regular_expressions(self):
         # self.rHELLO = ur"^\s*(?:s(?:lt|alut?)|b(?:on|'|)j(?:ou)?r?|coucous?|cc|wesh|yo)\s"
         self.rHELLO = ur"s(alut|lt)|b(jr|onjour)|coucou|cc|wesh|yo"
-        # self.rNEG =  ur"^\s*(?:n(?:an|o(?:n|pe))\b|pas?\s*(?:di[est]?\s*)[cç]a|incorr?ecte?|(?:il\s*y'?\s*[aà]\s*erreur)|pas\s*(?:corr?ecte?|[cç](?:el)?a|bons?|(?:biens?\s*compri[est]?)))\s"
-        self.rNEG =  ur"n[ao](n|pe?)?|pas(\s*)(di[est])?\s*(c|\xc3\xa7)a|(in|pas\s*)cor?recte?|il\s*y\s*[aà]\s+erreur|pas\s*(bons?|biens?(\s*compri[est]?)?)"
-        # self.rAFFIRM = ur"^\s*(?:oua?is?|ye[ps]|ok|[cçs]a\s*m['e]?\s*va[st]?|absolue?ment|(?:c(?:e\s*n|)'?\s*e(?:ts?|st?)\s*|)(?:bons?|corr?ecte?|[cçs]a))\s*$"
+        # self.rNEG =  ur"^\s*(?:n(?:an|o(?:n|pe))\b|pas?\s*(?:di[est]?\s*)(c|\xc3\xa7)a|incorr?ecte?|(?:il\s*y'?\s*(a|à)\s*erreur)|pas\s*(?:corr?ecte?|(c|\xc3\xa7)(?:el)?a|bons?|(?:biens?\s*compri[est]?)))\s"
+        self.rNEG =  ur"n[ao](n|pe?)?|pas(\s*)(di[est])?\s*(c|\xc3\xa7)a|(in|pas\s*)cor?recte?|il\s*y\s*(a|à)\s+erreur|pas\s*(bons?|biens?(\s*compri[est]?)?)"
+        # self.rAFFIRM = ur"^\s*(?:oua?is?|ye[ps]|ok|[c\xc3\xa7s]a\s*m['e]?\s*va[st]?|absolue?ment|(?:c(?:e\s*n|)'?\s*e(?:ts?|st?)\s*|)(?:bons?|corr?ecte?|[c\xc3\xa7s]a))\s*$"
         self.rAFFIRM = ur"\s*(oua?is?|ye[ps]|ok|(\xc3\xa7|c)a\s*m['e]?\s*va[st]?|absolue?ment|c'est?\s*(bons?|corr?ecte?|(\xc3\xa7|c)a))"
         # self.THATSALL = ur"c(?:'?e(?:st?|ts?)|e\s*serr?as?)\s*tou[ts](?:\s*pour\s*(?:moi|nous)|)"
         self.THATSALL = ur"c('?e(st?|ts?)|e\s*serr?as?)\s*tou[ts](\s*pour\s*(moi|nous)|)"
-        self.HELPFUL = ur"(?:c'?\s*(?:[eé]tai[st]?|e(?:st?|ts?))\s*|)(?:une?\s*info(?:rmations?)\s*|)(?:ass(?:ez|[eé]e?)\s*|)utiles?"
+        self.HELPFUL = ur"(?:c'?\s*(?:(e|é)tai[st]?|e(?:st?|ts?))\s*|)(?:une?\s*info(?:rmations?)\s*|)(?:ass(?:ez|(e|é)e?)\s*|)utiles?"
         self.THANK = ur"thx|[cs]imer(?:\s*bro|h?omer|albert?)|mer[csk]i\s*(?:b(?:eau|o|)c(?:ou|)p|)"
-        self.GREAT = ur"nickele?|nice|g[eé]niale?|pas?\s*male?|(?:tr(?:[eéè]s|op?)\s*)biens?"
+        self.GREAT = ur"nickele?|nice|g(e|é)niale?|pas?\s*male?|(?:tr(?:(e|é|è)s|op?)\s*)biens?"
         self.BYE = ur"au\s*re?v(?:oi?|i?o)r[ers]?|[+a]\+\s*(?:dans\s*l['e]?\s*bus|)"
         self.rBYE = (
             ur"^\s*(?:" +
@@ -91,7 +91,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                 ur"(?:en\s*)?" +
                 ur"(?:" +
                     ur"v(?:oudr(?:ai[estx]|i?on[st])|eu[stx])" +
-                    ur"|pr[eé]f[eè]re(?:rai[est]|s|)\s*" +
+                    ur"|pr(e|é)f(e|è)re(?:rai[est]|s|)\s*" +
                     ur"|aimerai[est]|peu[stx]?\s*avoir" +
                     ur"|" +
                 ur")\s*" +
@@ -101,11 +101,11 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             # Central part : <(an)other|alternative>
             ur"(?:" +
                 ur"(?:(?:une?(?:\s*(?:choses?|trucs?|machins?|options?|propositions?))?|quell?e?\s*que\s*chose\s*d[e']?|choses?|trucs?|machins?|options?|propositions?|choi[esx]|d'?)\s*|)" +
-                ur"(autres?|diff[eé]rente?s?|alternati[fv]e?s?)" +
+                ur"(autres?|diff(e|é)rente?s?|alternati[fv]e?s?)" +
                 ur"(?:\s*(?:choses?|trucs?|machins?|options?|propositions?|choi[esx])|)" +
             ur")" +
             # if available
-            ur"(?:si\s*(?:vous\s*avez(?:\s*[cç]e?l?a|)|t[u']?\s*as?(?:\s*[cç]e?l?a|)|(?:(?:c(?:'|ela)\s*est\s*|)possible))|)" +
+            ur"(?:si\s*(?:vous\s*avez(?:\s*(c|\xc3\xa7)e?l?a|)|t[u']?\s*as?(?:\s*(c|\xc3\xa7)e?l?a|)|(?:(?:c(?:'|ela)\s*est\s*|)possible))|)" +
             # Tail : courtesy
             ur"(?:\s*s'?\s*(?:il\s*|)(?:te?|v(?:ous|))\s*p(?:la[iî][st]|)|)" +
             # Quesiton mark for correctness
@@ -114,12 +114,12 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             # idontwantthis
             ur"|^\s*(?:j(?:e\s*n'?\s*en?|'?\s*en)\s*|on\s*(?:n['e]?\s*|)|)" +
             ur"veu[stx]\s*pas" +
-            ur"(?:\s*(?:d['e]\s*|)[cç](?:e?l?a|elui-?\s*(?:ci|l[aà])|et?t?e?s?\s*(?:choses?|trucs?|machins?|options?|propositions?|choi[esx]))|)\s*(?:!\s*|)$"
+            ur"(?:\s*(?:d['e]\s*|)(c|\xc3\xa7)(?:e?l?a|elui-?\s*(?:ci|l(a|à))|et?t?e?s?\s*(?:choses?|trucs?|machins?|options?|propositions?|choi[esx]))|)\s*(?:!\s*|)$"
         )
         self.rREPEAT = (
             ur"^\s*(?:(?:tu\s*|)peu[stx]?\s*(?:-\s*tu\s*|)|(?:vous\s*|)pouvez\s*(?:-\s*vous\s*|)|)" +
-            ur"(r(?:[eé]p[eéè]te[rsz]?|edi[str]?e?s?))" +
-            ur"(?:\s*[cç]e?l?a|)" +
+            ur"(r(?:(e|é)p(e|é|è)te[rsz]?|edi[str]?e?s?))" +
+            ur"(?:\s*(c|\xc3\xa7)e?l?a|)" +
             # Tail : courtesy
             ur"(?:\s*s'?\s*(?:il\s*|)(?:te?|v(?:ous|))\s*p(?:la[iî][st]|)|)" +
             # Quesiton mark for correctness
@@ -139,10 +139,10 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.NEGATE =ur"((i\ )*(don\'?t|do\ not|does\ not|does\'?nt)\ (care|mind|matter)(\ (about|what))*(\ (the|it\'?s*))*)"
         self.DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
             ur"|(?:c'?e(?:st?|ts?)\s*)?pas?\s*graves?" +
-            ur"|[cç]a\s*importe\s*p(?:as?|eu)" +
+            ur"|(c|\xc3\xa7)a\s*importe\s*p(?:as?|eu)" +
             ur"|peu[stx]?\s*importe(?:\s*l[ae]s?)?" +
-            ur"|(?:j'?\s*en\s*ai\s*)?rien\s*[aà]\s*(?:f(?:out|ai)re|battre|cir[eé]r?)(?:\s*de\s*[cç]a)?" +
-            ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr[eè]re?)?" +
+            ur"|(?:j'?\s*en\s*ai\s*)?rien\s*(a|à)\s*(?:f(?:out|ai)re|battre|cir(e|é)r?)(?:\s*de\s*(c|\xc3\xa7)a)?" +
+            ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr(e|è)re?)?" +
         ")")
         self.DONTCAREWHAT = "(i\ dont\ care\ what\ )"
         self.DONTCAREABOUT = "(i\ dont\ care\ about\ )"
@@ -151,44 +151,44 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.WANT = ur"(?:pourquoi\s*pas?|(?:j[e']|on)\s*v(?:eu[stx]|oudron[st])(?:\s*qu'?il\s*y\s*(?:aie?t?s?|est?|ets?))?|avec|j'ai\s*besoin\s*d[e']|(?:je\s*)(?:re)?cherche|(?:je\s*suis?\s*)habitue\s*a)(?:\s*(?:une?|des?|du))?"
         self.WBG = ur"(?:(?:serr?ai[est]\s*"+self.GREAT+ur")(?:$|[^\?]$))"
         self.rINFORM = ur"(?:\b|^|\ )"+self.WANT
-        self.rINFORM_DONTCARE = self.DONTCARE+ur"\s*(?:comment|[aà]\s*quell?e?\s*point?|si)\s*c'?e(?:st?|ts?)"
-        self.rINFORM_DONTWANT = ur"(?:je\s*[nl]e\s*veu[estx]\s*pas?(?:\s*que\s*[cç][ae]\s*so[iy][est]s?))"
+        self.rINFORM_DONTCARE = self.DONTCARE+ur"\s*(?:comment|(a|à)\s*quell?e?\s*point?|si)\s*c'?e(?:st?|ts?)"
+        self.rINFORM_DONTWANT = ur"(?:je\s*[nl]e\s*veu[estx]\s*pas?(?:\s*que\s*(c|\xc3\xa7)[ae]\s*so[iy][est]s?))"
         # Contextual dontcares: i.e things that should be labelled inform(=dontcare)
         self.rCONTEXTUAL_DONTCARE = self.DONTCARE
         # The following are NOT regular expresions, but EXACT string matching:
         self.COMMON_CONTEXTUAL_DONTCARES = [ur"(?:n'?|peu[st]?)\s*(importe)(?:\s*quoi)?", self.DONTCARE]
         self.COMMON_CONTEXTUAL_DONTCARES += ["it doesn\'t matter", "dont care"]
 
-        self.general_INFORM = ur"(?:(?:j[e']|on)\s*(?:(?:v(?:eu|oudrai)[stx]?|pr[eé]f[eè]re(?:rai[stx]?|s|)|(?:aime(?:rai[stx]?|s|)))\s*(?:biens?|)|(?:ai|aurai[stx]?)\s*(?:biens?|)\s*(?:besoin|envie)(?:\s*d[e'])?)\s*(?:que\s*[cç]e?l?[ae]\s*so(?:i[stx]?|yen?t?s?)|quel(?:les?\s*)?que\s*chose\s*d['e]|une?\s*(?:truc|machin)s?|))"
+        self.general_INFORM = ur"(?:(?:j[e']|on)\s*(?:(?:v(?:eu|oudrai)[stx]?|pr(e|é)f(e|è)re(?:rai[stx]?|s|)|(?:aime(?:rai[stx]?|s|)))\s*(?:biens?|)|(?:ai|aurai[stx]?)\s*(?:biens?|)\s*(?:besoin|envie)(?:\s*d[e'])?)\s*(?:que\s*(c|\xc3\xa7)e?l?[ae]\s*so(?:i[stx]?|yen?t?s?)|quel(?:les?\s*)?que\s*chose\s*d['e]|une?\s*(?:truc|machin)s?|))"
         
         self.contextual_NOT = ur"(?:n(?:o(?:n|pe)|an)|(?:absolument|surtout|certainement)\s*pas?|pas?\s*du\s*tou[stx]?)"
-        self.contextual_YES = ur"(?:oua?is?|ye[ps]|tou[stx]\s*[aà]\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
+        self.contextual_YES = ur"(?:oua?is?|ye[ps]|tou[stx]\s*(a|à)\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
         self.contextual_DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
             ur"|(?:c'?e(?:st?|ts?)\s*)?pas?\s*graves?" +
-            ur"|[cç]a\s*importe\s*p(?:as?|eu)" +
+            ur"|(c|\xc3\xa7)a\s*importe\s*p(?:as?|eu)" +
             ur"|peu[stx]?\s*importe(?:\s*l[ae]s?)?" +
-            ur"|(?:j'?\s*en\s*ai\s*)?rien\s*[aà]\s*(?:f(?:out|ai)re|battre|cir[eé]r?)(?:\s*de\s*[cç]a)?" +
-            ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr[eè]re?)?" +
+            ur"|(?:j'?\s*en\s*ai\s*)?rien\s*(a|à)\s*(?:f(?:out|ai)re|battre|cir(e|é)r?)(?:\s*de\s*(c|\xc3\xa7)a)?" +
+            ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr(e|è)re?)?" +
         ")")
         self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans|non)"
 
         # self.contextual_COM_DRAMA = ur"(com(e|é)die?s\s*dramatique?s)"
         # self.contextual_DIVERS = ur"(divers)"
-        self.contextual_COMEDIE = ur"(?:comm?(e|\xc3\xa9)dies?|drole|comm?iques?)"
+        self.contextual_COMEDIE = ur"(?:comm?(e|é)dies?|drole|comm?iques?)"
         self.contextual_ADVENTURE = ur"(?:(d')?\s*aventures?)"
-        # self.contextual_ANIMATION = ur"(?:(?:an?nimation?s|?(dessin)?s\s*anim[eé]?s))"
-        self.contextual_ANIMATION = ur"(?:(d')?\s*an?imations?|(dessins?)?\s*an?nim(e|\xc3\xa9)e?s?)"
+        # self.contextual_ANIMATION = ur"(?:(?:an?nimation?s|?(dessin)?s\s*anim(e|é)?s))"
+        self.contextual_ANIMATION = ur"(?:(d')?\s*an?imations?|(dessins?)?\s*an?nim(e|é)e?s?)"
         # self.contextual_COPS = ur"(policier?s|?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))"
         # self.contextual_DARK_COPS = ur"(?(?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))\s*noir\s*?(policier?s))"
         # self.contextual_DRAME = ur"(?:?(d')\s*dram(atique|e)?s|triste?s)"
         self.contextual_DRAME = ur"(dram(atique|e)s?|tristes?)"
-        # self.contextual_HOROR = ur"(?:?(qui\s*)?(fait\s*)peur|horeur?s|[eé]pouvante?s)"
-        self.contextual_HOROR = ur"(?:peur|(d')?\s*horreurs?|(d')?\s*(e|\xc3\xa9)pouvante(s)?)"
+        # self.contextual_HOROR = ur"(?:?(qui\s*)?(fait\s*)peur|horeur?s|(e|é)pouvante?s)"
+        self.contextual_HOROR = ur"(?:peur|(d')?\s*horreurs?|(d')?\s*(e|é)pouvante(s)?)"
         self.contextual_HISTORY = ur"(?:(d')?\s*histo(?:rique|ire)s?)"
-        self.contextual_THRILLER = ur"(?:(thriller|suspense?s?"
+        self.contextual_THRILLER = ur"(?:(thriller|suspense?)s?)"
         self.contextual_BIOPIC = ur"(?:(auto)?bio(graphi((que|e)|pic))?s?)"
         # self.contextual_ROMANCE = ur"((romance|?(d')\s*amours|?(à|a)\s*?(l')\s*de\s*rose)?s)"
-        self.contextual_ROMANCE = ur"(roman(tique|ce)s?|(d'?\s*)amours?|(a|\xc3\xa0)\s*l'eau\s*de\s*r(o|au)se)"
+        self.contextual_ROMANCE = ur"(roman(tique|ce)s?|(d'?\s*)amours?|(a|à)\s*l'eau\s*de\s*r(o|au)se)"
         self.contextual_ACTION = ur"(?:((d')?\s*action|bagarr?es?|course\s*poursuite|(d('|es))?\s*explosion)s?)"
         self.contextual_WAR = ur"(?:(guerre|bataill?e|confli?t)s?)"
         self.contextual_FANTASTIQUE = ur"(?:(fantastique|imagin?aire)s?)"
@@ -216,7 +216,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.slot_vocab["name"] = ur"(film|titre|nom)"
         self.slot_vocab["release"] = ur"(((date|jour)\s*de\s*)?sortie)"
         self.slot_vocab["duration"] = ur"(dur(é|e)e)"
-        self.slot_vocab["synopsis"] = ur"(de\s*quoi\s*(ç|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
+        self.slot_vocab["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
         self.slot_vocab["restriction"] = ur"(restriction)"
         self.slot_vocab["genre"] = ur"(genre|type|style|nature|cath(e|é)gorie)"
 
@@ -301,7 +301,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             for value in self.slot_values[slot].keys():
                 self.inform_regex[slot][value] = (self.general_INFORM + ur"\s*" + self.slot_values[slot][value] +
                     ur"|" + self.slot_values[slot][value])
-            s = (self.DONTCARE + ur"(?:\s*(?:comment|[aà]\s*quell?e?\s*point?|si)\s*c'?e(?:st?|ts?)\s*(" +
+            s = (self.DONTCARE + ur"(?:\s*(?:comment|(a|à)\s*quell?e?\s*point?|si)\s*c'?e(?:st?|ts?)\s*(" +
                 "|".join([self.slot_values[slot][value] for value in self.slot_values[slot].keys()])
                 + ur")(?:\s*ou\s*pas?)?)")
 
