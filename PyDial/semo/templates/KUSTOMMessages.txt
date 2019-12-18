@@ -242,7 +242,7 @@ request(saltiness, option=$X, option=$Y) : "Quel type de viande souhaitez-vous? 
 request(meat, option=$X, option=$Y) : "Quel type de viande souhaitez-vous? %meat_adj($X)? %meat_adj($Y)?";
 
 reqmore() : "Puis-je vous aider en quoi que ce soit d'autre?";
-reqmore(kind=dontcare) : "Voulez-vous chercher parmi tous les types de produits?";z
+reqmore(kind=dontcare) : "Voulez-vous chercher parmi tous les types de produits?";
 reqmore(energy=dontcare) : "Voulez-vous ignorer les calories?";
 reqmore(fatness=dontcare) : "Voulez-vous ignorer le taux de gras?";
 reqmore(sweetness=dontcare) : "Voulez-vous ignorer le taux de sucre?";

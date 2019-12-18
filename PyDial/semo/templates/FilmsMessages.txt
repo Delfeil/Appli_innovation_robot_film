@@ -46,13 +46,15 @@ bye(topictrackeruserended): "Désolé de ne pas avoir pu vous aider. Au revoir."
 
 request(task) : "Que voulez-vous?";
 request(genre) : "Quel genre de film voulez-vous voir?";
-
+request(genre=$V, name=$U) : "Voulez-vous plus d'information sur le film $U?";
 
 # Explicit Confirmations
 
 confirm(genre=$V) : "Vous voulez voir %genre_adj($V), c'est bien cela?";
+# confirm(name=$U) : "Vous voulez voir $U, c'est bien cela?";
 
 
 # Informs
 
 inform(genre=$V, name=$U) : "Le film $U est du genre $V";
+inform(name=$U, synopsis=$X) : "Le synopsis du film $U est : $X";
