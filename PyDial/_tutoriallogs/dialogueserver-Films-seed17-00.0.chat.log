@@ -1,60 +1,39 @@
-INFO   :: 09:47:49: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
-INFO   :: 09:47:49: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
-INFO   :: 09:47:49: root                                      pydial.py <initialise>374 :  Seed = 117
-INFO   :: 09:47:49: root                                      pydial.py <initialise>375 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
-DIAL   :: 09:47:49: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
-INFO   :: 09:47:49: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 09:47:49: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-ERROR  :: 09:47:49: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.UnicodeEncodeError'>( 'ascii' codec can't encode character u'\xe2' in position 12: ordinal not in range(128) )
-          Traceback (most recent call last):
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1143, in <module>
-              run()
-            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
-              add_verbosity_option=add_verbosity_option)
-            File "/home/casanova/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
-              return function(*args[:len(required_args)], **kw)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/pydial.py", line 1129, in chat_command
-              hub = Texthub.ConsoleHub()
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Texthub.py", line 78, in __init__
-              self.agent = DialogueAgent(hub_id='texthub')
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 141, in __init__
-              self.restart_agent(session_id=None)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 379, in restart_agent
-              self._hand_control(domainString=self.topic_tracker.operatingDomain, previousDomainString=None)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 456, in _hand_control
-              self._bootup(domainString, previousDomainString)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/Agent.py", line 485, in _bootup
-              self.semi_belief_manager.bootup(domainString, previousDomainString)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/SemanticBeliefTrackingManager.py", line 188, in bootup
-              self._load_domains_semantic_belief_tracker(domainString)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/SemanticBeliefTrackingManager.py", line 236, in _load_domains_semantic_belief_tracker
-              self.domainSemiBelieftrackers[domainString] = ModularSemanticBeliefTracker(domainString)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/ModularSemanticBeliefTracker.py", line 60, in __init__
-              self.semi_manager = ModularSemanticBeliefTracker.getSemiManager()
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semanticbelieftracking/ModularSemanticBeliefTracker.py", line 123, in getSemiManager
-              ModularSemanticBeliefTracker.semi_manager = SemI.SemIManager()
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/SemI.py", line 94, in __init__
-              self.semiManagers[domainTag] = self._load_domains_semi(dstring=domainTag)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/SemI.py", line 144, in _load_domains_semi
-              parsing_method = RegexSemI(domainTag=dstring)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RuleSemIMethods.py", line 77, in __init__
-              self.parser = getattr(parser_module, "RegexSemI_"+self.domain_tag)()
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI_Films.py", line 57, in __init__
-              self.create_domain_dependent_regex()
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI_Films.py", line 207, in create_domain_dependent_regex
-              self._domain_init(dstring=self.domainTag)
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI.py", line 99, in _domain_init
-              self.slot_values[slot] = {value:"("+str(value)+")" for value in slot_values}
-            File "/home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial/semi/RegexSemI.py", line 99, in <dictcomp>
-              self.slot_values[slot] = {value:"("+str(value)+")" for value in slot_values}
-          UnicodeEncodeError: 'ascii' codec can't encode character u'\xe2' in position 12: ordinal not in range(128)
-          
+INFO   :: 10:02:54: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
+INFO   :: 10:02:54: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
+INFO   :: 10:02:54: root                                      pydial.py <initialise>374 :  Seed = 117
+INFO   :: 10:02:54: root                                      pydial.py <initialise>375 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
+DIAL   :: 10:02:54: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
+INFO   :: 10:02:54: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 10:02:54: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 10:02:54: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 10:02:54: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 10:02:54: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 10:02:54: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+DIAL   :: 10:02:54: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 10:02:54: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
+DIAL   :: 10:02:54: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 10:03:04: root                                    Agent.py <continue_call>232 :  user input: [('annimation', 1.0)]
+DIAL   :: 10:03:04: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
+INFO   :: 10:03:04: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 10:03:04: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 10:03:04: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 10:03:04: root                                            SemI.py <decode>201 :  [('inform(genre=animation)', 1.0)]
+INFO   :: 10:03:04: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation)', 1.0)]
+INFO   :: 10:03:04: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation)', 1.0)]
+DIAL   :: 10:03:04: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(restriction)
+DIAL   :: 10:03:04: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+WARNING:: 10:03:04: root                              RuleSemOMethods.py <transform>570 :  While transforming request(restriction), there were missing items.

@@ -198,6 +198,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_MORE6 = ur"(?:((plus)?\s*(de)?\s*(6|six)\sans))" #OK
         self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\sans)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\sans))"
         self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?))" #OK
+        self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*de\s*(18|dix-?\s*huit|16|seize)\s*ans?)"
 
 
     def create_domain_dependent_regex(self):
@@ -255,6 +256,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                     self.inform_contextual[slot][value] = self.contextual_NOT
                 elif value == "1":
                     self.inform_contextual[slot][value] = self.contextual_YES
+                #### Genres 
                 # if value == "comedie dramatique":
                 #     self.inform_contextual[slot][value] = self.contextual_COM_DRAMA
                 # if value == "divers":
@@ -287,10 +289,19 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                     self.inform_contextual[slot][value] = self.contextual_WAR
                 if value == "fantastique":
                     self.inform_contextual[slot][value] = self.contextual_FANTASTIQUE
-                # if value == "science-fiction":
-                #     self.inform_contextual[slot][value] = self.contextual_SCIENCE_FICTION
                 else:
                     continue
+                ### Restrictions
+                if value == "forall":
+                    self.inform_contextual[slot][value] = self.contextual_FORALL
+                if value == "more12":
+                    self.inform_contextual[slot][value] = self.contextual_MORE12
+                if value == "more6":
+                    self.inform_contextual[slot][value] = self.contextual_MORE6
+                if value == "none":
+                    self.inform_contextual[slot][value] = self.contextual_NONE
+                if value == "sensible":
+                    self.inform_contextual[slot][value] = self.contextual_SENSIBLE
                 self.inform_contextual[slot][value] = ur"^\s*" + self.inform_contextual[slot][value] + ur"\s*$"
 
         for slot in self.inform_absolute.keys():
@@ -431,6 +442,8 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         
         # self.slot_values[slot]['annimation'] = ur"(("+regex_de+"|"+regex_en+"|dessin?(s))(anim?(ation|é)|image?(s)\s*"+regex_de+"synth(e|é)se?(s)))"
         
+        ### Genres
+
         self.slot_values[slot]['comedie'] = ur"(" + self.contextual_COMEDIE + ur")"
         self.slot_values[slot]['aventure'] = ur"(" + self.contextual_ADVENTURE + ur")"
         self.slot_values[slot]['animation'] = ur"(" + self.contextual_ANIMATION + ur")"
@@ -447,6 +460,12 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.slot_values[slot]['fantastique'] = ur"(" + self.contextual_FANTASTIQUE + ur")"
         # self.slot_values[slot]['science-fiction'] = ur"(" + self.contextual_SCIENCE_FICTION + ur")"
         
+        ### Restrictions
+        self.slot_values[slot]['forall'] = ur"(" + self.contextual_FORALL + ur")"
+        self.slot_values[slot]['more12'] = ur"(" + self.contextual_MORE12 + ur")"
+        self.slot_values[slot]['more6'] = ur"(" + self.contextual_MORE6 + ur")"
+        self.slot_values[slot]['none'] = ur"(" + self.contextual_NONE + ur")"
+        self.slot_values[slot]['sensible'] = ur"(" + self.contextual_SENSIBLE + ur")"
         #---------------------------------------------------------------------------------------------------
 
 

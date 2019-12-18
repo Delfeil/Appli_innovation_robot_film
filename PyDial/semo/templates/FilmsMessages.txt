@@ -30,10 +30,10 @@
 }
 
 %restriction_adj($restriction){
-	none: "pas de restriction pour ce film";
 	forAll: "pour tous publics";
-	more6: "pour tous publics a partir de 6 ans";
 	more12: "interdit aux moins de 12 ans";
+	more6: "pour tous publics a partir de 6 ans";
+	none: "pas de restriction pour ce film";
 	sensible: "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs";
 }
 

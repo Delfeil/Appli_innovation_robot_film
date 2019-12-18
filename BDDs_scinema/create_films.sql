@@ -63,7 +63,7 @@ INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
 	strftime('%H:%M', '02:33'),
 	strftime('%Y-%m-%d', '2019-11-13'),
 	"none",
-	"Base sur une histoire vraie, le film suit une equipe d'excentriques ingenieurs americains menes par le visionnaire Carroll Shelby et son pilote britannique Ken Miles, qui sont envoyes par Henry Ford II pour construire a partir de rien une nouvelle automobile qui doit detrôner la Ferrari a la competition du Mans de 1966."
+	"Base sur une histoire vraie, le film suit une equipe d'excentriques ingenieurs americains menes par le visionnaire Carroll Shelby et son pilote britannique Ken Miles, qui sont envoyes par Henry Ford II pour construire a partir de rien une nouvelle automobile qui doit detroner la Ferrari a la competition du Mans de 1966."
 );
 
 INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
@@ -71,7 +71,7 @@ INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
 	strftime('%H:%M', '01:56'),
 	strftime('%Y-%m-%d', '2019-11-06'),
 	"none",
-	"Victor, un sexagenaire desabuse, voit sa vie bouleversee le jour où Antoine, un brillant entrepreneur, lui propose une attraction d u nouveau : melangeant artifices theâtraux et reconstitution historique, cette entreprise propose a ses clients de replonger dans l'epoque de leur choix. Victor choisit alors de revivre la semaine la plus marquante de sa vie : celle où, 40 ans plus tôt, il rencontra le grand amour..."
+	"Victor, un sexagenaire desabuse, voit sa vie bouleversee le jour ou Antoine, un brillant entrepreneur, lui propose une attraction d u nouveau : melangeant artifices theatraux et reconstitution historique, cette entreprise propose a ses clients de replonger dans l'epoque de leur choix. Victor choisit alors de revivre la semaine la plus marquante de sa vie : celle ou, 40 ans plus tot, il rencontra le grand amour..."
 );
 
 INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
@@ -79,7 +79,7 @@ INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
 	strftime('%H:%M', '02:19'),
 	strftime('%Y-%m-%d', '2019-11-06'),
 	"none",
-	"Apres la debâcle de Pearl Harbor qui a laisse la flotte americaine devastee, la marine imperiale japonaise prepare une nouvelle attaque qui devrait eliminer definitivement les forces aeronavales restantes de son adversaire. La campagne du Pacifique va se jouer dans un petit atoll isole du Pacifique nord : Midway. L'amiral Nimitz, a la tete de la flotte americaine, voit cette bataille comme l'ultime chance de renverser la superiorite japonaise. Une course contre la montre s'engage alors pour Edwin Layton qui doit percer les codes secrets de la flotte japonaise et, grâce aux renseignements, permettre aux pilotes de l'aviation americaine de faire face a la plus grande offensive jamais menee pendant ce conflit"
+	"Apres la debacle de Pearl Harbor qui a laisse la flotte americaine devastee, la marine imperiale japonaise prepare une nouvelle attaque qui devrait eliminer definitivement les forces aeronavales restantes de son adversaire. La campagne du Pacifique va se jouer dans un petit atoll isole du Pacifique nord : Midway. L'amiral Nimitz, a la tete de la flotte americaine, voit cette bataille comme l'ultime chance de renverser la superiorite japonaise. Une course contre la montre s'engage alors pour Edwin Layton qui doit percer les codes secrets de la flotte japonaise et, grace aux renseignements, permettre aux pilotes de l'aviation americaine de faire face a la plus grande offensive jamais menee pendant ce conflit"
 );
 
 INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
@@ -95,7 +95,7 @@ INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
 	strftime('%H:%M', '02:32'),
 	strftime('%Y-%m-%d', '2019-10-30'),
 	"more12",
-	"Un nouveau chapitre de Shining de Stanley Kubrick. Encore profondement marque par le traumatisme qu'il a vecu, enfant, a l'Overlook Hotel, Dan Torrance a dû se battre pour tenter de trouver un semblant de serenite. Mais quand il rencontre Abra, courageuse adolescente aux dons extrasensoriels, ses vieux demons resurgissent. Car la jeune fille, consciente que Dan a les memes pouvoirs qu'elle, a besoin de son aide : elle cherche a lutter contre la redoutable Rose Claque et sa tribu du Noeud Vrai qui se nourrissent des dons d'innocents comme elle pour conquerir l'immortalite. Formant une alliance inattendue, Dan et Abra s'engagent dans un combat sans merci contre Rose. Face a l'innocence de la jeune fille et a sa maniere d'accepter son don, Dan n'a d'autre choix que de mobiliser ses propres pouvoirs, meme s'il doit affronter ses peurs et reveiller les fantômes du passe..."
+	"Un nouveau chapitre de Shining de Stanley Kubrick. Encore profondement marque par le traumatisme qu'il a vecu, enfant, a l'Overlook Hotel, Dan Torrance a du se battre pour tenter de trouver un semblant de serenite. Mais quand il rencontre Abra, courageuse adolescente aux dons extrasensoriels, ses vieux demons resurgissent. Car la jeune fille, consciente que Dan a les memes pouvoirs qu'elle, a besoin de son aide : elle cherche a lutter contre la redoutable Rose Claque et sa tribu du Noeud Vrai qui se nourrissent des dons d'innocents comme elle pour conquerir l'immortalite. Formant une alliance inattendue, Dan et Abra s'engagent dans un combat sans merci contre Rose. Face a l'innocence de la jeune fille et a sa maniere d'accepter son don, Dan n'a d'autre choix que de mobiliser ses propres pouvoirs, meme s'il doit affronter ses peurs et reveiller les fantomes du passe..."
 );
 
 INSERT INTO films_only(name, duration, release, restriction, synopsis) values(
