@@ -194,6 +194,10 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_FANTASTIQUE = ur"(?:(fantastique|imagin?aire)s?)"
         # self.contextual_SCIENCE_FICTION = ur"(science(-|\s*)fiction?s|futur(ist(e|ique))?s|espace?s|fictif?s|super\s*h(é|e)ro?s|marvel?s)"
 
+        ####Restriction####
+        self.contextual_MORE6 = ur"(?:((plus)?\s*(de)?\s*(6|six)\sans))" #OK
+        self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\sans)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\sans))"
+        self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?))" #OK
 
 
     def create_domain_dependent_regex(self):
