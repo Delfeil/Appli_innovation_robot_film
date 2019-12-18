@@ -29,13 +29,13 @@
 	epouvante_horreur: "un film d'épouvante-horreur"; 
 }
 
-#"restriction": [
-#            "none", 
-#            "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs", 
-#            "interdit aux moins de 12 ans", 
-#            "tous publics", 
-#            "tous publics a partir de 6 ans"
-#        ], 
+%restriction_adj($restriction){
+	none: "pas de restriction pour ce film";
+	forAll: "pour tous publics";
+	more6: "pour tous publics a partir de 6 ans";
+	more12: "interdit aux moins de 12 ans";
+	sensible: "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs";
+}
 
 # ============ RULES ============
 # -------Messages de bienvenu--------
@@ -66,3 +66,5 @@ confirm(genre=$V) : "Vous voulez voir %genre_adj($V), c'est bien cela?";
 
 inform(genre=$V, name=$U) : "Le film $U est du genre $V";
 inform(name=$U, synopsis=$X) : "Le synopsis du film $U est : $X";
+inform(restriction=$R, name=$U) : "Le film ayant la restriction $R est : $U";
+inform(name=$U, restriction=$R) : "La restriction du film $U est $R";
