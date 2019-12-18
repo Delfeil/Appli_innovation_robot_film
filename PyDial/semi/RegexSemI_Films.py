@@ -252,10 +252,11 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         for slot in self.inform_contextual.keys():
             self.inform_contextual[slot] = {}
             for value in self.slot_values[slot].keys():
-                if value == "0":
-                    self.inform_contextual[slot][value] = self.contextual_NOT
-                elif value == "1":
-                    self.inform_contextual[slot][value] = self.contextual_YES
+                # if value == "0":
+                #     self.inform_contextual[slot][value] = self.contextual_NOT
+                # elif value == "1":
+                #     self.inform_contextual[slot][value] = self.contextual_YES
+
                 #### Genres 
                 # if value == "comedie dramatique":
                 #     self.inform_contextual[slot][value] = self.contextual_COM_DRAMA
@@ -263,45 +264,44 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                 #     self.inform_contextual[slot][value] = self.contextual_DIVERS
                 if value == "comedie":
                     self.inform_contextual[slot][value] = self.contextual_COMEDIE
-                if value == "aventure":
+                elif value == "aventure":
                     self.inform_contextual[slot][value] = self.contextual_ADVENTURE
-                if value == "animation":
+                elif value == "animation":
                     self.inform_contextual[slot][value] = self.contextual_ANIMATION
-                # if value == "film policier":
+                # elif value == "film policier":
                 #     self.inform_contextual[slot][value] = self.contextual_COPS
-                if value == "noir-policier":
+                elif value == "noir-policier":
                     self.inform_contextual[slot][value] = self.contextual_DARK_COPS
-                if value == "drame":
+                elif value == "drame":
                     self.inform_contextual[slot][value] = self.contextual_DRAME
-                if value == "epouvante_horreur":
+                elif value == "epouvante_horreur":
                     self.inform_contextual[slot][value] = self.contextual_HOROR
-                if value == "historique":
+                elif value == "historique":
                     self.inform_contextual[slot][value] = self.contextual_HISTORY
-                if value == "thriller":
+                elif value == "thriller":
                     self.inform_contextual[slot][value] = self.contextual_THRILLER
-                if value == "biopic":
+                elif value == "biopic":
                     self.inform_contextual[slot][value] = self.contextual_BIOPIC
-                if value == "romance":
+                elif value == "romance":
                     self.inform_contextual[slot][value] = self.contextual_ROMANCE
-                if value == "action":
+                elif value == "action":
                     self.inform_contextual[slot][value] = self.contextual_ACTION
-                if value == "guerre":
+                elif value == "guerre":
                     self.inform_contextual[slot][value] = self.contextual_WAR
-                if value == "fantastique":
+                elif value == "fantastique":
                     self.inform_contextual[slot][value] = self.contextual_FANTASTIQUE
+                elif value == "forall": ### Restrictions
+                    self.inform_contextual[slot][value] = self.contextual_FORALL
+                elif value == "more12":
+                    self.inform_contextual[slot][value] = self.contextual_MORE12
+                elif value == "more6":
+                    self.inform_contextual[slot][value] = self.contextual_MORE6
+                elif value == "none":
+                    self.inform_contextual[slot][value] = self.contextual_NONE
+                elif value == "sensible":
+                    self.inform_contextual[slot][value] = self.contextual_SENSIBLE
                 else:
                     continue
-                ### Restrictions
-                if value == "forall":
-                    self.inform_contextual[slot][value] = self.contextual_FORALL
-                if value == "more12":
-                    self.inform_contextual[slot][value] = self.contextual_MORE12
-                if value == "more6":
-                    self.inform_contextual[slot][value] = self.contextual_MORE6
-                if value == "none":
-                    self.inform_contextual[slot][value] = self.contextual_NONE
-                if value == "sensible":
-                    self.inform_contextual[slot][value] = self.contextual_SENSIBLE
                 self.inform_contextual[slot][value] = ur"^\s*" + self.inform_contextual[slot][value] + ur"\s*$"
 
         for slot in self.inform_absolute.keys():
@@ -426,23 +426,13 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         # TYPE:
         self.inform_type_regex = ur"(film)"
         # SLOT: stars
-        # Genres
-        slot = 'genre'
         # {u'west': '(west)', u'east': '(east)', u'north': '(north)', u'south': '(south)', u'centre': '(centre)'}
         regex_de = "?(d'\s*|de\s*)"
         regex_qui = "?(qui\s*)"
         regex_en = "?(en)"
-        # self.slot_values[slot]['action'] = ur"("+regex_de+"action|"+regex_qui+"bouge)"
 
-        # self.slot_values[slot]['comedie dramatique'] = ur"(" + self.contextual_COM_DRAMA + ur")"
-        
-        # self.slot_values[slot]['horeur'] = ur"("+regex_de+"(horeur|(é|e)pouv(a|e)nte|peur)|"+regex_qui+"?(fait)\s*peur)"
-        
-        # self.slot_values[slot]['divers'] = ur"(" + self.contextual_DIVERS + ur")"
-        
-        # self.slot_values[slot]['annimation'] = ur"(("+regex_de+"|"+regex_en+"|dessin?(s))(anim?(ation|é)|image?(s)\s*"+regex_de+"synth(e|é)se?(s)))"
-        
         ### Genres
+        slot = 'genre'
 
         self.slot_values[slot]['comedie'] = ur"(" + self.contextual_COMEDIE + ur")"
         self.slot_values[slot]['aventure'] = ur"(" + self.contextual_ADVENTURE + ur")"
@@ -461,6 +451,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         # self.slot_values[slot]['science-fiction'] = ur"(" + self.contextual_SCIENCE_FICTION + ur")"
         
         ### Restrictions
+        slot = 'restriction'
         self.slot_values[slot]['forall'] = ur"(" + self.contextual_FORALL + ur")"
         self.slot_values[slot]['more12'] = ur"(" + self.contextual_MORE12 + ur")"
         self.slot_values[slot]['more6'] = ur"(" + self.contextual_MORE6 + ur")"

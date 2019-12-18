@@ -30,7 +30,7 @@
 }
 
 %restriction_adj($restriction){
-	forAll: "pour tous publics";
+	"forall": "pour tous publics";
 	more12: "interdit aux moins de 12 ans";
 	more6: "pour tous publics a partir de 6 ans";
 	none: "pas de restriction pour ce film";
@@ -54,6 +54,7 @@ bye(topictrackeruserended): "Désolé de ne pas avoir pu vous aider. Au revoir."
 
 request(task) : "Que voulez-vous?";
 request(genre) : "Quel genre de film voulez-vous voir?";
+request(restriction) : "Quel restriction de film voulez-vous avoir?";
 request(genre=$V, name=$U) : "Voulez-vous plus d'information sur le film $U?";
 
 # Explicit Confirmations
@@ -64,8 +65,9 @@ confirm(genre=$V) : "Vous voulez voir %genre_adj($V), c'est bien cela?";
 
 # Informs
 
-inform(genre=$V, name=$U) : "Le film $U est du genre $V";
+#inform(genre=$V, name=$U) : "Le film $U est du genre %genre_adj($V)";
+#inform(name=$U, genre=$V) : "Le film $U est du genre %genre_adj($V)";
 inform(name=$U, synopsis=$X) : "Le synopsis du film $U est : $X";
-inform(restriction=$R, name=$U) : "Le film ayant la restriction $R est : $U";
-inform(genre=$V, restriction=$R, name=$U) : "Le film du genre $V ayant la restriction $R est : $U";
-inform(name=$U, restriction=$R) : "La restriction du film $U est $R";
+inform(genre=$V, restriction=$R, name=$U) : "Le film du genre %genre_adj($V) ayant la restriction %restriction_adj($R) est : $U";
+inform(restriction=$R, name=$U) : "Le film ayant la restriction %restriction_adj($R) est : $U";
+inform(name=$U, restriction=$R) : "La restriction du film $U est %restriction_adj($R)";
