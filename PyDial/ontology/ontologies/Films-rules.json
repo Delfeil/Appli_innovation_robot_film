@@ -10,16 +10,16 @@
     ], 
     "informable": {
         "duration": [
-            "01_30", 
-            "01_37", 
-            "01_39", 
-            "01_42", 
-            "01_44", 
-            "01_56", 
-            "02_12", 
-            "02_19", 
-            "02_32", 
-            "02_33"
+            "01:30", 
+            "01:37", 
+            "01:39", 
+            "01:42", 
+            "01:44", 
+            "01:56", 
+            "02:12", 
+            "02:19", 
+            "02:32", 
+            "02:33"
         ], 
         "genre": [
             "action", 
@@ -28,52 +28,52 @@
             "biopic", 
             "comedie", 
             "drame", 
+            "epouvante-horreur", 
             "fantastique", 
-            "film noir-policier", 
             "guerre", 
             "historique", 
+            "noir-policier", 
             "romance", 
-            "thriller", 
-            "epouvante_horreur"
+            "thriller"
         ], 
         "name": [
             "abominable", 
             "countdown", 
-            "j'accuse", 
-            "joyeuse retraite !", 
+            "j accuse", 
+            "joyeuse retraite", 
             "la belle epoque", 
             "la reine des neiges 2", 
             "le mans 66", 
             "les miserables", 
             "midway", 
             "retour a zombieland", 
-            "stephen king's doctor sleep"
+            "stephen king s doctor sleep"
         ], 
         "release": [
-            "2019_10_23", 
-            "2019_10_30", 
-            "2019_11_06", 
-            "2019_11_13", 
-            "2019_11_20"
+            "2019-10-23", 
+            "2019-10-30", 
+            "2019-11-06", 
+            "2019-11-13", 
+            "2019-11-20"
         ], 
         "restriction": [
+            "forall", 
+            "more12", 
+            "more6", 
             "none", 
-            "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs", 
-            "interdit aux moins de 12 ans", 
-            "tous publics", 
-            "tous publics a partir de 6 ans"
+            "sensible"
         ], 
         "synopsis": [
-            "apres la debacle de pearl harbor qui a laisse la flotte americaine devastee, la marine imperiale japonaise prepare une nouvelle attaque qui devrait eliminer definitivement les forces aeronavales restantes de son adversaire. la campagne du pacifique va se jouer dans un petit atoll isole du pacifique nord : midway. l'amiral nimitz, a la tete de la flotte americaine, voit cette bataille comme l'ultime chance de renverser la superiorite japonaise. une course contre la montre s'engage alors pour edwin layton qui doit percer les codes secrets de la flotte japonaise et, grace aux renseignements, permettre aux pilotes de l'aviation americaine de faire face a la plus grande offensive jamais menee pendant ce conflit", 
-            "base sur une histoire vraie, le film suit une equipe d'excentriques ingenieurs americains menes par le visionnaire carroll shelby et son pilote britannique ken miles, qui sont envoyes par henry ford ii pour construire a partir de rien une nouvelle automobile qui doit detroner la ferrari a la competition du mans de 1966.", 
+            "apres la deb\u00e2cle de pearl harbor qui a laisse la flotte americaine devastee, la marine imperiale japonaise prepare une nouvelle attaque qui devrait eliminer definitivement les forces aeronavales restantes de son adversaire. la campagne du pacifique va se jouer dans un petit atoll isole du pacifique nord : midway. l'amiral nimitz, a la tete de la flotte americaine, voit cette bataille comme l'ultime chance de renverser la superiorite japonaise. une course contre la montre s'engage alors pour edwin layton qui doit percer les codes secrets de la flotte japonaise et, gr\u00e2ce aux renseignements, permettre aux pilotes de l'aviation americaine de faire face a la plus grande offensive jamais menee pendant ce conflit", 
+            "base sur une histoire vraie, le film suit une equipe d'excentriques ingenieurs americains menes par le visionnaire carroll shelby et son pilote britannique ken miles, qui sont envoyes par henry ford ii pour construire a partir de rien une nouvelle automobile qui doit detr\u00f4ner la ferrari a la competition du mans de 1966.", 
             "l'heure de la retraite est enfin arrivee pour philippe et marilou ! ils s'appretent a realiser leur reve : partir vivre sous le soleil du portugal. au revoir le travail, au revoir la famille, au revoir les emmerdes ! ils pensaient enfin etre tranquilles... mais leur famille a d'autres projets pour eux !", 
             "le chaos regne partout dans le pays, depuis la maison blanche jusqu'aux petites villes les plus reculees. nos quatre tueurs doivent desormais affronter de nouvelles races de zombies qui ont evolue en dix ans et une poignee de rescapes humains. mais ce sont les conflits propres a cette ' famille ' improvisee qui restent les plus difficiles a gerer...", 
             "pendant les 12 annees qu'elle dura, l'affaire dreyfus dechira la france, provoquant un veritable seisme dans le monde entier. dans cet immense scandale, le plus grand sans doute de la fin du xixeme siecle, se melent erreur judiciaire, deni de justice et antisemitisme. l'affaire est racontee du point de vue du colonel picquart qui, une fois nomme a la tete du contre-espionnage, va decouvrir que les preuves contre le capitaine alfred dreyfus avaient ete fabriquees. a partir de cet instant et au peril de sa carriere puis de sa vie, il n'aura de cesse d'identifier les vrais coupables et de rehabiliter alfred dreyfus.", 
             "pourquoi elsa est-elle nee avec des pouvoirs magiques ? la jeune fille reve de l'apprendre, mais la reponse met son royaume en danger. avec l'aide d'anna, kristoff, olaf et sven, elsa entreprend un voyage aussi perilleux qu'extraordinaire. dans la reine des neiges, elsa craignait que ses pouvoirs ne menacent le monde. dans la reine des neiges 2, elle espere qu'ils seront assez puissants pour le sauver...", 
             "stephane, tout juste arrive de cherbourg, integre la brigade anti-criminalite de montfermeil, dans le 93. il va faire la rencontre de ses nouveaux coequipiers, chris et gwada, deux 'bacqueux' d'experience. il decouvre rapidement les tensions entre les differents groupes du quartier. alors qu'ils se trouvent debordes lors d'une interpellation, un drone filme leurs moindres faits et gestes...", 
             "tout commence sur le toit d'un immeuble a shanghai, avec l'improbable rencontre d'une jeune adolescente, l'intrepide yi, avec un jeune yeti. la jeune fille et ses amis jin et peng vont tenter de ramener chez lui celui qu'ils appellent desormais everest, leur nouvel et etrange ami, afin qu'il puisse retrouver sa famille sur le toit du monde. mais pour accomplir cette mission, notre trio de choc va devoir mener une course effrenee contre burnish, un homme puissant qui a bien l'intention de capturer la creature car elle ressemble comme deux gouttes d'eau a celle qu'il avait fortuitement rencontree quand il etait enfant.", 
-            "un nouveau chapitre de shining de stanley kubrick. encore profondement marque par le traumatisme qu'il a vecu, enfant, a l'overlook hotel, dan torrance a du se battre pour tenter de trouver un semblant de serenite. mais quand il rencontre abra, courageuse adolescente aux dons extrasensoriels, ses vieux demons resurgissent. car la jeune fille, consciente que dan a les memes pouvoirs qu'elle, a besoin de son aide : elle cherche a lutter contre la redoutable rose claque et sa tribu du noeud vrai qui se nourrissent des dons d'innocents comme elle pour conquerir l'immortalite. formant une alliance inattendue, dan et abra s'engagent dans un combat sans merci contre rose. face a l'innocence de la jeune fille et a sa maniere d'accepter son don, dan n'a d'autre choix que de mobiliser ses propres pouvoirs, meme s'il doit affronter ses peurs et reveiller les fantomes du passe...", 
-            "victor, un sexagenaire desabuse, voit sa vie bouleversee le jour ou antoine, un brillant entrepreneur, lui propose une attraction d u nouveau : melangeant artifices theatraux et reconstitution historique, cette entreprise propose a ses clients de replonger dans l'epoque de leur choix. victor choisit alors de revivre la semaine la plus marquante de sa vie : celle ou, 40 ans plus tot, il rencontra le grand amour...", 
+            "un nouveau chapitre de shining de stanley kubrick. encore profondement marque par le traumatisme qu'il a vecu, enfant, a l'overlook hotel, dan torrance a d\u00fb se battre pour tenter de trouver un semblant de serenite. mais quand il rencontre abra, courageuse adolescente aux dons extrasensoriels, ses vieux demons resurgissent. car la jeune fille, consciente que dan a les memes pouvoirs qu'elle, a besoin de son aide : elle cherche a lutter contre la redoutable rose claque et sa tribu du noeud vrai qui se nourrissent des dons d'innocents comme elle pour conquerir l'immortalite. formant une alliance inattendue, dan et abra s'engagent dans un combat sans merci contre rose. face a l'innocence de la jeune fille et a sa maniere d'accepter son don, dan n'a d'autre choix que de mobiliser ses propres pouvoirs, meme s'il doit affronter ses peurs et reveiller les fant\u00f4mes du passe...", 
+            "victor, un sexagenaire desabuse, voit sa vie bouleversee le jour o\u00f9 antoine, un brillant entrepreneur, lui propose une attraction d u nouveau : melangeant artifices the\u00e2traux et reconstitution historique, cette entreprise propose a ses clients de replonger dans l'epoque de leur choix. victor choisit alors de revivre la semaine la plus marquante de sa vie : celle o\u00f9, 40 ans plus t\u00f4t, il rencontra le grand amour...", 
             "voulez-vous savoir combien de temps il vous reste a vivre ? telechargez l'appli countdown ! lorsque quinn, une jeune infirmiere, telecharge cette application a la mode, elle decouvre qu'il ne lui reste que 3 jours a vivre. elle doit trouver un moyen d'echapper a son sinistre destin avant la fin du compte a rebours."
         ]
     }, 
@@ -86,10 +86,12 @@
         "restart"
     ], 
     "requestable": [
-        "genre"
+        "genre", 
+        "restriction"
     ], 
     "system_requestable": [
-        "genre"
+        "genre", 
+        "restriction"
     ], 
     "type": "films"
 }

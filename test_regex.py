@@ -5,7 +5,7 @@ import re
 
 string_to_test = sys.argv[1]
 
-regex = ur"(?:oua?is?|ye[ps]|tou[stx]\s*(a|\xc3\xa0)\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
+regex = ur"((d')?(\s*)?enqu(e|ê)tes?(criminelles?)?)|noir\s*(policiers?)?"
 
 # regex = ur"n[ao](n|pe?)?|pas(\s*)(di[est])?\s*[cç]a|(in|pas\s*)cor?recte?|il\s*y\s*[aà]\s+erreur|pas\s*(bons?|biens?(\s*compri[est]?)?)"
 

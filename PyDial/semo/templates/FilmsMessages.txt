@@ -21,13 +21,21 @@
 	comedie: "une comédie";
 	drame: "un film de genre dramatique";
 	fantastique: "un film de genre fanstastique";
-	"film noir-policier": "un film noir-policier";
+	noir-policier: "un film noir-policier";
 	guerre: "un film de guerre";
 	historique: "un film de genre historique";
 	romance: "un film de genre romance";
 	thriller: "un thriller";
 	epouvante_horreur: "un film d'épouvante-horreur"; 
 }
+
+#"restriction": [
+#            "none", 
+#            "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs", 
+#            "interdit aux moins de 12 ans", 
+#            "tous publics", 
+#            "tous publics a partir de 6 ans"
+#        ], 
 
 # ============ RULES ============
 # -------Messages de bienvenu--------

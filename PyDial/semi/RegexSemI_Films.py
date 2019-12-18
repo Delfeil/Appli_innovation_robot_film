@@ -177,13 +177,13 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_COMEDIE = ur"(?:comm?(e|é)dies?|drole|comm?iques?)"
         self.contextual_ADVENTURE = ur"(?:(d')?\s*aventures?)"
         # self.contextual_ANIMATION = ur"(?:(?:an?nimation?s|?(dessin)?s\s*anim(e|é)?s))"
-        self.contextual_ANIMATION = ur"(?:(d')?\s*an?imations?|(dessins?)?\s*an?nim(e|é)e?s?)"
+        self.contextual_ANIMATION = ur"(?:(d')?\s*ann?imations?|(dessins?)?\s*an?nim(e|é)e?s?)"
         # self.contextual_COPS = ur"(policier?s|?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))"
-        # self.contextual_DARK_COPS = ur"(?(?(d')?(\s*)enqu(e|ê)te?s?(criminelle?s))\s*noir\s*?(policier?s))"
+        self.contextual_DARK_COPS = ur"((d')?(\s*)?enqu(e|\xc3\xaa)tes?(criminelles?)?)|noir\s*(policiers?)?"
         # self.contextual_DRAME = ur"(?:?(d')\s*dram(atique|e)?s|triste?s)"
         self.contextual_DRAME = ur"(dram(atique|e)s?|tristes?)"
         # self.contextual_HOROR = ur"(?:?(qui\s*)?(fait\s*)peur|horeur?s|(e|é)pouvante?s)"
-        self.contextual_HOROR = ur"(?:peur|(d')?\s*horreurs?|(d')?\s*(e|é)pouvante(s)?)"
+        self.contextual_HOROR = ur"(?:peur|(d')?\s*horr?eurs?|(d')?\s*(e|é)pouvante(s)?)"
         self.contextual_HISTORY = ur"(?:(d')?\s*histo(?:rique|ire)s?)"
         self.contextual_THRILLER = ur"(?:(thriller|suspense?)s?)"
         self.contextual_BIOPIC = ur"(?:(auto)?bio(graphi((que|e)|pic))?s?)"
@@ -263,8 +263,8 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                     self.inform_contextual[slot][value] = self.contextual_ANIMATION
                 # if value == "film policier":
                 #     self.inform_contextual[slot][value] = self.contextual_COPS
-                # if value == "film noir-policier":
-                #     self.inform_contextual[slot][value] = self.contextual_DARK_COPS
+                if value == "noir-policier":
+                    self.inform_contextual[slot][value] = self.contextual_DARK_COPS
                 if value == "drame":
                     self.inform_contextual[slot][value] = self.contextual_DRAME
                 if value == "epouvante_horreur":
@@ -431,7 +431,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.slot_values[slot]['aventure'] = ur"(" + self.contextual_ADVENTURE + ur")"
         self.slot_values[slot]['animation'] = ur"(" + self.contextual_ANIMATION + ur")"
         # self.slot_values[slot]['film policier'] = ur"(" + self.contextual_COPS + ur")"
-        # self.slot_values[slot]['film noir-policier'] = ur"(" + self.contextual_DARK_COPS + ur")"
+        self.slot_values[slot]['noir-policier'] = ur"(" + self.contextual_DARK_COPS + ur")"
         self.slot_values[slot]['drame'] = ur"(" + self.contextual_DRAME + ur")"
         self.slot_values[slot]['epouvante_horreur'] = ur"(" + self.contextual_HOROR + ur")"
         self.slot_values[slot]['historique'] = ur"(" + self.contextual_HISTORY + ur")"

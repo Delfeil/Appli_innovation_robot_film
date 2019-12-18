@@ -1,4 +1,4 @@
-create table films_genres (
+create table Films (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	name VARCHAR(35) NULL,
 	duration time(8) NULL,
@@ -15,14 +15,14 @@ create table films_genres (
 -- https://www.sqlitetutorial.net/sqlite-transaction/
 -- https://gist.github.com/jkpr/204f5f5318080ae5962d8272cce1eea4
 
-attach 'films.db' as films;  
-attach 'rel-film-genre.db' as relation_genres_films;
+attach 'Films.db' as films_only;  
+attach 'rel_film_genres.db' as relation_genres_films;
 attach 'genres.db' as genres;
 
 BEGIN;
 
-INSERT INTO films_genres(name, duration, release, restriction, synopsis, genre) select f.name, f.duration, f.release, f.restriction, f.synopsis, g.genre
-from films f
+INSERT INTO Films(name, duration, release, restriction, synopsis, genre) select f.name, f.duration, f.release, f.restriction, f.synopsis, g.genre
+from films_only f
 	JOIN relation_genres_films.relation_genres_films r ON r.id_film = f.id
 	JOIN genres g ON r.id_genre = g.id;
 
@@ -32,7 +32,7 @@ COMMIT;
 2|Joyeuse retraite !|01:37|2019-11-20||...|comédie
 3|Les Misérables|01:42|2019-11-20|...|film noir-policier
 4|Les Misérables|01:42|2019-11-20|...|drame
-5|Countdown|01:30|2019-11-13|Interdit aux -12 ans|..épouvante-horreur
+5|Countdown|01:30|2019-11-13|Interdit aux -12 ans|...|épouvante-horreur
 6|J'accuse|02:12|2019-11-13||...|historique
 7|J'accuse|02:12|2019-11-13||...|drame
 8|J'accuse|02:12|2019-11-13||...|thriller

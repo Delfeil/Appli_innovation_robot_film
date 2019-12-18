@@ -4,7 +4,7 @@ create table genres (
 );
 
 INSERT INTO genres(genre) values(
-	'comédie dramatique'
+	'comedie dramatique'
 );
 
 INSERT INTO genres(genre) values(
@@ -12,7 +12,7 @@ INSERT INTO genres(genre) values(
 );
 
 INSERT INTO genres(genre) values(
-	'comédie'
+	'comedie'
 );
 
 INSERT INTO genres(genre) values(
@@ -24,11 +24,11 @@ INSERT INTO genres(genre) values(
 );
 
 INSERT INTO genres(genre) values(
-	'film policier'
+	'policier'
 );
 
 INSERT INTO genres(genre) values(
-	'film noir-policier'
+	'noir-policier'
 );
 
 INSERT INTO genres(genre) values(
@@ -36,7 +36,7 @@ INSERT INTO genres(genre) values(
 );
 
 INSERT INTO genres(genre) values(
-	'épouvante-horreur'
+	'epouvante-horreur'
 );
 
 INSERT INTO genres(genre) values(
@@ -71,15 +71,15 @@ INSERT INTO genres(genre) values(
 	'science-fiction'
 );
 
-1|comédie dramatique
+1|comedie dramatique
 2|divers
-3|comédie
+3|comedie
 4|aventure
 5|animation
-6|film policier
-7|film noir-policier
+6|policier
+7|noir-policier
 8|drame
-9|épouvante-horreur
+9|epouvante-horreur
 10|historique
 11|thriller
 12|biopic
@@ -88,3 +88,4 @@ INSERT INTO genres(genre) values(
 15|guerre
 16|fantastique
 17|science-fiction
+
