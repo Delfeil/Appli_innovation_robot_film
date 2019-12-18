@@ -191,7 +191,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_ROMANCE = ur"(roman(tique|ce)s?|(d'?\s*)amours?|(a|à)\s*l'eau\s*de\s*r(o|au)se)"
         self.contextual_ACTION = ur"(?:((d')?\s*action|bagarr?es?|course\s*poursuite|(d('|es))?\s*explosion)s?)"
         self.contextual_WAR = ur"(?:(guerre|bataill?e|confli?t)s?)"
-        self.contextual_FANTASTIQUE = ur"(?:(fantastique|imagin?aire)s?)"
+        self.contextual_FANTASTIQUE = ur"(?:(fantastique|imaginn?aire)s?)"
         # self.contextual_SCIENCE_FICTION = ur"(science(-|\s*)fiction?s|futur(ist(e|ique))?s|espace?s|fictif?s|super\s*h(é|e)ro?s|marvel?s)"
 
         ####Restriction####
@@ -268,13 +268,13 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
                     self.inform_contextual[slot][value] = self.contextual_ADVENTURE
                 elif value == "animation":
                     self.inform_contextual[slot][value] = self.contextual_ANIMATION
-                # elif value == "film policier":
-                #     self.inform_contextual[slot][value] = self.contextual_COPS
-                elif value == "noirPolicier":
+                    # elif value == "film policier":
+                    #     self.inform_contextual[slot][value] = self.contextual_COPS
+                elif value == "noirpolicier":
                     self.inform_contextual[slot][value] = self.contextual_DARK_COPS
                 elif value == "drame":
                     self.inform_contextual[slot][value] = self.contextual_DRAME
-                elif value == "epouvanteHorreur":
+                elif value == "epouvantehorreur":
                     self.inform_contextual[slot][value] = self.contextual_HOROR
                 elif value == "historique":
                     self.inform_contextual[slot][value] = self.contextual_HISTORY
@@ -438,9 +438,9 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.slot_values[slot]['aventure'] = ur"(" + self.contextual_ADVENTURE + ur")"
         self.slot_values[slot]['animation'] = ur"(" + self.contextual_ANIMATION + ur")"
         # self.slot_values[slot]['film policier'] = ur"(" + self.contextual_COPS + ur")"
-        self.slot_values[slot]['noirPolicier'] = ur"(" + self.contextual_DARK_COPS + ur")"
+        self.slot_values[slot]['noirpolicier'] = ur"(" + self.contextual_DARK_COPS + ur")"
         self.slot_values[slot]['drame'] = ur"(" + self.contextual_DRAME + ur")"
-        self.slot_values[slot]['epouvanteHorreur'] = ur"(" + self.contextual_HOROR + ur")"
+        self.slot_values[slot]['epouvantehorreur'] = ur"(" + self.contextual_HOROR + ur")"
         self.slot_values[slot]['historique'] = ur"(" + self.contextual_HISTORY + ur")"
         self.slot_values[slot]['thriller'] = ur"(" + self.contextual_THRILLER + ur")"
         self.slot_values[slot]['biopic'] = ur"(" + self.contextual_BIOPIC + ur")"

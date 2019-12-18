@@ -4,7 +4,7 @@ create table genres (
 );
 
 INSERT INTO genres(genre) values(
-	'comedie dramatique'
+	'comedieDramatique'
 );
 
 INSERT INTO genres(genre) values(
@@ -28,7 +28,7 @@ INSERT INTO genres(genre) values(
 );
 
 INSERT INTO genres(genre) values(
-	'noir-policier'
+	'noirPolicier'
 );
 
 INSERT INTO genres(genre) values(
@@ -36,7 +36,7 @@ INSERT INTO genres(genre) values(
 );
 
 INSERT INTO genres(genre) values(
-	'epouvante-horreur'
+	'epouvanteHorreur'
 );
 
 INSERT INTO genres(genre) values(
@@ -68,7 +68,7 @@ INSERT INTO genres(genre) values(
 );
 
 INSERT INTO genres(genre) values(
-	'science-fiction'
+	'scienceFiction'
 );
 
 1|comedie dramatique
