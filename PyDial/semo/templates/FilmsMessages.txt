@@ -21,12 +21,12 @@
 	comedie: "une comédie";
 	drame: "un film de genre dramatique";
 	fantastique: "un film de genre fanstastique";
-	noir-policier: "un film noir-policier";
+	noirPolicier: "un film noir-policier";
 	guerre: "un film de guerre";
 	historique: "un film de genre historique";
 	romance: "un film de genre romance";
 	thriller: "un thriller";
-	epouvante_horreur: "un film d'épouvante-horreur"; 
+	epouvanteHorreur: "un film d'épouvante-horreur"; 
 }
 
 %restriction_adj($restriction){
