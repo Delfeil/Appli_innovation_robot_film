@@ -78,7 +78,7 @@ hello(more) : "Puis-je faire autre chose pour vous?";
 
 null() : "Navré, je n'ai pas compris ce que vous avez dit. Pouvez-vous répéter, s'il vous plaît?";
 
-bye() : "Merci, au revoir!";
+bye() : "Merci beaucoup, au revoir et à bientot!";
 bye(toptictrackertimedout) : "Je suis désolé, mes réponses sont limitées. Veuillez recommencer une session."; 
 bye(topictrackeruserended): "Désolé de ne pas avoir pu vous aider. Au revoir.";
 
