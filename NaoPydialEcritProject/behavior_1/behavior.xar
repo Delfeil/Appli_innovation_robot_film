@@ -30,8 +30,7 @@ import time
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
-#        self.url = 'http://192.168.1.6:8082/'
-        self.url = 'http://10.120.11.47:8082/'
+        self.url = 'http://192.168.1.6:8082/'
         self.session = "sessid" + str(random.randint(0, 9999999))
         self.is_newcall = True
         self.text = None
@@ -223,7 +222,7 @@ import wave
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
-        self.url = 'http://10.120.11.47:8082/google?'
+        self.url = 'http://192.168.1.6:8082/google?'
         self.session = "sessid" + str(random.randint(0, 9999999))
 
     def onLoad(self):

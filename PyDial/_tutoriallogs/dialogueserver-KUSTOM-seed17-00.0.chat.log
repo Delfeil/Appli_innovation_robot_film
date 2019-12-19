@@ -1,29 +1,152 @@
-INFO   :: 11:14:40: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/KUSTOM-rules.json
-INFO   :: 11:14:40: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/KUSTOM-dbase.db
-INFO   :: 11:14:40: root                                      pydial.py <initialise>374 :  Seed = 117
-INFO   :: 11:14:40: root                                      pydial.py <initialise>375 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
-DIAL   :: 11:14:40: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
-INFO   :: 11:14:40: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                RuleSemIMethods.py <__init__>79 :  No suitable regex SemI module found. Defaulting to generic module.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:40: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:14:41: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
-WARNING:: 11:14:41: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
-WARNING:: 11:14:41: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
-DIAL   :: 11:14:41: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
-INFO   :: 11:14:41: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
-DIAL   :: 11:14:41: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
-DIAL   :: 11:14:41: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello()
-DIAL   :: 11:14:41: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+INFO   :: 13:08:38: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/KUSTOM-rules.json
+INFO   :: 13:08:38: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/KUSTOM-dbase.db
+INFO   :: 13:08:38: root                                      pydial.py <initialise>374 :  Seed = 117
+INFO   :: 13:08:38: root                                      pydial.py <initialise>375 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
+DIAL   :: 13:08:38: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
+INFO   :: 13:08:38: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: KUSTOM
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:38: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:08:39: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 13:08:39: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 13:08:39: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 13:08:39: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 13:08:39: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+DIAL   :: 13:08:39: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 13:08:39: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
+DIAL   :: 13:08:39: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:08:41: root                                    Agent.py <continue_call>232 :  user input: [('sdoqifs', 1.0)]
+DIAL   :: 13:08:41: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
+INFO   :: 13:08:41: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:08:41: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:08:42: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 13:08:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 13:08:42: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 13:08:42: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(energy)
+DIAL   :: 13:08:42: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:08:55: root                                    Agent.py <continue_call>232 :  user input: [('tres gras', 1.0)]
+DIAL   :: 13:08:55: root                                      Agent.py <_print_turn>579 :  ** Turn 2 **
+INFO   :: 13:08:55: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:08:55: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:08:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(fatness=much)', 1.0]]
+INFO   :: 13:08:55: root                                            SemI.py <decode>201 :  [('inform(fatness=much)', 1.0)]
+INFO   :: 13:08:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(fatness=much)', 1.0)]
+INFO   :: 13:08:55: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(fatness=much)', 1.0)]
+DIAL   :: 13:08:55: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(energy)
+DIAL   :: 13:08:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:05: root                                    Agent.py <continue_call>232 :  user input: [('tres energetique', 1.0)]
+DIAL   :: 13:09:05: root                                      Agent.py <_print_turn>579 :  ** Turn 3 **
+INFO   :: 13:09:05: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:05: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:05: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 13:09:05: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 13:09:05: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 13:09:05: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(energy)
+DIAL   :: 13:09:05: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:14: root                                    Agent.py <continue_call>232 :  user input: [('je ne sait pas', 1.0)]
+DIAL   :: 13:09:14: root                                      Agent.py <_print_turn>579 :  ** Turn 4 **
+INFO   :: 13:09:14: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:14: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:14: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 13:09:14: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 13:09:14: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 13:09:15: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(energy)
+DIAL   :: 13:09:15: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:21: root                                    Agent.py <continue_call>232 :  user input: [('peux importe', 1.0)]
+DIAL   :: 13:09:21: root                                      Agent.py <_print_turn>579 :  ** Turn 5 **
+INFO   :: 13:09:21: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:21: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['inform(=dontcare)', 1.0]]
+INFO   :: 13:09:21: root                                            SemI.py <decode>201 :  [('inform(=dontcare)', 1.0)]
+INFO   :: 13:09:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(=dontcare)', 1.0)]
+INFO   :: 13:09:21: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(=dontcare)', 1.0)]
+DIAL   :: 13:09:21: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(ishappymealavailable)
+DIAL   :: 13:09:21: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:28: root                                    Agent.py <continue_call>232 :  user input: [('peux importe', 1.0)]
+DIAL   :: 13:09:28: root                                      Agent.py <_print_turn>579 :  ** Turn 6 **
+INFO   :: 13:09:28: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:28: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:28: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['inform(=dontcare)', 1.0]]
+INFO   :: 13:09:28: root                                            SemI.py <decode>201 :  [('inform(=dontcare)', 1.0)]
+INFO   :: 13:09:28: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(=dontcare)', 1.0)]
+INFO   :: 13:09:28: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(=dontcare)', 1.0)]
+DIAL   :: 13:09:28: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(kind)
+DIAL   :: 13:09:28: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:38: root                                    Agent.py <continue_call>232 :  user input: [('un sandwithc', 1.0)]
+DIAL   :: 13:09:38: root                                      Agent.py <_print_turn>579 :  ** Turn 7 **
+INFO   :: 13:09:38: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:38: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:38: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 13:09:38: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 13:09:38: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 13:09:38: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(kind)
+DIAL   :: 13:09:38: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:44: root                                    Agent.py <continue_call>232 :  user input: [('peux importe', 1.0)]
+DIAL   :: 13:09:44: root                                      Agent.py <_print_turn>579 :  ** Turn 8 **
+INFO   :: 13:09:44: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:44: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:44: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['inform(=dontcare)', 1.0]]
+INFO   :: 13:09:44: root                                            SemI.py <decode>201 :  [('inform(=dontcare)', 1.0)]
+INFO   :: 13:09:44: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(=dontcare)', 1.0)]
+INFO   :: 13:09:44: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(=dontcare)', 1.0)]
+DIAL   :: 13:09:44: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(ishappymealavailable="0",energy="much",name="royal deluxe",kind="sandwich",fatness="much")
+DIAL   :: 13:09:44: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:09:54: root                                    Agent.py <continue_call>232 :  user input: [('non merci', 1.0)]
+DIAL   :: 13:09:54: root                                      Agent.py <_print_turn>579 :  ** Turn 9 **
+INFO   :: 13:09:54: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:09:54: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:09:54: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 13:09:54: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 13:09:54: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 13:09:55: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(ishappymealavailable="0",energy="much",name="royal deluxe",kind="sandwich",fatness="much")
+DIAL   :: 13:09:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:10:05: root                                    Agent.py <continue_call>232 :  user input: [('je veux autre chose', 1.0)]
+DIAL   :: 13:10:05: root                                      Agent.py <_print_turn>579 :  ** Turn 10 **
+INFO   :: 13:10:05: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:10:05: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:10:05: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['reqalts()', 1.0]]
+INFO   :: 13:10:05: root                                            SemI.py <decode>201 :  [('reqalts()', 1.0)]
+INFO   :: 13:10:05: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('reqalts()', 1.0)]
+INFO   :: 13:10:05: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('reqalts()', 1.0)]
+DIAL   :: 13:10:05: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(ishappymealavailable="0",energy="much",name="royal deluxe",kind="sandwich",fatness="much")
+DIAL   :: 13:10:05: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:10:26: root                                    Agent.py <continue_call>232 :  user input: [('non merci', 1.0)]
+DIAL   :: 13:10:26: root                                      Agent.py <_print_turn>579 :  ** Turn 11 **
+INFO   :: 13:10:26: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:10:26: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:10:26: root                                            SemI.py <decode>201 :  [('', 1.0)]
+INFO   :: 13:10:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('', 1.0)]
+INFO   :: 13:10:26: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('', 1.0)]
+DIAL   :: 13:10:26: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(ishappymealavailable="0",energy="much",name="royal deluxe",kind="sandwich",fatness="much")
+DIAL   :: 13:10:26: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:10:33: root                                    Agent.py <continue_call>232 :  user input: [('je veux autre chose', 1.0)]
+DIAL   :: 13:10:33: root                                      Agent.py <_print_turn>579 :  ** Turn 12 **
+INFO   :: 13:10:33: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:10:33: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:10:33: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['reqalts()', 1.0]]
+INFO   :: 13:10:33: root                                            SemI.py <decode>201 :  [('reqalts()', 1.0)]
+INFO   :: 13:10:33: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('reqalts()', 1.0)]
+INFO   :: 13:10:33: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('reqalts()', 1.0)]
+DIAL   :: 13:10:33: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(ishappymealavailable="0",energy="much",name="royal deluxe",kind="sandwich",fatness="much")
+DIAL   :: 13:10:33: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 13:10:49: root                                    Agent.py <continue_call>232 :  user input: [('je veux une boisson', 1.0)]
+DIAL   :: 13:10:49: root                                      Agent.py <_print_turn>579 :  ** Turn 13 **
+INFO   :: 13:10:49: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: KUSTOM
+INFO   :: 13:10:49: root                                    Agent.py <_hand_control>470 :  Domain KUSTOM is both already running and has control
+INFO   :: 13:10:49: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(kind=drink)', 1.0]]
+INFO   :: 13:10:49: root                                            SemI.py <decode>201 :  [('inform(kind=drink)', 1.0)]
+INFO   :: 13:10:49: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(kind=drink)', 1.0)]
+INFO   :: 13:10:49: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(kind=drink)', 1.0)]
+DIAL   :: 13:10:49: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(name="none",kind="drink",fatness="much")
+DIAL   :: 13:10:49: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM

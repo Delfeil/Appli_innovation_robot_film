@@ -7,10 +7,5 @@
     <Dialogs />
     <Resources />
     <Topics />
-    <IgnoredPaths>
-        <Path src="NaoPydial_ecrit.pml" />
-    </IgnoredPaths>
-    <Translations auto-fill="en_US">
-        <Translation name="translation_en_US" src="translations/translation_en_US.ts" language="en_US" />
-    </Translations>
+    <IgnoredPaths />
 </Package>

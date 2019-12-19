@@ -1,39 +1,152 @@
-INFO   :: 11:31:21: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
-INFO   :: 11:31:21: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
-INFO   :: 11:31:21: root                                      pydial.py <initialise>374 :  Seed = 117
-INFO   :: 11:31:21: root                                      pydial.py <initialise>375 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
-DIAL   :: 11:31:21: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
-INFO   :: 11:31:21: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 11:31:21: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
-WARNING:: 11:31:21: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
-WARNING:: 11:31:21: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
-DIAL   :: 11:31:21: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
-INFO   :: 11:31:21: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-DIAL   :: 11:31:21: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
-DIAL   :: 11:31:21: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
-DIAL   :: 11:31:21: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-DIAL   :: 11:31:23: root                                    Agent.py <continue_call>232 :  user input: [('aventure', 1.0)]
-DIAL   :: 11:31:23: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
-INFO   :: 11:31:23: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 11:31:23: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 11:31:23: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=aventure)', 1.0]]
-INFO   :: 11:31:23: root                                            SemI.py <decode>201 :  [('inform(genre=aventure)', 1.0)]
-INFO   :: 11:31:23: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=aventure)', 1.0)]
-INFO   :: 11:31:23: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=aventure)', 1.0)]
-DIAL   :: 11:31:23: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(genre="aventure",name="abominable")
-DIAL   :: 11:31:23: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-WARNING:: 11:31:23: root                              RuleSemOMethods.py <transform>570 :  While transforming inform(genre="aventure",name="abominable"), there were missing items.
+INFO   :: 13:10:59: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
+INFO   :: 13:10:59: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
+INFO   :: 13:10:59: root                                      pydial.py <initialise>374 :  Seed = 117
+INFO   :: 13:10:59: root                                      pydial.py <initialise>375 :  Root = /home/casanova/master/s3/application_innovation/Application Interaction vocale/projet_robotparlant/PyDial
+DIAL   :: 13:10:59: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
+INFO   :: 13:10:59: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
+WARNING:: 13:10:59: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:10:59: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:11:00: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 13:11:00: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 13:11:00: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 13:11:00: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 13:11:00: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+DIAL   :: 13:11:00: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 13:11:00: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
+DIAL   :: 13:11:00: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:11:12: root                                    Agent.py <continue_call>232 :  user input: [('je veux voir un film tout publique', 1.0)]
+DIAL   :: 13:11:12: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
+INFO   :: 13:11:12: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:11:12: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:11:12: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 13:11:12: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 13:11:12: root                                            SemI.py <decode>201 :  [('inform(restriction=forall,type=films)', 1.0)]
+INFO   :: 13:11:12: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(restriction=forall,type=films)', 1.0)]
+INFO   :: 13:11:12: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(restriction=forall,type=films)', 1.0)]
+DIAL   :: 13:11:12: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(genre)
+DIAL   :: 13:11:12: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:11:17: root                                    Agent.py <continue_call>232 :  user input: [('animation', 1.0)]
+DIAL   :: 13:11:17: root                                      Agent.py <_print_turn>579 :  ** Turn 2 **
+INFO   :: 13:11:17: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:11:17: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:11:17: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 13:11:17: root                                            SemI.py <decode>201 :  [('inform(genre=animation)', 1.0)]
+INFO   :: 13:11:17: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation)', 1.0)]
+INFO   :: 13:11:17: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation)', 1.0)]
+DIAL   :: 13:11:18: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 13:11:18: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:11:26: root                                    Agent.py <continue_call>232 :  user input: [("je veux voir un film d'action", 1.0)]
+DIAL   :: 13:11:26: root                                      Agent.py <_print_turn>579 :  ** Turn 3 **
+INFO   :: 13:11:26: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:11:26: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:11:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=action)', 1.0]]
+INFO   :: 13:11:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 13:11:26: root                                            SemI.py <decode>201 :  [('inform(genre=action,type=films)', 1.0)]
+INFO   :: 13:11:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=action,type=films)', 1.0)]
+INFO   :: 13:11:26: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=action,type=films)', 1.0)]
+DIAL   :: 13:11:26: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(name="none",genre="action",restriction="forall")
+DIAL   :: 13:11:26: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:11:47: root                                    Agent.py <continue_call>232 :  user input: [('je veux voir un film sans restriction', 1.0)]
+DIAL   :: 13:11:47: root                                      Agent.py <_print_turn>579 :  ** Turn 4 **
+INFO   :: 13:11:47: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:11:47: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:11:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=none)', 1.0]]
+INFO   :: 13:11:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 13:11:47: root                                            SemI.py <decode>201 :  [('inform(restriction=none,type=films)', 1.0)]
+INFO   :: 13:11:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(restriction=none,type=films)', 1.0)]
+INFO   :: 13:11:47: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(restriction=none,type=films)', 1.0)]
+DIAL   :: 13:11:47: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(genre="action",restriction="none",name="midway")
+DIAL   :: 13:11:47: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:13:26: root                                    Agent.py <continue_call>232 :  user input: [('de quoi ca parle', 1.0)]
+DIAL   :: 13:13:26: root                                      Agent.py <_print_turn>579 :  ** Turn 5 **
+INFO   :: 13:13:26: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:13:26: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:13:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=none)', 1.0]]
+INFO   :: 13:13:26: root                                            SemI.py <decode>201 :  [('inform(restriction=none)', 1.0)]
+INFO   :: 13:13:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(restriction=none)', 1.0)]
+INFO   :: 13:13:26: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(restriction=none)', 1.0)]
+DIAL   :: 13:13:26: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(genre="action",restriction="none",name="midway")
+DIAL   :: 13:13:26: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:13:40: root                                    Agent.py <continue_call>232 :  user input: [('je veux voir un autre film', 1.0)]
+DIAL   :: 13:13:40: root                                      Agent.py <_print_turn>579 :  ** Turn 6 **
+INFO   :: 13:13:40: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:13:40: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:13:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 13:13:40: root                                            SemI.py <decode>201 :  [('inform(type=films)', 1.0)]
+INFO   :: 13:13:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=films)', 1.0)]
+INFO   :: 13:13:40: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=films)', 1.0)]
+DIAL   :: 13:13:40: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(genre="action",restriction="none",name="midway")
+DIAL   :: 13:13:40: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:13:44: root                                    Agent.py <continue_call>232 :  user input: [('non merci', 1.0)]
+DIAL   :: 13:13:44: root                                      Agent.py <_print_turn>579 :  ** Turn 7 **
+INFO   :: 13:13:44: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:13:44: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:13:44: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=none)', 1.0]]
+INFO   :: 13:13:44: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['negate()', 1.0]]
+WARNING:: 13:13:44: root                       SemIContextUtils.py <_convert_yes_no>161 :  affirm or negate in response to currently unhandled system_act:
+ inform(genre="action",restriction="none",name="midway")
+INFO   :: 13:13:44: root                                            SemI.py <decode>201 :  [('negate()|inform(restriction=none)', 1.0)]
+INFO   :: 13:13:44: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('negate()|inform(restriction=none)', 1.0)]
+INFO   :: 13:13:44: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('negate()|inform(restriction=none)', 1.0)]
+DIAL   :: 13:13:44: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(genre="action",restriction="none",name="midway")
+DIAL   :: 13:13:44: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:13:53: root                                    Agent.py <continue_call>232 :  user input: [("je veux voir un film d'aventure", 1.0)]
+DIAL   :: 13:13:53: root                                      Agent.py <_print_turn>579 :  ** Turn 8 **
+INFO   :: 13:13:53: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:13:53: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:13:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=aventure)', 1.0]]
+INFO   :: 13:13:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 13:13:53: root                                            SemI.py <decode>201 :  [('inform(genre=aventure,type=films)', 1.0)]
+INFO   :: 13:13:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=aventure,type=films)', 1.0)]
+INFO   :: 13:13:53: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=aventure,type=films)', 1.0)]
+DIAL   :: 13:13:53: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(name="none",genre="aventure",restriction="none")
+DIAL   :: 13:13:53: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:14:10: root                                    Agent.py <continue_call>232 :  user input: [('peux importe la restriction', 1.0)]
+DIAL   :: 13:14:10: root                                      Agent.py <_print_turn>579 :  ** Turn 9 **
+INFO   :: 13:14:10: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:14:10: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:14:10: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'request(restriction)', 1.0]]
+INFO   :: 13:14:10: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['inform(=dontcare)', 1.0]]
+INFO   :: 13:14:10: root                                            SemI.py <decode>201 :  [('inform(=dontcare)|request(restriction)', 1.0)]
+INFO   :: 13:14:10: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(=dontcare)|request(restriction)', 1.0)]
+INFO   :: 13:14:10: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(=dontcare)|request(restriction)', 1.0)]
+DIAL   :: 13:14:10: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(name="none",genre="aventure",restriction="none")
+DIAL   :: 13:14:10: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:14:14: root                                    Agent.py <continue_call>232 :  user input: [('ok merci', 1.0)]
+DIAL   :: 13:14:14: root                                      Agent.py <_print_turn>579 :  ** Turn 10 **
+INFO   :: 13:14:14: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:14:14: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:14:14: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['affirm()', 1.0]]
+WARNING:: 13:14:14: root                       SemIContextUtils.py <_convert_yes_no>161 :  affirm or negate in response to currently unhandled system_act:
+ inform(name=none, genre="aventure",restriction="none")
+INFO   :: 13:14:14: root                                            SemI.py <decode>201 :  [('affirm()', 1.0)]
+INFO   :: 13:14:14: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('affirm()', 1.0)]
+WARNING:: 13:14:14: root                       SemIContextUtils.py <_convert_yes_no>161 :  affirm or negate in response to currently unhandled system_act:
+ inform(name=none, genre="aventure",restriction="none")
+INFO   :: 13:14:14: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('affirm()', 1.0)]
+DIAL   :: 13:14:14: root                                   Agent.py <_print_sys_act>595 :  | Sys > inform(name="none",genre="aventure",restriction="none")
+DIAL   :: 13:14:14: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:14:17: root                                    Agent.py <continue_call>232 :  user input: [('merci', 1.0)]
+DIAL   :: 13:14:17: root                                      Agent.py <_print_turn>579 :  ** Turn 11 **
+INFO   :: 13:14:17: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 13:14:17: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 13:14:17: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['bye()', 1.0]]
+INFO   :: 13:14:17: root                                            SemI.py <decode>201 :  [('bye()', 1.0)]
+INFO   :: 13:14:17: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('bye()', 1.0)]
+INFO   :: 13:14:17: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('bye()', 1.0)]
+WARNING:: 13:14:17: root                               Agent.py <_check_USER_ending>664 :  Ignoring system act: bye() and saying goodbye as user has said bye
+DIAL   :: 13:14:17: root                                   Agent.py <_print_sys_act>595 :  | Sys > bye()
+DIAL   :: 13:14:17: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+DIAL   :: 13:14:17: root                                   pydial.py <chat_command>1131 :  *** Chat complete

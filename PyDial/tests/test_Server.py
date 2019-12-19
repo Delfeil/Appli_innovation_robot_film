@@ -18,7 +18,8 @@ class TServer():
 	"""
 	"""
 	def __init__(self):
-		cfg = 'tests/test_configs/dialogueserver-KUSTOM.cfg'
+		# cfg = 'tests/test_configs/dialogueserver-KUSTOM.cfg'
+		cfg = 'tests/test_configs/dialogueserver-Films.cfg'
 		assert(os.path.exists(cfg))
 		Settings.init(config_file=cfg)
 		ContextLogger.createLoggingHandlers(config=Settings.config)

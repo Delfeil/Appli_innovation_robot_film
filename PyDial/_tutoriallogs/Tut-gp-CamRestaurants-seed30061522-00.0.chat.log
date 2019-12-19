@@ -1,27 +1,62 @@
-DIAL   :: 11:06:31: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies []: ***
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
-WARNING:: 11:06:31: root                                       GPLib.py <readPolicy>745 :  inpolicyfile:auto does not exist
-WARNING:: 11:06:31: root                            Agent.py <_logical_requirements>406 :  Enforcing hello() at first turn in singledomain system
-WARNING:: 11:06:31: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
-DIAL   :: 11:06:31: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
-DIAL   :: 11:06:31: root                                      Agent.py <_print_turn>580 :  ** Turn 0 **
-DIAL   :: 11:06:31: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
-DIAL   :: 11:06:31: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
-DIAL   :: 11:06:35: root                                    Agent.py <continue_call>233 :  user input: [('bye', 1.0)]
-DIAL   :: 11:06:35: root                                      Agent.py <_print_turn>580 :  ** Turn 1 **
-DIAL   :: 11:06:35: root                                  SummaryAction.py <Convert>126 :  system summary act: request_food.
-WARNING:: 11:06:35: root                               Agent.py <_check_USER_ending>664 :  Ignoring system act: request(food) and saying goodbye as user has said bye
-DIAL   :: 11:06:35: root                                   Agent.py <_print_sys_act>595 :  | Sys > bye()
-DIAL   :: 11:06:35: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
-DIAL   :: 11:06:35: root                                   pydial.py <chat_command>1130 :  *** Chat complete
+DIAL   :: 13:18:39: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 13:18:39: root                                       GPLib.py <readPolicy>745 :  inpolicyfile:auto does not exist
+WARNING:: 13:18:39: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 13:18:39: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 13:18:39: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+DIAL   :: 13:18:39: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 13:18:39: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
+DIAL   :: 13:18:39: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:18:42: root                                    Agent.py <continue_call>232 :  user input: [('hello', 1.0)]
+DIAL   :: 13:18:42: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
+DIAL   :: 13:18:42: root                                  SummaryAction.py <Convert>126 :  system summary act: request_food.
+DIAL   :: 13:18:42: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(food)
+DIAL   :: 13:18:42: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:18:48: root                                    Agent.py <continue_call>232 :  user input: [('chinese', 1.0)]
+DIAL   :: 13:18:48: root                                      Agent.py <_print_turn>579 :  ** Turn 2 **
+DIAL   :: 13:18:49: root                                  SummaryAction.py <Convert>126 :  system summary act: confirm_food.
+DIAL   :: 13:18:49: root                                   Agent.py <_print_sys_act>595 :  | Sys > confirm(food="chinese")
+DIAL   :: 13:18:49: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:18:55: root                                    Agent.py <continue_call>232 :  user input: [('yes', 1.0)]
+DIAL   :: 13:18:55: root                                      Agent.py <_print_turn>579 :  ** Turn 3 **
+DIAL   :: 13:18:55: root                                  SummaryAction.py <Convert>126 :  system summary act: request_food.
+DIAL   :: 13:18:55: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(food)
+DIAL   :: 13:18:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:19:04: root                                    Agent.py <continue_call>232 :  user input: [('chinese', 1.0)]
+DIAL   :: 13:19:04: root                                      Agent.py <_print_turn>579 :  ** Turn 4 **
+DIAL   :: 13:19:04: root                                  SummaryAction.py <Convert>126 :  system summary act: request_area.
+DIAL   :: 13:19:04: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(area)
+DIAL   :: 13:19:04: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:19:10: root                                    Agent.py <continue_call>232 :  user input: [('north', 1.0)]
+DIAL   :: 13:19:10: root                                      Agent.py <_print_turn>579 :  ** Turn 5 **
+DIAL   :: 13:19:11: root                                  SummaryAction.py <Convert>126 :  system summary act: request_area.
+DIAL   :: 13:19:11: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(area)
+DIAL   :: 13:19:11: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:19:15: root                                    Agent.py <continue_call>232 :  user input: [('north', 1.0)]
+DIAL   :: 13:19:15: root                                      Agent.py <_print_turn>579 :  ** Turn 6 **
+DIAL   :: 13:19:15: root                                  SummaryAction.py <Convert>126 :  system summary act: confirm_area.
+DIAL   :: 13:19:15: root                                   Agent.py <_print_sys_act>595 :  | Sys > confirm(area="north")
+DIAL   :: 13:19:15: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:19:21: root                                    Agent.py <continue_call>232 :  user input: [('yes area', 1.0)]
+DIAL   :: 13:19:21: root                                      Agent.py <_print_turn>579 :  ** Turn 7 **
+DIAL   :: 13:19:21: root                                  SummaryAction.py <Convert>126 :  system summary act: confirm_area.
+DIAL   :: 13:19:21: root                                   Agent.py <_print_sys_act>595 :  | Sys > confirm(area="north")
+DIAL   :: 13:19:21: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 13:19:25: root                                    Agent.py <continue_call>232 :  user input: [('area yes', 1.0)]
+DIAL   :: 13:19:25: root                                      Agent.py <_print_turn>579 :  ** Turn 8 **
+DIAL   :: 13:19:26: root                                  SummaryAction.py <Convert>126 :  system summary act: request_food.
+DIAL   :: 13:19:26: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(food)
+DIAL   :: 13:19:26: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamRestaurants

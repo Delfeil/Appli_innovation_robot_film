@@ -166,11 +166,10 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
             ur"|(?:c'?e(?:st?|ts?)\s*)?pas?\s*graves?" +
             ur"|(c|\xc3\xa7)a\s*importe\s*p(?:as?|eu)" +
-            ur"|peu[stx]?\s*importe(?:\s*l[ae]s?)?" +
+            ur"|(n'?|peu[stx]?)\s*importe(?:\s*l[ae]s?)?" +
             ur"|(?:j'?\s*en\s*ai\s*)?rien\s*(a|à)\s*(?:f(?:out|ai)re|battre|cir(e|é)r?)(?:\s*de\s*(c|\xc3\xa7)a)?" +
             ur"|ba(?:llec|t\s*les\s*couilles|lais?\s*couilles?)(?:\s*fr(e|è)re?)?" +
         ")")
-        self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans|non)"
 
         # self.contextual_COM_DRAMA = ur"(com(e|é)die?s\s*dramatique?s)"
         # self.contextual_DIVERS = ur"(divers)"
@@ -198,7 +197,8 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_MORE6 = ur"(?:((plus)?\s*(de)?\s*(6|six)\sans))" #OK
         self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\sans)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\sans))"
         self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?))" #OK
-        self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*de\s*(18|dix-?\s*huit|16|seize)\s*ans?)"
+        self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans\s*(restriction|limites)?|non|aucunes?)"
+        self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*(de)?\s*(18|dix-?\s*huit|16|seize)\s*(ans?)?|sensibles?)"
 
 
     def create_domain_dependent_regex(self):
