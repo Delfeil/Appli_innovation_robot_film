@@ -29,11 +29,43 @@
 	epouvantehorreur: "un film d'épouvante-horreur"; 
 }
 
+%genre_simple($genre) {
+	action: "action";
+	animation: "animation";
+	aventure: "aventure";
+	biopic: "biopic";
+	comedie: "comédie";
+	drame: "dramatique";
+	fantastique: "fanstastique";
+	noirpolicier: "noir policier";
+	guerre: "guerre";
+	historique: "historique";
+	romance: "romance";
+	thriller: "thriller";
+	epouvantehorreur: "épouvante-horreur"; 
+}
+
 %restriction_adj($restriction){
 	forall: "pour tous publics";
 	more12: "interdit aux moins de 12 ans";
 	more6: "pour tous publics a partir de 6 ans";
-	none: "pas de restriction pour ce film";
+	none: "sans restriction";
+	sensible: "avec des scenes, des propos ou des images qui peuvent heurter la sensibilite des spectateurs";
+}
+
+%restriction_verbe($restriction){
+	forall: "ayant la restriction pour tous publics";
+	more12: "ayant la restriction interdit aux moins de 12 ans";
+	more6: "ayant la restriction pour tous publics a partir de 6 ans";
+	none: "n'ayant pas de restriction";
+	sensible: " ayant la restriction: des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs";
+}
+
+%restriction_simple($restriction){
+	forall: "tous publics";
+	more12: "interdit aux moins de 12 ans";
+	more6: "tous publics a partir de 6 ans";
+	none: "ausune restriction";
 	sensible: "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs";
 }
 
@@ -69,13 +101,13 @@ confirm(genre=$V) : "Vous voulez voir %genre_adj($V), c'est bien cela?";
 
 inform(name=none, genre=$V, restriction=$R) : "Désolé, je ne connais aucun film du genre %genre_adj($V) ayant la restriction %restriction_adj($R)";
 
-inform(genre=$V, name=$U, restriction=forall) : "Le film $U est du genre %genre_adj($V), %restriction_adj(forall)";
-inform(genre=$V, name=$U, restriction=more6) : "Le film $U est du genre %genre_adj($V), %restriction_adj(more6)";
-inform(genre=$V, name=$U, restriction=more12) : "Le film $U est du genre %genre_adj($V), %restriction_adj(more12)";
-inform(genre=$V, name=$U, restriction=none) : "Le film $U est du genre %genre_adj($V), %restriction_adj(none)";
-inform(genre=$V, name=$U, restriction=sensible) : "Le film $U est du genre %genre_adj($V), %restriction_adj(sensible)";
+inform(genre=$V, name=$U, restriction=forall) : "Le film $U est %genre_adj($V), %restriction_adj(forall)";
+inform(genre=$V, name=$U, restriction=more6) : "Le film $U est %genre_adj($V), %restriction_adj(more6)";
+inform(genre=$V, name=$U, restriction=more12) : "Le film $U est %genre_adj($V), %restriction_adj(more12)";
+inform(genre=$V, name=$U, restriction=none) : "Le film $U est %genre_adj($V), %restriction_adj(none)";
+inform(genre=$V, name=$U, restriction=sensible) : "Le film $U est %genre_adj($V), %restriction_adj(sensible)";
 
 inform(name=$U, synopsis=$X) : "Le synopsis du film $U est : $X";
-inform(genre=$V, restriction=$R, name=$U) : "Le film du genre %genre_adj($V) ayant la restriction %restriction_adj($R) est : $U";
-inform(restriction=$R, name=$U) : "Le film ayant la restriction %restriction_adj($R) est : $U";
-inform(name=$U, restriction=$R) : "La restriction du film $U est %restriction_adj($R)";
+inform(genre=$V, restriction=$R, name=$U) : "Le film du genre %genre_simple($V) étant %restriction_adj($R) est : $U";
+inform(restriction=$R, name=$U) : "Le film %restriction_verbe($R) est : $U";
+inform(name=$U, restriction=$R) : "La restriction du film $U est %restriction_simple($R)";
