@@ -243,6 +243,8 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             self.request_regex[slot] = self.rREQUEST+ur"\s*"+self.slot_vocab[slot]
             self.request_regex[slot] += "|"+self.IT+ur"\s*"+self.slot_vocab[slot]
 
+        self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
+
     def _set_inform_regex(self):
         """
         """

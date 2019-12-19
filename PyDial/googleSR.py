@@ -24,7 +24,8 @@ def speechRecognition(data, params):
 		audioFile = r.record(source)
 
 	try:
-		text = r.recognize_google(audioFile, language="en-EN")
+		# text = r.recognize_google(audioFile, language="en-EN")
+		text = r.recognize_google(audioFile, language="fr-FR")
 		return text
 		
 	except Exception as e:

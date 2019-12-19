@@ -87,7 +87,8 @@
     ], 
     "requestable": [
         "genre", 
-        "restriction"
+        "restriction",
+        "synopsis"
     ], 
     "system_requestable": [
         "genre", 

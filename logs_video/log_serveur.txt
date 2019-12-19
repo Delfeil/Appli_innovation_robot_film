@@ -1,0 +1,77 @@
+hello()
+hello()
+Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous?
+10.120.10.167 - - [19/Dec/2019 15:31:16] "POST /newcall? HTTP/1.1" 200 -
+------------------------------
+je veux voir un film
+10.120.10.167 - - [19/Dec/2019 15:31:28] "POST /google? HTTP/1.1" 200 -
+------------------------------
+request(genre)
+request(genre)
+Quel genre de film voulez-vous voir?
+10.120.10.167 - - [19/Dec/2019 15:31:29] "POST /next? HTTP/1.1" 200 -
+------------------------------
+voir un film d'animation
+10.120.10.167 - - [19/Dec/2019 15:31:37] "POST /google? HTTP/1.1" 200 -
+------------------------------
+request(restriction)
+request(restriction)
+Quel restriction de film voulez-vous avoir?
+10.120.10.167 - - [19/Dec/2019 15:31:37] "POST /next? HTTP/1.1" 200 -
+------------------------------
+plus de 6 ans
+10.120.10.167 - - [19/Dec/2019 15:31:46] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(genre="animation",restriction="more6",name="la reine des neiges 2")
+inform(genre="animation",restriction="more6",name="la reine des neiges 2")
+Le film la reine des neiges 2 est du genre un film d' animation , pour tous publics a partir de6 ans
+10.120.10.167 - - [19/Dec/2019 15:31:47] "POST /next? HTTP/1.1" 200 -
+------------------------------
+je veux voir un film de guerre
+10.120.10.167 - - [19/Dec/2019 15:32:00] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(name="none",genre="guerre",restriction="more6")
+inform(name="none",genre="guerre",restriction="more6")
+Désolé, je ne connais aucun film du genre un film de guerre ayant la restriction pour tous publics a partir de6 ans
+10.120.10.167 - - [19/Dec/2019 15:32:00] "POST /next? HTTP/1.1" 200 -
+------------------------------
+aucune restriction
+10.120.10.167 - - [19/Dec/2019 15:32:13] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(name="none",genre="guerre",restriction="more6")
+inform(name="none",genre="guerre",restriction="more6")
+Désolé, je ne connais aucun film du genre un film de guerre ayant la restriction pour tous publics a partir de6 ans
+10.120.10.167 - - [19/Dec/2019 15:32:13] "POST /next? HTTP/1.1" 200 -
+------------------------------
+aucune restriction
+10.120.10.167 - - [19/Dec/2019 15:32:27] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(genre="guerre",restriction="none",name="midway")
+inform(genre="guerre",restriction="none",name="midway")
+Le film midway est du genre un film de guerre , pas de restriction pour ce film
+10.120.10.167 - - [19/Dec/2019 15:32:27] "POST /next? HTTP/1.1" 200 -
+------------------------------
+je veux voir un film d'aventure tout public
+10.120.10.167 - - [19/Dec/2019 15:32:40] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(genre="aventure",restriction="forall",name="abominable")
+inform(genre="aventure",restriction="forall",name="abominable")
+Le film abominable est du genre un film d' aventure , pour tous publics
+10.120.10.167 - - [19/Dec/2019 15:32:40] "POST /next? HTTP/1.1" 200 -
+------------------------------
+au revoir
+10.120.10.167 - - [19/Dec/2019 15:32:51] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(genre="aventure",restriction="forall",name="abominable")
+inform(genre="aventure",restriction="forall",name="abominable")
+Le film abominable est du genre un film d' aventure , pour tous publics
+10.120.10.167 - - [19/Dec/2019 15:32:51] "POST /next? HTTP/1.1" 200 -
+------------------------------
+au revoir
+10.120.10.167 - - [19/Dec/2019 15:33:03] "POST /google? HTTP/1.1" 200 -
+------------------------------
+bye()
+bye()
+Merci, au revoir!  Avez-vous bien obtenu toutes les informations dont vous aviez besoin? Répondez simplement par oui ou non, s'il vous plaît.
+10.120.10.167 - - [19/Dec/2019 15:33:03] "POST /next? HTTP/1.1" 200 -
+
