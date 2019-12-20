@@ -1,176 +1,644 @@
-INFO   :: 15:29:45: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
-INFO   :: 15:29:45: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
-INFO   :: 15:29:45: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 15:29:45: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
-WARNING:: 15:29:45: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
-INFO   :: 15:29:45: root                                     DialogueServer.py <run>419 :  Server starting 10.120.13.133:8082 (level=info)
-INFO   :: 15:30:00: root                                       Agent.py <start_call>832 :  Agent Smith has been reactivated.
-DIAL   :: 15:30:00: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
-INFO   :: 15:30:00: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-DIAL   :: 15:30:00: root                                      Agent.py <_print_turn>576 :  Turn 0
-DIAL   :: 15:30:00: root                                   Agent.py <_print_sys_act>592 :  Sys > hello()
-DIAL   :: 15:30:00: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:30:00: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid3234514 
-INFO   :: 15:30:00: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous? to tts.
-INFO   :: 15:30:12: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:31:16: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
-WARNING:: 15:31:16: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
-WARNING:: 15:31:16: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
-INFO   :: 15:31:16: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:31:16: root                                        Agent.py <new_agent>935 :  Agent Smith1 has been created.
-DIAL   :: 15:31:16: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
-INFO   :: 15:31:16: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-DIAL   :: 15:31:16: root                                      Agent.py <_print_turn>576 :  Turn 0
-DIAL   :: 15:31:16: root                                   Agent.py <_print_sys_act>592 :  Sys > hello()
-DIAL   :: 15:31:16: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:31:16: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid5186263 
-INFO   :: 15:31:16: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous? to tts.
-INFO   :: 15:31:28: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:31:28: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:31:28: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'je veux voir un film', 1)]
-DIAL   :: 15:31:28: root                                    Agent.py <continue_call>232 :  user input: [(u'je veux voir un film', 1)]
-DIAL   :: 15:31:28: root                                      Agent.py <_print_turn>576 :  Turn 1
-INFO   :: 15:31:28: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:31:28: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:31:28: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
-INFO   :: 15:31:28: root                                            SemI.py <decode>201 :  [('inform(type=films)', 1)]
-INFO   :: 15:31:28: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=films)', 1)]
-INFO   :: 15:31:28: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=films)', 1)]
-DIAL   :: 15:31:28: root                                   Agent.py <_print_sys_act>592 :  Sys > request(genre)
-DIAL   :: 15:31:28: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:31:29: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Quel genre de film voulez-vous voir? to tts.
-INFO   :: 15:31:37: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:31:37: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:31:37: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"voir un film d'animation", 1)]
-DIAL   :: 15:31:37: root                                    Agent.py <continue_call>232 :  user input: [(u"voir un film d'animation", 1)]
-DIAL   :: 15:31:37: root                                      Agent.py <_print_turn>576 :  Turn 2
-INFO   :: 15:31:37: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:31:37: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:31:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
-INFO   :: 15:31:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
-INFO   :: 15:31:37: root                                            SemI.py <decode>201 :  [('inform(genre=animation,type=films)', 1)]
-INFO   :: 15:31:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,type=films)', 1)]
-INFO   :: 15:31:37: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,type=films)', 1)]
-DIAL   :: 15:31:37: root                                   Agent.py <_print_sys_act>592 :  Sys > request(restriction)
-DIAL   :: 15:31:37: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:31:37: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Quel restriction de film voulez-vous avoir? to tts.
-INFO   :: 15:31:46: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:31:46: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:31:46: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'plus de 6 ans', 1)]
-DIAL   :: 15:31:46: root                                    Agent.py <continue_call>232 :  user input: [(u'plus de 6 ans', 1)]
-DIAL   :: 15:31:47: root                                      Agent.py <_print_turn>576 :  Turn 3
-INFO   :: 15:31:47: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:31:47: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:31:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=more6)', 1.0]]
-INFO   :: 15:31:47: root                                            SemI.py <decode>201 :  [('inform(restriction=more6)', 1)]
-INFO   :: 15:31:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(restriction=more6)', 1)]
-INFO   :: 15:31:47: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(restriction=more6)', 1)]
-DIAL   :: 15:31:47: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="more6",name="la reine des neiges 2")
-DIAL   :: 15:31:47: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:31:47: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film la reine des neiges 2 est du genre un film d' animation , pour tous publics a partir de6 ans to tts.
-INFO   :: 15:32:00: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:32:00: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:32:00: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'je veux voir un film de guerre', 1)]
-DIAL   :: 15:32:00: root                                    Agent.py <continue_call>232 :  user input: [(u'je veux voir un film de guerre', 1)]
-DIAL   :: 15:32:00: root                                      Agent.py <_print_turn>576 :  Turn 4
-INFO   :: 15:32:00: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:32:00: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:32:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=guerre)', 1.0]]
-INFO   :: 15:32:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
-INFO   :: 15:32:00: root                                            SemI.py <decode>201 :  [('inform(genre=guerre,type=films)', 1)]
-INFO   :: 15:32:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=guerre,type=films)', 1)]
-INFO   :: 15:32:00: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=guerre,type=films)', 1)]
-DIAL   :: 15:32:00: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(name="none",genre="guerre",restriction="more6")
-DIAL   :: 15:32:00: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:32:00: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Désolé, je ne connais aucun film du genre un film de guerre ayant la restriction pour tous publics a partir de6 ans to tts.
-INFO   :: 15:32:13: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:32:13: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:32:13: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'je veux voir un film de guerre', 1)]
-DIAL   :: 15:32:13: root                                    Agent.py <continue_call>232 :  user input: [(u'je veux voir un film de guerre', 1)]
-DIAL   :: 15:32:13: root                                      Agent.py <_print_turn>576 :  Turn 5
-INFO   :: 15:32:13: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:32:13: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:32:13: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=guerre)', 1.0]]
-INFO   :: 15:32:13: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
-INFO   :: 15:32:13: root                                            SemI.py <decode>201 :  [('inform(genre=guerre,type=films)', 1)]
-INFO   :: 15:32:13: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=guerre,type=films)', 1)]
-INFO   :: 15:32:13: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=guerre,type=films)', 1)]
-DIAL   :: 15:32:13: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(name="none",genre="guerre",restriction="more6")
-DIAL   :: 15:32:13: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:32:13: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Désolé, je ne connais aucun film du genre un film de guerre ayant la restriction pour tous publics a partir de6 ans to tts.
-INFO   :: 15:32:27: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:32:27: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:32:27: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'aucune restriction', 1)]
-DIAL   :: 15:32:27: root                                    Agent.py <continue_call>232 :  user input: [(u'aucune restriction', 1)]
-DIAL   :: 15:32:27: root                                      Agent.py <_print_turn>576 :  Turn 6
-INFO   :: 15:32:27: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:32:27: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:32:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=none)', 1.0]]
-INFO   :: 15:32:27: root                                            SemI.py <decode>201 :  [('inform(restriction=none)', 1)]
-INFO   :: 15:32:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(restriction=none)', 1)]
-INFO   :: 15:32:27: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(restriction=none)', 1)]
-DIAL   :: 15:32:27: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="guerre",restriction="none",name="midway")
-DIAL   :: 15:32:27: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:32:27: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film midway est du genre un film de guerre , pas de restriction pour ce film to tts.
-INFO   :: 15:32:40: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:32:40: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:32:40: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"je veux voir un film d'aventure tout public", 1)]
-DIAL   :: 15:32:40: root                                    Agent.py <continue_call>232 :  user input: [(u"je veux voir un film d'aventure tout public", 1)]
-DIAL   :: 15:32:40: root                                      Agent.py <_print_turn>576 :  Turn 7
-INFO   :: 15:32:40: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:32:40: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:32:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
-INFO   :: 15:32:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=aventure)', 1.0]]
-INFO   :: 15:32:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
-INFO   :: 15:32:40: root                                            SemI.py <decode>201 :  [('inform(genre=aventure,restriction=forall,type=films)', 1)]
-INFO   :: 15:32:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=aventure,restriction=forall,type=films)', 1)]
-INFO   :: 15:32:40: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=aventure,restriction=forall,type=films)', 1)]
-DIAL   :: 15:32:40: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="aventure",restriction="forall",name="abominable")
-DIAL   :: 15:32:40: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:32:40: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est du genre un film d' aventure , pour tous publics to tts.
-INFO   :: 15:32:51: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:32:51: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:32:51: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"je veux voir un film d'aventure tout public", 1)]
-DIAL   :: 15:32:51: root                                    Agent.py <continue_call>232 :  user input: [(u"je veux voir un film d'aventure tout public", 1)]
-DIAL   :: 15:32:51: root                                      Agent.py <_print_turn>576 :  Turn 8
-INFO   :: 15:32:51: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:32:51: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:32:51: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
-INFO   :: 15:32:51: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=aventure)', 1.0]]
-INFO   :: 15:32:51: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
-INFO   :: 15:32:51: root                                            SemI.py <decode>201 :  [('inform(genre=aventure,restriction=forall,type=films)', 1)]
-INFO   :: 15:32:51: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=aventure,restriction=forall,type=films)', 1)]
-INFO   :: 15:32:51: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=aventure,restriction=forall,type=films)', 1)]
-DIAL   :: 15:32:51: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="aventure",restriction="forall",name="abominable")
-DIAL   :: 15:32:51: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:32:51: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est du genre un film d' aventure , pour tous publics to tts.
-INFO   :: 15:33:03: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
-INFO   :: 15:33:03: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5186263 with agent_id Smith1 
-INFO   :: 15:33:03: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'au revoir', 1)]
-DIAL   :: 15:33:03: root                                    Agent.py <continue_call>232 :  user input: [(u'au revoir', 1)]
-DIAL   :: 15:33:03: root                                      Agent.py <_print_turn>576 :  Turn 9
-INFO   :: 15:33:03: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
-INFO   :: 15:33:03: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
-INFO   :: 15:33:03: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['bye()', 1.0]]
-INFO   :: 15:33:03: root                                            SemI.py <decode>201 :  [('bye()', 1)]
-INFO   :: 15:33:03: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('bye()', 1)]
-INFO   :: 15:33:03: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('bye()', 1)]
-WARNING:: 15:33:03: root                               Agent.py <_check_USER_ending>664 :  Ignoring system act: bye() and saying goodbye as user has said bye
-DIAL   :: 15:33:03: root                                   Agent.py <_print_sys_act>592 :  Sys > bye()
-DIAL   :: 15:33:03: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
-INFO   :: 15:33:03: root                                 DialogueServer.py <do_POST>280 :  Agent Smith1 is ending dialogue
-INFO   :: 15:33:03: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Merci, au revoir!  Avez-vous bien obtenu toutes les informations dont vous aviez besoin? Répondez simplement par oui ou non, s'il vous plaît. to tts.
+INFO   :: 08:56:02: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/Films-rules.json
+INFO   :: 08:56:02: root                            FlatOntologyManager.py <_set_db>109 :  Loading database: ontology/ontologies/Films-dbase.db
+INFO   :: 08:56:02: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 08:56:02: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 08:56:02: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 08:56:02: root                                     DialogueServer.py <run>419 :  Server starting 10.120.11.47:8082 (level=info)
+INFO   :: 08:56:12: root                                       Agent.py <start_call>832 :  Agent Smith has been reactivated.
+DIAL   :: 08:56:12: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 08:56:12: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+DIAL   :: 08:56:12: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 08:56:12: root                                   Agent.py <_print_sys_act>592 :  Sys > hello()
+DIAL   :: 08:56:12: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:12: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid6161382 
+INFO   :: 08:56:12: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous? to tts.
+INFO   :: 08:56:15: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:15: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:15: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:15: root                                      Agent.py <_print_turn>576 :  Turn 1
+INFO   :: 08:56:15: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:15: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:15: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:15: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:15: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:15: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:15: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:15: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:15: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:15: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:15: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:15: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:15: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:15: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:15: root                                      Agent.py <_print_turn>576 :  Turn 2
+INFO   :: 08:56:15: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:15: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:16: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:16: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:16: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:16: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:16: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:21: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:21: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:21: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:21: root                                      Agent.py <_print_turn>576 :  Turn 3
+INFO   :: 08:56:21: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:21: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:21: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:21: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:21: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:21: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:21: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:21: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:21: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:21: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:21: root                                      Agent.py <_print_turn>576 :  Turn 4
+INFO   :: 08:56:21: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:21: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:21: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:21: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:21: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:21: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:21: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:26: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:26: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:26: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:26: root                                      Agent.py <_print_turn>576 :  Turn 5
+INFO   :: 08:56:26: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:26: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:26: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:26: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:26: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:26: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:26: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:26: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:26: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:26: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:26: root                                      Agent.py <_print_turn>576 :  Turn 6
+INFO   :: 08:56:26: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:26: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:26: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:26: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:26: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:26: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:26: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:26: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:31: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:31: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:31: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:31: root                                      Agent.py <_print_turn>576 :  Turn 7
+INFO   :: 08:56:31: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:31: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:31: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:31: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:31: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:31: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:31: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:31: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:31: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:31: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:31: root                                      Agent.py <_print_turn>576 :  Turn 8
+INFO   :: 08:56:31: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:31: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:31: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:31: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:31: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:31: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:31: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:31: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:37: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:37: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:37: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:37: root                                      Agent.py <_print_turn>576 :  Turn 9
+INFO   :: 08:56:37: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:37: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:37: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:37: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:37: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:37: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:37: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:37: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:37: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:37: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:37: root                                      Agent.py <_print_turn>576 :  Turn 10
+INFO   :: 08:56:37: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:37: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:37: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:37: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:37: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:37: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:37: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:42: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:42: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:42: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:42: root                                      Agent.py <_print_turn>576 :  Turn 11
+INFO   :: 08:56:42: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:42: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:42: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:42: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:42: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:42: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:42: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:42: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:42: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:42: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:42: root                                      Agent.py <_print_turn>576 :  Turn 12
+INFO   :: 08:56:42: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:42: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:42: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:42: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:42: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:42: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:42: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:42: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:47: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:47: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:47: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:47: root                                      Agent.py <_print_turn>576 :  Turn 13
+INFO   :: 08:56:47: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:47: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:47: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:47: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:47: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:47: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:47: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:47: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid6161382 with agent_id Smith 
+INFO   :: 08:56:47: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:47: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:47: root                                      Agent.py <_print_turn>576 :  Turn 14
+INFO   :: 08:56:47: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:47: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:47: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:47: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:47: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:47: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:47: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:47: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:52: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
+WARNING:: 08:56:52: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 08:56:52: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 08:56:52: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:52: root                                        Agent.py <new_agent>935 :  Agent Smith1 has been created.
+DIAL   :: 08:56:52: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 08:56:52: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+DIAL   :: 08:56:52: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 08:56:52: root                                   Agent.py <_print_sys_act>592 :  Sys > hello()
+DIAL   :: 08:56:52: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:52: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid8092139 
+INFO   :: 08:56:52: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous? to tts.
+INFO   :: 08:56:55: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:56:55: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:55: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:55: root                                      Agent.py <_print_turn>576 :  Turn 1
+INFO   :: 08:56:55: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:55: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:55: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:55: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:55: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:55: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:56:55: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:56:55: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:55: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:56:55: root                                      Agent.py <_print_turn>576 :  Turn 2
+INFO   :: 08:56:55: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:56:55: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:56:55: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:55: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:56:55: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:56:55: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:56:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:56:55: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:00: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:00: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:00: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:00: root                                      Agent.py <_print_turn>576 :  Turn 3
+INFO   :: 08:57:00: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:00: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:00: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:00: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:00: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:00: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:00: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:00: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:00: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:00: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:00: root                                      Agent.py <_print_turn>576 :  Turn 4
+INFO   :: 08:57:00: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:00: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:00: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:00: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:00: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:00: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:00: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:06: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:06: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:06: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:06: root                                      Agent.py <_print_turn>576 :  Turn 5
+INFO   :: 08:57:06: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:06: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:06: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:06: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:06: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:06: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:06: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:06: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:06: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:06: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:06: root                                      Agent.py <_print_turn>576 :  Turn 6
+INFO   :: 08:57:06: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:06: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:06: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:06: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:06: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:06: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:06: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:06: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:11: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:11: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:11: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:11: root                                      Agent.py <_print_turn>576 :  Turn 7
+INFO   :: 08:57:11: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:11: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:11: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:11: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:11: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:11: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:11: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:11: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:11: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:11: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:11: root                                      Agent.py <_print_turn>576 :  Turn 8
+INFO   :: 08:57:11: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:11: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:11: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:11: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:11: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:11: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:11: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:11: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:16: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:16: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:16: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:16: root                                      Agent.py <_print_turn>576 :  Turn 9
+INFO   :: 08:57:16: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:16: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:16: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:16: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:16: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:16: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:16: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:16: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:16: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:16: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:16: root                                      Agent.py <_print_turn>576 :  Turn 10
+INFO   :: 08:57:16: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:16: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:16: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:16: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:16: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:16: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:16: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:21: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:21: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:21: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:21: root                                      Agent.py <_print_turn>576 :  Turn 11
+INFO   :: 08:57:21: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:21: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:21: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:21: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:21: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:21: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:21: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:21: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:21: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:21: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:21: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:21: root                                      Agent.py <_print_turn>576 :  Turn 12
+INFO   :: 08:57:21: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:21: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:22: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:22: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:22: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:22: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:22: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:22: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:22: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:22: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:22: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:27: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:27: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:27: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:27: root                                      Agent.py <_print_turn>576 :  Turn 13
+INFO   :: 08:57:27: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:27: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:27: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:27: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:27: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:27: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:27: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:27: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:27: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:27: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:27: root                                      Agent.py <_print_turn>576 :  Turn 14
+INFO   :: 08:57:27: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:27: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:27: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:27: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:27: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:27: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:27: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:27: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:32: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:32: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:32: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:32: root                                      Agent.py <_print_turn>576 :  Turn 15
+INFO   :: 08:57:32: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:32: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:32: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:32: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:32: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:32: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:32: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:32: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:32: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:32: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:32: root                                      Agent.py <_print_turn>576 :  Turn 16
+INFO   :: 08:57:32: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:32: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:32: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:32: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:32: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:32: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:32: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:32: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:37: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:37: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:37: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:37: root                                      Agent.py <_print_turn>576 :  Turn 17
+INFO   :: 08:57:37: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:37: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:37: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:37: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:37: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:37: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:37: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:37: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:37: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:37: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:37: root                                      Agent.py <_print_turn>576 :  Turn 18
+INFO   :: 08:57:37: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:37: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:37: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:37: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:37: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:37: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:37: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:37: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:43: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:43: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:43: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:43: root                                      Agent.py <_print_turn>576 :  Turn 19
+INFO   :: 08:57:43: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:43: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:43: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:43: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:43: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:43: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:43: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:43: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:43: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:43: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:43: root                                      Agent.py <_print_turn>576 :  Turn 20
+INFO   :: 08:57:43: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:43: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:43: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:43: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:43: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:43: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:43: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:43: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:48: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:48: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:48: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:48: root                                      Agent.py <_print_turn>576 :  Turn 21
+INFO   :: 08:57:48: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:48: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:48: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:48: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:48: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:48: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:48: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:48: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:48: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:48: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:48: root                                      Agent.py <_print_turn>576 :  Turn 22
+INFO   :: 08:57:48: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:48: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:48: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:48: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:48: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:48: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:48: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:53: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:53: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:53: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:53: root                                      Agent.py <_print_turn>576 :  Turn 23
+INFO   :: 08:57:53: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:53: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:53: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:53: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:53: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:53: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:53: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:53: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:53: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:53: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:53: root                                      Agent.py <_print_turn>576 :  Turn 24
+INFO   :: 08:57:53: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:53: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:53: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:53: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:53: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:53: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:53: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:53: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:58: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:58: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:58: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:58: root                                      Agent.py <_print_turn>576 :  Turn 25
+INFO   :: 08:57:58: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 08:57:58: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 08:57:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 08:57:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 08:57:59: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 08:57:59: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:59: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 08:57:59: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 08:57:59: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 08:57:59: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 08:57:59: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 08:57:59: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:57:59: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:59: root                                    Agent.py <continue_call>232 :  user input: [(u"Je veux voir un film d'animation tout public", 1)]
+DIAL   :: 08:57:59: root                                      Agent.py <_print_turn>576 :  Turn 26
+DIAL   :: 08:57:59: root                                  Agent.py <_check_maxTurns>733 :  Ending dialog due to MAX TURNS being reached: 26
+INFO   :: 08:57:59: root                                 DialogueServer.py <do_POST>280 :  Agent Smith1 is ending dialogue
+INFO   :: 08:57:59: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: The dialogue has finshed due to too many turns  Avez-vous bien obtenu toutes les informations dont vous aviez besoin? Répondez simplement par oui ou non, s'il vous plaît. to tts.
+INFO   :: 08:58:07: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid8092139 with agent_id Smith1 
+INFO   :: 08:58:07: root                                 DialogueServer.py <do_POST>280 :  Agent Smith1 is ending dialogue
+WARNING:: 08:58:07: root                               DialogueServer.py <_get_DTMF>540 :  No dtmf entry from user/voiceserver
+INFO   :: 08:58:07: root                                 DialogueServer.py <do_POST>313 :  Subjective feedback -1
+INFO   :: 08:58:07: root                                 DialogueServer.py <do_POST>331 :  Token for camdial feedback form: 3440
+INFO   :: 08:58:07: root                                         Agent.py <end_call>874 :  Ending agents Smith1 call
+DIAL   :: 08:58:07: root                               EvaluationManager.py <_prstr>177 :  Evaluation of domain: Films --evaluated by: objective success evaluator
+DIAL   :: 08:58:07: root                               EvaluationManager.py <_prstr>177 :  rew = -25, suc = 0, turn = 25
+INFO   :: 08:58:07: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bien reçu! Au revoir et bonne journée! to tts.
+ERROR  :: 08:58:07: root                                   Agent.py <retrieve_agent>905 :  Attempted to get an agent for unknown session sessid8092139
+WARNING:: 08:58:07: root                                 DialogueServer.py <do_POST>224 :  Tried to get an agent for the non-existent session id: sessid8092139
+INFO   :: 08:58:07: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: DIALOGUE_SERVER_ERROR:NO_SUCH_SESSION to tts.

@@ -12,6 +12,13 @@
  <contents>
   <behaviorContent path="behavior_1">
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="mooving">
+   <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
  </contents>

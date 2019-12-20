@@ -161,7 +161,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
 
         self.general_INFORM = ur"(?:(?:j[e']|on)\s*(?:(?:v(?:eu|oudrai)[stx]?|pr(e|é)f(e|è)re(?:rai[stx]?|s|)|(?:aime(?:rai[stx]?|s|)))\s*(?:biens?|)|(?:ai|aurai[stx]?)\s*(?:biens?|)\s*(?:besoin|envie)(?:\s*d[e'])?)\s*(?:que\s*(c|\xc3\xa7)e?l?[ae]\s*so(?:i[stx]?|yen?t?s?)|quel(?:les?\s*)?que\s*chose\s*d['e]|une?\s*(?:truc|machin)s?|))"
         
-        self.contextual_NOT = ur"(?:n(?:o(?:n|pe)|an)|(?:absolument|surtout|certainement)\s*pas?|pas?\s*du\s*tou[stx]?)"
+        self.contextual_NOT = ur"(?:n(?:o(?:n|pe)|an)|(?:absolument|surtout|certainement)\s*pas?|pas?\s*du\s*tou[stx]?|pas\s*celui-?\s*l[aà]|un\s*autres?)"
         self.contextual_YES = ur"(?:oua?is?|ye[ps]|tou[stx]\s*(a|à)\s*fai[st](?:\s*le\s*f(?:ai|eu?)san[st])?|absolument)"
         self.contextual_DONTCARE = (ur"()(?:(?:(?:je\s*)?m|(?:on\s*)?s)'?en?\s*(?:f(?:iche|ou[st])|tape|cogne|branle|bat\s*les\s*couilles)\s*(?:d[ue]s?)?" +
             ur"|(?:c'?e(?:st?|ts?)\s*)?pas?\s*graves?" +
@@ -242,8 +242,9 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             # FIXME: write domain dependent expressions to detext request acts
             self.request_regex[slot] = self.rREQUEST+ur"\s*"+self.slot_vocab[slot]
             self.request_regex[slot] += "|"+self.IT+ur"\s*"+self.slot_vocab[slot]
-
-        self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e))"
+            
+            # To remove for no synopsis
+        self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
 
     def _set_inform_regex(self):
         """
