@@ -1,0 +1,39 @@
+------------------------------
+hello()
+hello()
+Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous?
+10.120.10.167 - - [20/Dec/2019 11:16:39] "POST /newcall? HTTP/1.1" 200 -
+------------------------------
+hello()
+hello()
+Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous?
+10.120.10.167 - - [20/Dec/2019 11:17:39] "POST /newcall? HTTP/1.1" 200 -
+------------------------------
+je veux voir un film d'animation tout public
+10.120.10.167 - - [20/Dec/2019 11:17:52] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(genre="animation",restriction="forall",name="abominable")
+inform(genre="animation",restriction="forall",name="abominable")
+Le film abominable est un film d' animation , pour tous publics
+10.120.10.167 - - [20/Dec/2019 11:17:52] "POST /next? HTTP/1.1" 200 -
+------------------------------
+avoir le synopsis
+10.120.10.167 - - [20/Dec/2019 11:18:04] "POST /google? HTTP/1.1" 200 -
+------------------------------
+inform(name="abominable",synopsis="tout commence sur le toit d'un immeuble a shanghai, avec l'improbable rencontre d'une jeune adolescente, l'intrepide yi, avec un jeune yeti. la jeune fille et ses amis jin et peng vont tenter de ramener chez lui celui qu'ils appellent desormais everest, leur nouvel et etrange ami, afin qu'il puisse retrouver sa famille sur le toit du monde. mais pour accomplir cette mission, notre trio de choc va devoir mener une course effrenee contre burnish, un homme puissant qui a bien l'intention de capturer la creature car elle ressemble comme deux gouttes d'eau a celle qu'il avait fortuitement rencontree quand il etait enfant.")
+inform(name="abominable",synopsis="tout commence sur le toit d'un immeuble a shanghai, avec l'improbable rencontre d'une jeune adolescente, l'intrepide yi, avec un jeune yeti. la jeune fille et ses amis jin et peng vont tenter de ramener chez lui celui qu'ils appellent desormais everest, leur nouvel et etrange ami, afin qu'il puisse retrouver sa famille sur le toit du monde. mais pour accomplir cette mission, notre trio de choc va devoir mener une course effrenee contre burnish, un homme puissant qui a bien l'intention de capturer la creature car elle ressemble comme deux gouttes d'eau a celle qu'il avait fortuitement rencontree quand il etait enfant.")
+Le synopsis du film abominable est: tout commence sur le toit d'un immeuble a shanghai, avec l'improbable rencontre d'une jeune adolescente, l'intrepide yi, avec un jeune yeti. la jeune fille et ses amis jin et peng vont tenter de ramener chez lui celui qu'ils appellent desormais everest, leur nouvel et etrange ami, afin qu'il puisse retrouver sa famille sur le toit du monde. mais pour accomplir cette mission, notre trio de choc va devoir mener une course effrenee contre burnish, un homme puissant qui a bien l'intention de capturer la creature car elle ressemble comme deux gouttes d'eau a celle qu'il avait fortuitement rencontree quand il etait enfant.
+10.120.10.167 - - [20/Dec/2019 11:18:04] "POST /next? HTTP/1.1" 200 -
+------------------------------
+merci
+10.120.10.167 - - [20/Dec/2019 11:18:48] "POST /google? HTTP/1.1" 200 -
+------------------------------
+bye()
+bye()
+Merci beaucoup, au revoir et à bientot!  Avez-vous bien obtenu toutes les informations dont vous aviez besoin? Répondez simplement par oui ou non, s'il vous plaît.
+10.120.10.167 - - [20/Dec/2019 11:18:49] "POST /next? HTTP/1.1" 200 -
+------------------------------
+
+10.120.10.167 - - [20/Dec/2019 11:19:05] "POST /google? HTTP/1.1" 200 -
+------------------------------
+Bien reçu! Au revoir et bonne journée!

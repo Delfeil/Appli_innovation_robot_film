@@ -1,21 +1,40 @@
-DIAL   :: 10:01:34: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies []: ***
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
-WARNING:: 10:01:34: root                                       GPLib.py <readPolicy>745 :  inpolicyfile:auto does not exist
-WARNING:: 10:01:34: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
-WARNING:: 10:01:34: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
-DIAL   :: 10:01:34: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
-DIAL   :: 10:01:34: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
-DIAL   :: 10:01:34: root                                   Agent.py <_print_sys_act>594 :  | Sys > hello()
-DIAL   :: 10:01:34: root                                     Agent.py <_agents_semo>679 :  Domain with CONTROL: KUSTOM
+DIAL   :: 14:26:11: root                                   pydial.py <chat_command>1126 :  *** Chatting with policies []: ***
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:11: root                                      RegexSemI.py <__init__>83 :  No rTYPE regex has been set.
+WARNING:: 14:26:12: root                                       GPLib.py <readPolicy>745 :  inpolicyfile:auto does not exist
+WARNING:: 14:26:12: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+WARNING:: 14:26:12: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 14:26:12: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+DIAL   :: 14:26:12: root                                      Agent.py <_print_turn>579 :  ** Turn 0 **
+DIAL   :: 14:26:12: root                                   Agent.py <_print_sys_act>595 :  | Sys > hello()
+DIAL   :: 14:26:12: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+DIAL   :: 14:26:23: root                                    Agent.py <continue_call>232 :  user input: [('boobs', 1.0)]
+DIAL   :: 14:26:23: root                                      Agent.py <_print_turn>579 :  ** Turn 1 **
+DIAL   :: 14:26:23: root                                  SummaryAction.py <Convert>126 :  system summary act: request_kind.
+DIAL   :: 14:26:23: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(kind)
+DIAL   :: 14:26:23: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+WARNING:: 14:26:23: root                              RuleSemOMethods.py <transform>570 :  While transforming request(kind), there were missing items.
+DIAL   :: 14:26:28: root                                    Agent.py <continue_call>232 :  user input: [('booooobs', 1.0)]
+DIAL   :: 14:26:28: root                                      Agent.py <_print_turn>579 :  ** Turn 2 **
+DIAL   :: 14:26:28: root                                  SummaryAction.py <Convert>126 :  system summary act: request_sweetness.
+DIAL   :: 14:26:28: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(sweetness)
+DIAL   :: 14:26:28: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+WARNING:: 14:26:28: root                              RuleSemOMethods.py <transform>570 :  While transforming request(sweetness), there were missing items.
+DIAL   :: 14:26:34: root                                    Agent.py <continue_call>232 :  user input: [('bite', 1.0)]
+DIAL   :: 14:26:34: root                                      Agent.py <_print_turn>579 :  ** Turn 3 **
+DIAL   :: 14:26:34: root                                  SummaryAction.py <Convert>126 :  system summary act: request_meat.
+DIAL   :: 14:26:34: root                                   Agent.py <_print_sys_act>595 :  | Sys > request(meat)
+DIAL   :: 14:26:34: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: KUSTOM
+WARNING:: 14:26:34: root                              RuleSemOMethods.py <transform>570 :  While transforming request(meat), there were missing items.

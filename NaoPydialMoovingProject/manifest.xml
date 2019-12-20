@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="naopydial-dd3cc6" version="0.0.0">
+<package version="0.0.0" uuid="naopydial-dd3cc6">
  <names>
   <name lang="en_US">NaoPydial</name>
  </names>
@@ -12,9 +12,6 @@
  <contents>
   <behaviorContent path="behavior_1">
    <nature>solitary</nature>
-   <triggerSentences/>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="mooving">
@@ -28,8 +25,6 @@
     <sentence lang="en_US">help</sentence>
     <sentence lang="en_US">halp</sentence>
    </triggerSentences>
-   <loadingResponses/>
-   <autonomous/>
    <permissions/>
   </behaviorContent>
  </contents>

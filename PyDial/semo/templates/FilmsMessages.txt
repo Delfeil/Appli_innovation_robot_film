@@ -59,6 +59,7 @@
 	more6: "ayant la restriction tous publics a partir de 6 ans";
 	none: "n'ayant pas de restriction";
 	sensible: " ayant la restriction: des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs";
+	dontcare: " ayant n'importe quelle restriction";
 }
 
 %restriction_simple($restriction){

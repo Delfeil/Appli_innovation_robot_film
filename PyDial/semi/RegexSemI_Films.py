@@ -244,7 +244,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             self.request_regex[slot] += "|"+self.IT+ur"\s*"+self.slot_vocab[slot]
             
             # To remove for no synopsis
-        self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
+        # self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
 
     def _set_inform_regex(self):
         """

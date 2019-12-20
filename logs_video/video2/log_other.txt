@@ -1,0 +1,82 @@
+WARNING:: 11:16:38: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 11:16:38: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 11:16:38: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 11:16:38: root                                        Agent.py <new_agent>935 :  Agent Smith4 has been created.
+DIAL   :: 11:16:38: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 11:16:38: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+DIAL   :: 11:16:38: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 11:16:38: root                                   Agent.py <_print_sys_act>592 :  Sys > hello()
+DIAL   :: 11:16:38: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 11:16:39: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid1069399 
+INFO   :: 11:16:39: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous? to tts.
+INFO   :: 11:17:39: root                                    Agent.py <_hand_control>453 :  Launching Dialogue Manager for domain: Films
+WARNING:: 11:17:39: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+WARNING:: 11:17:39: root                            Agent.py <_logical_requirements>405 :  Enforcing hello() at first turn in singledomain system
+INFO   :: 11:17:39: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 11:17:39: root                                        Agent.py <new_agent>935 :  Agent Smith5 has been created.
+DIAL   :: 11:17:39: root                                       Agent.py <start_call>170 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 11:17:39: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+DIAL   :: 11:17:39: root                                      Agent.py <_print_turn>576 :  Turn 0
+DIAL   :: 11:17:39: root                                   Agent.py <_print_sys_act>592 :  Sys > hello()
+DIAL   :: 11:17:39: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 11:17:39: root                                 DialogueServer.py <do_POST>208 :  A new call has started. Session: sessid5461021 
+INFO   :: 11:17:39: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bonjour et bienvenue! Je suis votre assistant de recherche de films! Que recherchez-vous? to tts.
+INFO   :: 11:17:52: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
+INFO   :: 11:17:52: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5461021 with agent_id Smith5 
+INFO   :: 11:17:52: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u"je veux voir un film d'animation tout public", 1)]
+DIAL   :: 11:17:52: root                                    Agent.py <continue_call>232 :  user input: [(u"je veux voir un film d'animation tout public", 1)]
+DIAL   :: 11:17:52: root                                      Agent.py <_print_turn>576 :  Turn 1
+INFO   :: 11:17:52: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 11:17:52: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 11:17:52: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(restriction=forall)', 1.0]]
+INFO   :: 11:17:52: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(genre=animation)', 1.0]]
+INFO   :: 11:17:52: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=films)', 1.0]]
+INFO   :: 11:17:52: root                                            SemI.py <decode>201 :  [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 11:17:52: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(genre=animation,restriction=forall,type=films)', 1)]
+INFO   :: 11:17:52: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(genre=animation,restriction=forall,type=films)', 1)]
+DIAL   :: 11:17:52: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(genre="animation",restriction="forall",name="abominable")
+DIAL   :: 11:17:52: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 11:17:52: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le film abominable est un film d' animation , pour tous publics to tts.
+INFO   :: 11:18:04: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
+INFO   :: 11:18:04: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5461021 with agent_id Smith5 
+INFO   :: 11:18:04: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'avoir le synopsis', 1)]
+DIAL   :: 11:18:04: root                                    Agent.py <continue_call>232 :  user input: [(u'avoir le synopsis', 1)]
+DIAL   :: 11:18:04: root                                      Agent.py <_print_turn>576 :  Turn 2
+INFO   :: 11:18:04: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 11:18:04: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 11:18:04: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'request(synopsis)', 1.0]]
+INFO   :: 11:18:04: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['negate()', 1.0]]
+WARNING:: 11:18:04: root                       SemIContextUtils.py <_convert_yes_no>161 :  affirm or negate in response to currently unhandled system_act:
+ inform(genre="animation",restriction="forall",name="abominable")
+INFO   :: 11:18:04: root                                            SemI.py <decode>201 :  [('negate()|request(synopsis)', 1)]
+INFO   :: 11:18:04: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('negate()|request(synopsis)', 1)]
+INFO   :: 11:18:04: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('negate()|request(synopsis)', 1)]
+DIAL   :: 11:18:04: root                                   Agent.py <_print_sys_act>592 :  Sys > inform(name="abominable",synopsis="tout commence sur le toit d'un immeuble a shanghai, avec l'improbable rencontre d'une jeune adolescente, l'intrepide yi, avec un jeune yeti. la jeune fille et ses amis jin et peng vont tenter de ramener chez lui celui qu'ils appellent desormais everest, leur nouvel et etrange ami, afin qu'il puisse retrouver sa famille sur le toit du monde. mais pour accomplir cette mission, notre trio de choc va devoir mener une course effrenee contre burnish, un homme puissant qui a bien l'intention de capturer la creature car elle ressemble comme deux gouttes d'eau a celle qu'il avait fortuitement rencontree quand il etait enfant.")
+DIAL   :: 11:18:04: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 11:18:04: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Le synopsis du film abominable est: tout commence sur le toit d'un immeuble a shanghai, avec l'improbable rencontre d'une jeune adolescente, l'intrepide yi, avec un jeune yeti. la jeune fille et ses amis jin et peng vont tenter de ramener chez lui celui qu'ils appellent desormais everest, leur nouvel et etrange ami, afin qu'il puisse retrouver sa famille sur le toit du monde. mais pour accomplir cette mission, notre trio de choc va devoir mener une course effrenee contre burnish, un homme puissant qui a bien l'intention de capturer la creature car elle ressemble comme deux gouttes d'eau a celle qu'il avait fortuitement rencontree quand il etait enfant. to tts.
+INFO   :: 11:18:48: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
+INFO   :: 11:18:48: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5461021 with agent_id Smith5 
+INFO   :: 11:18:48: root                                 DialogueServer.py <do_POST>243 :  ASR: [(u'merci', 1)]
+DIAL   :: 11:18:48: root                                    Agent.py <continue_call>232 :  user input: [(u'merci', 1)]
+DIAL   :: 11:18:48: root                                      Agent.py <_print_turn>576 :  Turn 3
+INFO   :: 11:18:48: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: Films
+INFO   :: 11:18:48: root                                    Agent.py <_hand_control>470 :  Domain Films is both already running and has control
+INFO   :: 11:18:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['bye()', 1.0]]
+INFO   :: 11:18:48: root                                            SemI.py <decode>201 :  [('bye()', 1)]
+INFO   :: 11:18:48: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('bye()', 1)]
+INFO   :: 11:18:48: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('bye()', 1)]
+WARNING:: 11:18:48: root                               Agent.py <_check_USER_ending>664 :  Ignoring system act: bye() and saying goodbye as user has said bye
+DIAL   :: 11:18:48: root                                   Agent.py <_print_sys_act>592 :  Sys > bye()
+DIAL   :: 11:18:48: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: Films
+INFO   :: 11:18:49: root                                 DialogueServer.py <do_POST>280 :  Agent Smith5 is ending dialogue
+INFO   :: 11:18:49: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Merci beaucoup, au revoir et à bientot!  Avez-vous bien obtenu toutes les informations dont vous aviez besoin? Répondez simplement par oui ou non, s'il vous plaît. to tts.
+INFO   :: 11:19:05: root                                 DialogueServer.py <do_POST>345 :  Sending prompt:  to tts.
+INFO   :: 11:19:06: root                                 DialogueServer.py <do_POST>227 :  Continuing session: sessid5461021 with agent_id Smith5 
+INFO   :: 11:19:06: root                                 DialogueServer.py <do_POST>280 :  Agent Smith5 is ending dialogue
+WARNING:: 11:19:06: root                               DialogueServer.py <_get_DTMF>540 :  No dtmf entry from user/voiceserver
+INFO   :: 11:19:06: root                                 DialogueServer.py <do_POST>313 :  Subjective feedback -1
+INFO   :: 11:19:06: root                                 DialogueServer.py <do_POST>331 :  Token for camdial feedback form: 6434
+INFO   :: 11:19:06: root                                         Agent.py <end_call>874 :  Ending agents Smith5 call
+DIAL   :: 11:19:06: root                               EvaluationManager.py <_prstr>177 :  Evaluation of domain: Films --evaluated by: objective success evaluator
+DIAL   :: 11:19:06: root                               EvaluationManager.py <_prstr>177 :  rew = -3, suc = 0, turn = 3
+INFO   :: 11:19:06: root                                 DialogueServer.py <do_POST>345 :  Sending prompt: Bien reçu! Au revoir et bonne journée! to tts.
