@@ -516,8 +516,6 @@ class BasicTemplateGenerator(object):
         :returns: (str) natural language 
         '''
         input_utt = DiaAct.DiaAct(sysAct)
-        print sysAct
-        print input_utt 
         # FIXME hack to transform system acts with slot op "!=" to "=" and add slot-value pair other=true which is needed by NLG rule base
         # assumption: "!=" only appears if there are no further alternatives, ie, inform(name=none, name!=place!, ...)
         negFound = False

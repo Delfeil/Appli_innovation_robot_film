@@ -42,8 +42,7 @@
 	historique: "historique";
 	romance: "romance";
 	thriller: "thriller";
-	epouvantehorreur: "épouvante-horreur";
-	dontcare: "peux importe";
+	epouvantehorreur: "épouvante-horreur"; 
 }
 
 %restriction_adj($restriction){
@@ -89,14 +88,6 @@ bye(topictrackeruserended): "Désolé de ne pas avoir pu vous aider. Au revoir."
 request(task) : "Que voulez-vous?";
 request(genre) : "Quel genre de film voulez-vous voir?";
 request(restriction) : "Quel restriction de film voulez-vous avoir?";
-request(synopsis) : "Voulez-vous avoir plus d'information sur le scenario?";
-
-request(genre, option=$X) : "Quel genre de film voulez-vous voir? Par example, %genre_simple($X)?";
-request(restriction, option=$X) : "Quel restriction de film voulez-vous avoir? Par example, %genre_simple($X)?";
-
-request(genre, option=$X, option=$Y) : "Quel genre de film voulez-vous voir? Par example, %genre_simple($X) ou %genre_simple($Y)";
-request(restriction, option=$X, option=$Y) : "Quel restriction de film voulez-vous avoir? Par example, %genre_simple($X) ou , ou %genre_simple($Y)";
-
 request(genre=$V, name=$U) : "Voulez-vous plus d'information sur le film $U?";
 
 # Explicit Confirmations

@@ -46,6 +46,9 @@ import PolicyUtils
 import SummaryUtils
 from utils import ContextLogger, Settings
 from ontology import Ontology
+
+import random
+
 logger = ContextLogger.getLogger('')
 
 MAX_NUM_ACCEPTED = 10
@@ -64,6 +67,8 @@ class HDCPolicy(Policy.Policy):
         """
         super(HDCPolicy, self).__init__(domainString) # inherited from Policy.Policy() is self.domainString
         
+        self.request_slots_count = {}
+
         self.use_confreq = False
         
         if Settings.config.has_option('policy', 'useconfreq'):
@@ -221,15 +226,29 @@ class HDCPolicy(Policy.Policy):
     def _getRequest(self, belief, array_slot_summary):
         '''
         '''
-
+        # TODO: DELF: MODIF TO ADD OPTIONS FOR REQUESTS
+            # Ajouter un compteur de memes tentatives (x*demandes genre)
+                # si 0 -> request(genre)
+                # si 1 -> request(genre, option="val1")
+                # si >1 -> request(genre, option="val1", option="val2")
+        # print("_getRequest", array_slot_summary)
+        # print('genre' in self.request_slots_count)
         # This is added for confreq.
         need_grounding = SummaryUtils.getTopBeliefs(belief, 0.8, domainString=self.domainString)
 
         for slot in Ontology.global_ontology.get_sorted_system_requestable_slots(self.domainString):
+            # print(slot)
+            if slot not in self.request_slots_count:
+                self.request_slots_count[slot] = -1
+            # print(self.request_slots_count)
+
+            
             summary = array_slot_summary[slot]
             (_, topprob) = summary['TOPHYPS'][0]
             #(_, secprob) = summary['TOPHYPS'][1]
-
+            slot_elements = summary['TOPHYPS']
+            # print("for_loop", slot, slot_elements)
+            # print(summary['TOPHYPS'][0][0])
             if topprob < 0.8:
                 # Add implicit confirmation (for confreq.)
                 grounding_slots = copy.deepcopy(need_grounding)
@@ -242,9 +261,21 @@ class HDCPolicy(Policy.Policy):
                         (value, _) = grounding_slots[grounding_slot]
                         #(value, prob) = grounding_slots[grounding_slot]
                         grounding_result.append('%s="%s"' % (grounding_slot, value))
-
+                # print(grounding_result, slot, self.use_confreq)
                 if not grounding_result or not self.use_confreq:
-                    return True, 'request(%s)' % slot
+                    self.request_slots_count[slot] +=1
+                    
+                    examples = random.sample(slot_elements, 2)
+                    # print("randoms", examples[0][0])
+
+                    if self.request_slots_count[slot] == 0:
+                        return True, 'request(%s)' % slot
+                    elif self.request_slots_count[slot] == 1:
+                        return True, 'request(%s, option=%s)' % (slot, examples[0][0])
+                    else:
+                        return True, 'request(%s, option=%s, option=%s)' % (slot, examples[0][0], examples[1][0])
+
+
                 else:
                     return True, 'confreq(' + ','.join(grounding_result) + ',%s)' % slot
 

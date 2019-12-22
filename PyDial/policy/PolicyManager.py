@@ -110,7 +110,6 @@ class PolicyManager(object):
             systemAct = self.committees[dstring].act_on(state=state, domainInControl=dstring)
         else:
             systemAct = self.domainPolicies[dstring].act_on(state=state)
-
         return systemAct
     
     def train(self, training_vec = None):

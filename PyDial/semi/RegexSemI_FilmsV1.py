@@ -194,8 +194,8 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         # self.contextual_SCIENCE_FICTION = ur"(science(-|\s*)fiction?s|futur(ist(e|ique))?s|espace?s|fictif?s|super\s*h(é|e)ro?s|marvel?s)"
 
         ####Restriction####
-        self.contextual_MORE6 = ur"(?:((plus)?\s*(de)?\s*(6|six)\s*ans?)|moins?\s*de\s*(10|dix)\s*ans?)" #OK
-        self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\s*ans?)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\s*ans?))"
+        self.contextual_MORE6 = ur"(?:((plus)?\s*(de)?\s*(6|six)\sans))" #OK
+        self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\sans)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\sans))"
         self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?))" #OK
         self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans\s*(restriction|limites)?|non|aucunes?)"
         self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*(de)?\s*(18|dix-?\s*huit|16|seize)\s*(ans?)?|sensibles?)"
@@ -244,8 +244,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             self.request_regex[slot] += "|"+self.IT+ur"\s*"+self.slot_vocab[slot]
             
             # To remove for no synopsis
-        self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
-        self.request_regex["genre"] = ur"(quels sont les genres)"
+        # self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
 
     def _set_inform_regex(self):
         """
