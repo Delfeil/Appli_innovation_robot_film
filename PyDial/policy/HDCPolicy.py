@@ -226,11 +226,6 @@ class HDCPolicy(Policy.Policy):
     def _getRequest(self, belief, array_slot_summary):
         '''
         '''
-        # TODO: DELF: MODIF TO ADD OPTIONS FOR REQUESTS
-            # Ajouter un compteur de memes tentatives (x*demandes genre)
-                # si 0 -> request(genre)
-                # si 1 -> request(genre, option="val1")
-                # si >1 -> request(genre, option="val1", option="val2")
         # print("_getRequest", array_slot_summary)
         # print('genre' in self.request_slots_count)
         # This is added for confreq.
@@ -268,15 +263,15 @@ class HDCPolicy(Policy.Policy):
                     examples = random.sample(slot_elements, 2)
                     # print("randoms", examples[0][0])
                     # -------V1--------
-                    return True, 'request(%s)' % slot
+                    # return True, 'request(%s)' % slot
 
                     # -------V2--------
-                    # if self.request_slots_count[slot] == 0:
-                    #     return True, 'request(%s)' % slot
-                    # elif self.request_slots_count[slot] == 1:
-                    #     return True, 'request(%s, option=%s)' % (slot, examples[0][0])
-                    # else:
-                    #     return True, 'request(%s, option=%s, option=%s)' % (slot, examples[0][0], examples[1][0])
+                    if self.request_slots_count[slot] == 0:
+                        return True, 'request(%s)' % slot
+                    elif self.request_slots_count[slot] == 1:
+                        return True, 'request(%s, option=%s)' % (slot, examples[0][0])
+                    else:
+                        return True, 'request(%s, option=%s, option=%s)' % (slot, examples[0][0], examples[1][0])
 
 
                 else:

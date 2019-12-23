@@ -5,7 +5,9 @@ create table Films (
 	release date NULL,
 	restriction VARCHAR(35) NULL,
 	synopsis VARCHAR(128) NULL,
-	genre VARCHAR(35) NULL
+	genre VARCHAR(35) NULL,
+	acteurs VARCHAR(128) NULL,
+	realisateurs VARCHAR(128)
 );
 
 
@@ -21,7 +23,7 @@ attach 'genres.db' as genres;
 
 BEGIN;
 
-INSERT INTO Films(name, duration, release, restriction, synopsis, genre) select f.name, f.duration, f.release, f.restriction, f.synopsis, g.genre
+INSERT INTO Films(name, duration, release, restriction, synopsis, genre, acteurs, realisateurs) select f.name, f.duration, f.release, f.restriction, f.synopsis, g.genre, f.acteurs, f.realisateurs
 from films_only f
 	JOIN relation_genres_films.relation_genres_films r ON r.id_film = f.id
 	JOIN genres g ON r.id_genre = g.id;
