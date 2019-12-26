@@ -8,7 +8,7 @@ string_to_test = sys.argv[1]
 # des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs
 
 
-regex = ur"(((combien\s*de\s*temps?\s*)?(c|\xc3\xa7)a)?\s*dur(e|é)e?(\s*combien\s*de\s*temps?)?|c'est?\s*long)"
+regex = ur"(comm?(e|é)dies?|drole|comm?iques?|((qui)?\s*fai[st]\s*(moi)?|je\s*veux?)\s*rire)"
 
 # regex = ur"n[ao](n|pe?)?|pas(\s*)(di[est])?\s*[cç]a|(in|pas\s*)cor?recte?|il\s*y\s*[aà]\s+erreur|pas\s*(bons?|biens?(\s*compri[est]?)?)"
 

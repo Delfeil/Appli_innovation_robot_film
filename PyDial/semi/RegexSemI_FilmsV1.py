@@ -173,7 +173,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
 
         # self.contextual_COM_DRAMA = ur"(com(e|é)die?s\s*dramatique?s)"
         # self.contextual_DIVERS = ur"(divers)"
-        self.contextual_COMEDIE = ur"(?:comm?(e|é)dies?|drole|comm?iques?)"
+        self.contextual_COMEDIE = ur"(comm?(e|é)dies?|drole|comm?iques?|((qui)?\s*fai[st]\s*(moi)?|je\s*veux?)\s*rire)"
         self.contextual_ADVENTURE = ur"(?:(d')?\s*aventures?)"
         # self.contextual_ANIMATION = ur"(?:(?:an?nimation?s|?(dessin)?s\s*anim(e|é)?s))"
         self.contextual_ANIMATION = ur"(?:(d')?\s*ann?imations?|(dessins?)?\s*an?nim(e|é)e?s?)"
@@ -196,7 +196,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         ####Restriction####
         self.contextual_MORE6 = ur"(?:((plus)?\s*(de)?\s*(6|six)\sans))" #OK
         self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\sans)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\sans))"
-        self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?))" #OK
+        self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?)|non\s*violent?)" #OK
         self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans\s*(restriction|limites)?|non|aucunes?)"
         self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*(de)?\s*(18|dix-?\s*huit|16|seize)\s*(ans?)?|sensibles?)"
 
