@@ -42,7 +42,8 @@
 	historique: "historique";
 	romance: "romance";
 	thriller: "thriller";
-	epouvantehorreur: "épouvante-horreur"; 
+	epouvantehorreur: "épouvante-horreur";
+	dontcare: "peux importe";
 }
 
 %restriction_adj($restriction){
@@ -68,6 +69,7 @@
 	more6: "tous publics a partir de 6 ans";
 	none: "ausune restriction";
 	sensible: "des scenes, des propos ou des images peuvent heurter la sensibilite des spectateurs";
+	dontcare: " ayant n'importe quelle restriction";
 }
 
 # ============ RULES ============
@@ -85,9 +87,17 @@ bye(topictrackeruserended): "Désolé de ne pas avoir pu vous aider. Au revoir."
 
 # -----------Requetes-----------
 
-request(task) : "Que voulez-vous?";
+#request(task) : "Que voulez-vous?";
 request(genre) : "Quel genre de film voulez-vous voir?";
 request(restriction) : "Quel restriction de film voulez-vous avoir?";
+#request(synopsis) : "Voulez-vous avoir plus d'information sur le scenario?";
+
+request(genre, option=$X) : "Quel genre de film voulez-vous voir? Par example, %genre_simple($X)?";
+request(restriction, option=$X) : "Quel restriction de film voulez-vous avoir? Par example, %restriction_simple($X)?";
+
+request(genre, option=$X, option=$Y) : "Quel genre de film voulez-vous voir? Par example, %genre_simple($X) ou %genre_simple($Y)";
+request(restriction, option=$X, option=$Y) : "Quel restriction de film voulez-vous avoir? Par example, %restriction_simple($X) ou , ou %restriction_simple($Y)";
+
 request(genre=$V, name=$U) : "Voulez-vous plus d'information sur le film $U?";
 
 # Explicit Confirmations
@@ -109,6 +119,11 @@ inform(genre=$V, name=$U, restriction=none) : "Le film $U est %genre_adj($V), %r
 inform(genre=$V, name=$U, restriction=sensible) : "Le film $U est %genre_adj($V), %restriction_adj(sensible)";
 
 inform(name=$U, synopsis=$X) : "Le synopsis du film $U est : $X";
+inform(name=$U, release=$R) : "Le film $U est sorti le $R";
+inform(name=$U, duration=$D) : "Le film $U dure $D";
+inform(name=$U, acteurs=$A) : "Les acteurs présents dans film $U sont $A";
+inform(name=$U, realisateurs=$E) : "Le film $U a été réalisé par $E";
+
 inform(genre=$V, restriction=$R, name=$U) : "Le film du genre %genre_simple($V) étant %restriction_adj($R) est : $U";
 inform(restriction=$R, name=$U) : "Le film %restriction_verbe($R) est : $U";
 inform(name=$U, restriction=$R) : "La restriction du film $U est %restriction_simple($R)";

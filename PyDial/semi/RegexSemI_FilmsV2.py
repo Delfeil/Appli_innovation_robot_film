@@ -198,7 +198,7 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
         self.contextual_MORE12 = ur"(?:(((plus)?\s*(de)?\s*(12|douze)\sans)|interdit\s(au(x)?)?\s*(moins)?\s*(de)?\s*(12|douze)\sans))"
         self.contextual_FORALL = ur"(?:((tou(s|t)?\s*public(s)?)|(pour)?\s*tou(s|t)?)|non\s*violent?)" #OK
         self.contextual_NONE = ur"(?:pas?(?:\s*du\s*tou[stx]?|)|sans\s*(restriction|limites)?|non|aucunes?)"
-        self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*(de)?\s*(18|dix-?\s*huit|16|seize)\s*(ans?)?|sensibles?)"
+        self.contextual_SENSIBLE = ur"(p(eut|ouvant)\s*heurter\s*[lm]a\s*sensibilit(e|é)|polemique|violent?|adulte|(plus|interdit?\s*au[xs]?\s*moins?)\s*(de)?\s*(18|dix-?\s*huit|16|seize)\s*(ans?)?|sensibles?)"
 
 
     def create_domain_dependent_regex(self):
@@ -244,7 +244,13 @@ class RegexSemI_Films(RegexSemI.RegexSemI):
             self.request_regex[slot] += "|"+self.IT+ur"\s*"+self.slot_vocab[slot]
             
             # To remove for no synopsis
-        # self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
+        self.request_regex["synopsis"] = ur"(de\s*quoi\s*(\xc3\xa7|c)a\s*parle|trame|sc(e|é)nario|intrigue|synopsis|description|r(é|e)sum(é|e)|di[st]\s*(m'(\s*)?en)?\s*plus|c'est?\s*quoi)"
+        self.request_regex["genre"] = ur"(quels sont les genres)"
+        self.request_regex["release"] = ur"((date\s*de|(c'|il\s*)?est?)?\s*(sortie?|pass(e|é))(\s*quand)?|date|ann(e|é)e)"
+        # il est de quelle annee
+        self.request_regex["duration"] = ur"(((combien\s*de\s*temps?\s*)?(c|\xc3\xa7)a)?\s*dur(e|é)e?(\s*combien\s*de\s*temps?)?|c'est?\s*long)"
+        self.request_regex["acteurs"] = ur"(((qui|quels?)\s*(sont|est)\s*les?\s*)?(acteurs?|casting)|qui\s*jou(es|ent|e))"
+        self.request_regex["realisateurs"] = ur"((qui\s*(as?|est?\s*le)\s*)?(r(e|é)alis(e|é)|cr(e|é)er?|fai[ts]|r(e|é)alisateurs?))"
 
     def _set_inform_regex(self):
         """

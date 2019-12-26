@@ -263,15 +263,15 @@ class HDCPolicy(Policy.Policy):
                     examples = random.sample(slot_elements, 2)
                     # print("randoms", examples[0][0])
                     # -------V1--------
-                    # return True, 'request(%s)' % slot
+                    return True, 'request(%s)' % slot
 
                     # -------V2--------
-                    if self.request_slots_count[slot] == 0:
-                        return True, 'request(%s)' % slot
-                    elif self.request_slots_count[slot] == 1:
-                        return True, 'request(%s, option=%s)' % (slot, examples[0][0])
-                    else:
-                        return True, 'request(%s, option=%s, option=%s)' % (slot, examples[0][0], examples[1][0])
+                    # if self.request_slots_count[slot] == 0:
+                    #     return True, 'request(%s)' % slot
+                    # elif self.request_slots_count[slot] == 1:
+                    #     return True, 'request(%s, option=%s)' % (slot, examples[0][0])
+                    # else:
+                    #     return True, 'request(%s, option=%s, option=%s)' % (slot, examples[0][0], examples[1][0])
 
 
                 else:
